@@ -9,6 +9,8 @@ Non esiste un glossario ufficiale inglese-italiano di Python. Nella documentazio
 1. con il **tutorial ufficiale** in italiano (sorgenti in `python/python-docs-it`, ramo `3.13`, 950 frasi tradotte), che è l'unica traduzione pubblicata dalla Python Software Foundation: le note riportano quante volte usa ciascuna forma;
 2. dove il tutorial non ha il termine o è incerto, con l'**uso corrente** tra chi programma in italiano, per decisione del revisore.
 
+Per i termini che vengono da *Think Python* (per esempio fruitful e void function) si è consultata anche «Pensare in Python», la traduzione italiana di Andrea Zanella (`AllenDowney/ThinkPythonItalian`).
+
 Le voci dei glossari di fine capitolo sono elencate qui sotto accanto all'originale inglese. Una voce senza scelta non è ancora stata rivista: si decide quando si lavora al suo capitolo.
 
 ## Scelte trasversali
@@ -30,6 +32,19 @@ Termini che ricorrono nel testo di più capitoli.
 | statement | istruzione | tutorial ufficiale: «istruzione» 76 volte su 84 |
 | line (di codice) | riga |  |
 | traceback | traceback | resta in inglese: è la parola che Python stampa a schermo |
+| programmer | programmatore | tutorial ufficiale: sempre «programmatore»; «sviluppatore» solo per developer |
+| program, script, code | programma, script, codice | non si usano come sinonimi: l'inglese li distingue |
+| run, execute | eseguire | tutorial ufficiale: «eseguire» 25 volte su 32; «avviare» per start |
+| type, enter | digitare, inserire | tutorial ufficiale: «digitare» per type 9 volte, «inserire» per enter 7 |
+| display, show | visualizzare, mostrare | tutorial ufficiale: 16 volte su 20 e 14 su 15 |
+| store, save | memorizzare, salvare | tutorial ufficiale: 15 volte su 16 e 7 su 11 |
+| call | chiamare | tutorial ufficiale: «chiamare» 73 volte su 76 |
+| stop | fermare | deciso il 22 novembre 2026 |
+| test (verbo) | testare | deciso il 22 novembre 2026; il nome resta «test» |
+| central processing unit | CPU | deciso il 22 novembre 2026: «*unità centrale di elaborazione* (CPU, Central Processing Unit)» alla prima comparsa, poi «CPU» |
+| error message | messaggio di errore | tutorial ufficiale: «di errore» 9 volte, «d'errore» 0 |
+| debugging | debug | tutorial ufficiale: «debug» 5 volte, «debugging» 0 |
+| nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
 
@@ -40,7 +55,7 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | bug | Bug | bug |  |
-| central processing unit | Central processing unit | central processing unit |  |
+| central processing unit | Central processing unit | CPU | vedi le scelte trasversali |
 | compile | Compilare | compilare |  |
 | high-level language | Linguaggio di alto livello | linguaggio di alto livello |  |
 | interactive mode | Modalità interattiva | modalità interattiva |  |
