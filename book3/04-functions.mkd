@@ -113,7 +113,7 @@ Funzioni matematiche
 --------------
 
 \index{funzione matematica}
-\index{funzione!math}
+\index{funzione, matematica}
 \index{modulo}
 \index{oggetto modulo}
 Python ha un modulo `math` che fornisce la maggior parte delle funzioni matematiche più comuni. Prima di poter usare il modulo, dobbiamo importarlo:
@@ -144,7 +144,7 @@ L'oggetto modulo contiene le funzioni e le variabili definite nel modulo. Per ac
 ~~~~
 
 
-Nel primo esempio viene calcolato il logaritmo in base 10 del rapporto segnale/rumore. Il modulo math è dotato anche di una funzione chiamata `log` che calcola i logaritmi in base `e`.
+Nel primo esempio viene calcolato il logaritmo in base 10 del rapporto segnale/rumore. Il modulo math è dotato anche di una funzione chiamata `log` che calcola i logaritmi in base e.
 \index{funzione log}
 \index{funzione!log}
 \index{funzione seno}
@@ -183,7 +183,7 @@ Numeri casuali
 \index{numero casuale}
 \index{numero, casuale}
 \index{deterministico}
-\index{pseudorandom}
+\index{pseudo-casuale}
 Dato il medesimo input, la maggior parte dei programmi per computer genera sempre lo stesso output. Per tale motivo vengono detti *deterministici*. Il determinismo di solito è una cosa auspicabile poiché ci aspettiamo che lo stesso calcolo produca sempre lo stesso risultato. Per alcune applicazioni, tuttavia, vogliamo che il computer sia imprevedibile. I giochi sono un esempio ovvio, ma ce ne sono altri.
 
 Realizzare un programma veramente non deterministico non è così semplice come potrebbe sembrare a prima vista anche se esistono modi per farlo almeno sembrare tale. Uno di questi è usare *algoritmi* che generano numeri *pseudo-casuali*. I numeri pseudo-casuali non sono veramente casuali perché sono generati da un calcolo deterministico, ma osservando solo i numeri è quasi impossibile distinguerli da quelli casuali.
@@ -191,7 +191,7 @@ Realizzare un programma veramente non deterministico non è così semplice come 
 \index{modulo random}
 \index{modulo!random}
 
-Il modulo `random` fornisce funzioni che generano numeri pseudo-casuali (che chiameremo semplicemente "casuali" da qui in poi).
+Il modulo `random` fornisce funzioni che generano numeri pseudo-casuali (che chiamerò semplicemente "casuali" da qui in poi).
 \index{funzione random}
 \index{funzione!random}
 
@@ -508,7 +508,7 @@ Per restituire un risultato da una funzione, usiamo l'istruzione `return` nella 
 
 \VerbatimInput{../code3/addtwo.py}
 
-Quando questo script viene eseguito, l'istruzione `print` visualizza "8" perché la funzione `addtwo` è stata chiamata con 3 e 5 come argomenti. All'interno della funzione, i parametri `a` e `b` valevano rispettivamente 3 e 5. La funzione ha calcolato la somma dei due numeri e l'ha inserita nella variabile locale della funzione chiamata `added`. Poi ha usato l'istruzione `return` per inviare il valore calcolato al codice chiamante come risultato della funzione; il valore è stato assegnato alla variabile `x` e visualizzato.
+Quando questo script viene eseguito, l'istruzione `print` visualizza "8" perché la funzione `addtwo` è stata chiamata con 3 e 5 come argomenti. All'interno della funzione, i parametri `a` e `b` valevano rispettivamente 3 e 5. La funzione ha calcolato la somma dei due numeri e l'ha inserita in una variabile locale della funzione, chiamata `added`. Poi ha usato l'istruzione `return` per inviare il valore calcolato al codice chiamante come risultato della funzione; il valore è stato assegnato alla variabile `x` e visualizzato.
 
 Perché le funzioni?
 --------------
@@ -518,7 +518,7 @@ Potrebbe non esserti chiaro il motivo per cui vale la pena di suddividere un pro
 
 - la creazione di una nuova funzione ti dà l'opportunità di dare un nome a un insieme di istruzioni, facilitandoti la lettura, la comprensione e il debug del tuo programma;
 - le funzioni possono ridurre le dimensioni di un programma, eliminando il codice ripetitivo. Se in seguito fai una modifica, devi farla in un solo posto;
-- dividere in funzioni un programma esteso, ti consente di eseguire il debug delle singole parti e solo dopo assemblarle in un insieme funzionante;
+- dividere in funzioni un programma esteso ti consente di eseguire il debug delle singole parti e solo dopo assemblarle in un insieme funzionante;
 - le funzioni ben progettate sono spesso utili in molti programmi: una volta scritta e corretta una funzione, puoi riutilizzarla.
 
 Nel resto del libro useremo spesso una definizione di funzione per spiegare un concetto. Parte dell'abilità nel creare e usare le funzioni sta nel fare in modo che una funzione catturi correttamente un'idea, come "trova il valore più piccolo in una lista di valori". Più avanti ti mostreremo il codice che trova il valore più piccolo in una lista di valori e te lo presenteremo come una funzione chiamata `min`, che accetta come argomento una lista di valori e restituisce il valore più piccolo della lista.  
@@ -609,10 +609,10 @@ Glossario
 
 **Pseudo-casuale**
 : Relativo a una sequenza di numeri che sembrano casuali, ma sono generati da un programma deterministico.
-\index{pseudorandom}
+\index{pseudo-casuale}
 
 **Valore di ritorno**
-: Il risultato di una funzione. Se una chiamata di funzione viene utilizzata come espressione, il valore restituito è il valore dell'espressione.
+: Il risultato di una funzione. Se una chiamata di funzione viene utilizzata come espressione, il valore di ritorno è il valore dell'espressione.
 \index{valore di ritorno}
 
 **Funzione vuota**
