@@ -56,6 +56,13 @@ Termini che ricorrono nel testo di più capitoli.
 | sanity check, consistency check | controllo di plausibilità, controllo di coerenza | con l'inglese tra parentesi alla prima comparsa |
 | scaffolding | impalcatura | «Pensare in Python»: «impalcature» |
 | idiom | idioma |  |
+| keyword argument | argomento chiave-valore | tutorial ufficiale: «argomenti chiave-valore» in 7 coppie su 9; alla prima comparsa «*argomento chiave-valore* (keyword argument)» |
+| list comprehension | comprensione di lista | tutorial ufficiale: «comprensione» in 9 coppie su 11 |
+| composite key | chiave composta |  |
+| swap | scambiare | tutorial ufficiale: «scambiare» |
+| collection | collezione | tutorial ufficiale: «collezione» 5 volte, «raccolta» 1; «raccolta» resta per «gather» |
+| list (parola comune, non il tipo di dato) | elenco | «a comma-separated list of values» = «un elenco di valori separati da virgole»; «lista» solo per il tipo di dato |
+| hash order | ordine dell'hash |  |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -226,20 +233,20 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | nested loops | Cicli annidati | cicli annidati | voce d'indice al singolare: «ciclo annidato» |
 | value | Valore | valore |  |
 
-### Capitolo 10 (`10-tuples.mkd`), da rivedere
+### Capitolo 10 (`10-tuples.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| comparable | Comparabile |  |  |
-| data structure | Struttura di dati |  |  |
-| DSU | DSU |  |  |
+| comparable | Comparabile | confrontabile | «compare» è «confrontare», mai «comparare» |
+| data structure | Struttura di dati | struttura di dati |  |
+| DSU | DSU | DSU | la sigla e «decorate-sort-undecorate» restano in inglese, con «decorare, ordinare, togliere la decorazione» come spiegazione |
 | gather | Gather | raccolta (gather) |  |
 | hashable | Hashabile | hashable | deciso il 22 novembre 2026: resta in inglese |
 | scatter | Scatter | spacchettamento (scatter) |  |
-| shape (of a data structure) | Formato (di una struttura dati) |  |  |
-| singleton | Singleton |  |  |
-| tuple | Tupla |  |  |
-| tuple assignment | Assegnazione di tupla |  |  |
+| shape (of a data structure) | Formato (di una struttura dati) | forma (di una struttura di dati) | «shape error» = «*errori di forma* (shape error)» |
+| singleton | Singleton | singleton | resta in inglese |
+| tuple | Tupla | tupla |  |
+| tuple assignment | Assegnazione di tupla | assegnazione di tupla |  |
 
 ### Capitolo 11 (`11-regex.mkd`), da rivedere
 
