@@ -92,7 +92,7 @@ True
 ~~~~
 
 
-Questa flessibilità può tornare utile in alcune situazioni, ma ha alcune sottigliezze che potrebbero creare confusione. È meglio evitarla finché non sei sicuro di sapere quello che stai facendo.
+Questa flessibilità può tornare utile in alcune situazioni, ma ha alcune sottigliezze che potrebbero creare confusione. Ti conviene evitarla finché non sei sicuro di sapere quello che stai facendo.
 
 Esecuzione condizionale
 ---------------------
@@ -110,7 +110,7 @@ if x > 0 :
 ~~~~
 
 
-L'espressione booleana dopo l'istruzione `if` è chiamata *condizione*. L'istruzione `if` termina con il carattere due punti (:) e la riga o le righe che la seguono sono indentate.
+L'espressione booleana dopo l'istruzione `if` è chiamata *condizione*. L'istruzione `if` termina con il carattere due punti (`:`) e la riga o le righe che la seguono sono indentate.
 
 ![Logica If](height=1.5in@../images/if)
 
@@ -119,7 +119,7 @@ Se la condizione logica è vera, l'istruzione indentata viene eseguita. Se la co
 \index{istruzione composta}
 \index{istruzione!composta}
 
-Le istruzioni `if` hanno la stessa struttura delle definizioni di funzione o dei cicli `for`^[Impareremo a conoscere funzioni e cicli rispettivamente nei capitoli 4 e 5.]. L'istruzione è composta da una riga di intestazione che termina con i due punti (:) seguita da un blocco indentato. Istruzioni come questa sono chiamate *istruzioni composte* perché si estendono su più righe.
+Le istruzioni `if` hanno la stessa struttura delle definizioni di funzione o dei cicli `for`^[Impareremo a conoscere funzioni e cicli rispettivamente nei Capitoli 4 e 5.]. L'istruzione è composta da una riga di intestazione che termina con i due punti (`:`) seguita da un blocco indentato. Istruzioni come questa sono chiamate *istruzioni composte* perché si estendono su più righe.
 
 ~~~~ {.python}
 if x > y:
@@ -138,7 +138,7 @@ if x < 0 :
 ~~~~
 
 
-Se immetti un'istruzione `if` nell'interprete Python, il prompt cambierà da tre chevron (>>>) a tre punti (...) per segnalare che ti trovi nel mezzo di un blocco di istruzioni, come mostrato di seguito:
+Se inserisci un'istruzione `if` nell'interprete Python, il prompt cambierà da tre chevron (`>>>`) a tre punti (`...`) per segnalare che ti trovi nel mezzo di un blocco di istruzioni, come mostrato di seguito:
 
 ~~~~ {.python}
 >>> x = 3
@@ -150,7 +150,7 @@ Small
 ~~~~
 
 
-Quando utilizzi l'interprete Python, è necessario lasciare una riga vuota alla fine di un blocco, in caso contrario Python restituirà un errore:
+Quando utilizzi l'interprete Python, devi lasciare una riga vuota alla fine di un blocco, in caso contrario Python segnalerà un errore:
 
 ~~~~ {.python}
 >>> x = 3
@@ -268,7 +268,7 @@ if 0 < x and x < 10:
 ~~~~
 
 
-Catturare le eccezioni usando try ed except
+Catturare le eccezioni usando `try` ed `except`
 ----------------------------------------
 
 In precedenza abbiamo esaminato un segmento di codice in cui abbiamo utilizzato le funzioni `input` e `int` per leggere e analizzare un numero intero inserito dall'utente. Abbiamo anche visto che questo potrebbe risultare insidioso:
@@ -291,8 +291,8 @@ Tuttavia, se inserisci questo codice in uno script Python e si verifica questo e
 \index{traceback}
 
 Ecco un programma di esempio che converte una temperatura da Fahrenheit a Celsius:
-\index{fahrenheit}
-\index{celsius}
+\index{Fahrenheit}
+\index{Celsius}
 \index{conversione della temperatura}
 
 \VerbatimInput{../code3/fahren.py}
@@ -318,9 +318,9 @@ ValueError: could not convert string to float: 'fred'
 ~~~~
 
 
-Per gestire questi tipi di errori, previsti e imprevisti, Python ha una struttura di esecuzione condizionale integrata chiamata "try / except". Lo scopo di `try` ed `except` è questo: sai che una certa sequenza di istruzioni potrebbe avere un problema e vuoi aggiungere alcune istruzioni da eseguire se si verifica un errore. Queste istruzioni aggiuntive (il blocco except) vengono ignorate se non ci sono errori.
+Per gestire questi tipi di errori, previsti e imprevisti, Python ha una struttura di esecuzione condizionale built-in chiamata `try`/`except`. Lo scopo di `try` ed `except` è questo: sai che una certa sequenza di istruzioni potrebbe avere un problema e vuoi aggiungere alcune istruzioni da eseguire se si verifica un errore. Queste istruzioni aggiuntive (il blocco `except`) vengono ignorate se non ci sono errori.
 
-Puoi pensare alla funzionalità `try` ed `except` di Python come ad una "polizza assicurativa" su una sequenza di istruzioni.
+Puoi pensare alla funzionalità `try` ed `except` di Python come a una "polizza assicurativa" su una sequenza di istruzioni.
 
 Possiamo riscrivere il nostro convertitore di temperatura come segue:
 
@@ -352,7 +352,7 @@ Valutazione in cortocircuito delle espressioni logiche
 \index{cortocircuito}
 Quando Python sta elaborando un'espressione logica come `x >= 2 and (x/y) > 2`, valuta l'espressione da sinistra a destra. Per la definizione di `and`, se `x` è minore di 2, l'espressione `x >= 2` è `False` e quindi l'intera espressione è `False`, indipendentemente dal fatto che `(x/y) > 2` valga `True` o `False`.
 
-Quando Python rileva che non c'è nulla da guadagnare valutando il resto di un'espressione logica, interrompe la valutazione e non esegue i calcoli rimanenti. Quando la valutazione di un'espressione logica si interrompe perché il valore complessivo è già noto, si parla di *cortocircuito* della valutazione.
+Quando Python rileva che non c'è nulla da guadagnare valutando il resto di un'espressione logica, ferma la valutazione e non esegue i calcoli rimanenti. Quando la valutazione di un'espressione logica si ferma perché il valore complessivo è già noto, si parla di *cortocircuito* della valutazione.
 
 \index{schema del guardiano}
 \index{schema!guardiano}
@@ -407,14 +407,14 @@ Nella seconda espressione diciamo che `y != 0` fa da *guardia*, per assicurare c
 Debug
 ---------
 
-\index{debugging}
+\index{debug}
 \index{traceback}
 Il traceback che Python visualizza quando si verifica un errore contiene molte informazioni, ma può disorientare. Le parti più utili sono di solito:
 
 - il tipo di errore;
 - dove si è verificato.
 
-Gli errori di sintassi sono solitamente facili da trovare, ma ci sono alcuni tranelli. Gli errori di spaziatura possono essere insidiosi perché gli spazi e le tabulazioni sono invisibili e siamo abituati ad ignorarli.
+Gli errori di sintassi sono solitamente facili da trovare, ma ci sono alcuni tranelli. Gli errori di spaziatura possono essere insidiosi perché gli spazi e le tabulazioni sono invisibili e siamo abituati a ignorarli.
 \index{spaziatura}
 
 
@@ -428,7 +428,7 @@ IndentationError: unexpected indent
 ~~~~
 
 
-In questo esempio il problema è che la seconda riga è indentata di uno spazio. Ma il messaggio di errore punta ad `y`, e ciò è fuorviante. In generale, i messaggi di errore indicano il punto dove è stato rilevato il problema, ma l'errore reale potrebbe essere in un punto precedente del codice, a volte su una riga precedente.
+In questo esempio il problema è che la seconda riga è indentata di uno spazio. Ma il messaggio di errore punta a `y`, e ciò è fuorviante. In generale, i messaggi di errore indicano il punto dove è stato rilevato il problema, ma l'errore reale potrebbe essere in un punto precedente del codice, a volte su una riga precedente.
 
 In generale, i messaggi di errore dicono dove è stato scoperto il problema, ma spesso quel punto non coincide con il punto dove è stato causato.  
 
@@ -468,7 +468,7 @@ Glossario
 \index{condizione}
 
 **Istruzione composta**
-: Un'istruzione formata da un'intestazione e da un corpo. L'intestazione termina con i due punti (:). Il corpo è indentato rispetto all'intestazione.
+: Un'istruzione formata da un'intestazione e da un corpo. L'intestazione termina con i due punti (`:`). Il corpo è indentato rispetto all'intestazione.
 \index{istruzione composta}
 
 **Schema del guardiano**
@@ -485,11 +485,11 @@ Glossario
 \index{condizione!annidata}
 
 **Traceback**
-: Elenco delle funzioni in esecuzione, che viene stampato quando si verifica un'eccezione.
+: Un elenco delle funzioni in esecuzione, che viene stampato quando si verifica un'eccezione.
 \index{traceback}
 
 **Cortocircuito**
-: Si verifica quando Python, a metà della valutazione di un'espressione logica, interrompe la valutazione perché conosce già il valore finale dell'espressione, senza dover valutare il resto.
+: Si verifica quando Python, a metà della valutazione di un'espressione logica, ferma la valutazione perché conosce già il valore finale dell'espressione, senza dover valutare il resto.
 \index{cortocircuito}
 
 Esercizi
@@ -573,4 +573,4 @@ F
 ~~~~
 
 
-Esegui più volte il programma, come mostrato sopra, per provare i diversi valori di input.
+Esegui più volte il programma, come mostrato sopra, per testare i diversi valori di input.
