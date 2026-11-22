@@ -38,7 +38,7 @@ Per la maggior parte delle persone, la prima lettera di `'banana'` è `b`, non `
 b
 ~~~~
 
-Quindi `b` è la lettera numero 0 ("zeresima") di `'banana'`, `a` è la lettera numero 1 e `n` è la lettera numero 2.
+Quindi `b` è la lettera numero 0 ("zeresima") di `'banana'`, `a` è la lettera numero 1 ("unesima") e `n` è la lettera numero 2 ("duesima").
 
 ![Indici di una stringa](height=0.75in@../images/string)
 
@@ -145,7 +145,7 @@ Monty
 Python
 ~~~~
 
-L'operatore `[n:m]` restituisce la parte della stringa che va dal carattere numero n al carattere numero m, compreso il primo ma escluso l'ultimo.
+L'operatore `[n:m]` restituisce la parte della stringa che va dal carattere numero `n` al carattere numero `m`, compreso il primo ma escluso l'ultimo.
 
 Se ometti il primo indice (prima dei due punti), la slice parte dall'inizio della stringa. Se ometti il secondo indice, la slice arriva fino alla fine della stringa:
 
@@ -216,8 +216,8 @@ Cicli e conteggi
 --------------------
 
 \index{contatore}
-\index{conteggio e cicli}
-\index{cicli e conteggio}
+\index{conteggio e ciclo}
+\index{ciclo e conteggio}
 \index{ciclo!con le stringhe}
 
 Il seguente programma conta il numero di volte in cui la lettera `a` compare in una stringa:
@@ -318,7 +318,7 @@ capitalize(self, /)
 >>>
 ~~~~
 
-La funzione `dir` elenca i metodi e puoi usare `help` per ottenere una semplice documentazione su un metodo, ma una fonte di documentazione migliore per i metodi delle stringhe è
+La funzione `dir` elenca i metodi e puoi usare `help` per ottenere una semplice documentazione su un metodo, ma una fonte di documentazione migliore per i metodi delle stringhe sarebbe
 
 <https://docs.python.org/library/stdtypes.html#string-methods>.
 
@@ -376,7 +376,7 @@ Può accettare come secondo argomento l'indice da cui deve iniziare:
 4
 ~~~~
 
-Un compito comune è rimuovere gli spazi bianchi (spazi, tabulazioni o newline) dall'inizio e dalla fine di una stringa usando il metodo `strip`:
+Un compito comune è rimuovere gli spazi bianchi (spazi, tabulazioni o newline, cioè caratteri di fine riga) dall'inizio e dalla fine di una stringa usando il metodo `strip`:
 
 ~~~~ {.python}
 >>> line = '  Here we go  '
@@ -422,7 +422,7 @@ Analisi delle stringhe
 
 Spesso vogliamo guardare dentro una stringa e trovare una sottostringa. Ad esempio, se ci venisse presentata una serie di righe formattate come segue:
 
-`From stephen.marquard@`*` uct.ac.za`*` Sat Jan  5 09:14:16 2008`
+`From stephen.marquard@`*` uct.ac.za`*` Sat Jan  5 09:14:16 2008`
 
 e volessimo estrarre da ogni riga solo la seconda metà dell'indirizzo (cioè `uct.ac.za`), possiamo farlo usando il metodo `find` e lo slicing delle stringhe.
 
@@ -456,7 +456,7 @@ Stringhe formattate letterali
 
 Una stringa formattata letterale (spesso chiamata semplicemente f-string) permette di usare espressioni Python all'interno delle stringhe letterali. Per farlo si antepone una `f` alla stringa letterale e si racchiudono le espressioni tra parentesi graffe `{}`.
 
-Ad esempio, se racchiudi il nome di una variabile tra parentesi graffe dentro una f-string, il nome viene sostituito dal suo valore:
+Ad esempio, se racchiudi il nome di una variabile tra parentesi graffe dentro una f-string, il nome verrà sostituito dal suo valore:
 
 ~~~~ {.python}
 >>> camels = 42
@@ -551,7 +551,7 @@ Glossario
 \index{invocazione}
 
 **Immutabile**
-: La proprietà di una sequenza ai cui elementi non si può assegnare un valore.
+: Relativo a una sequenza ai cui elementi non si può assegnare un valore.
 \index{immutabilità}
 
 **Indice**
