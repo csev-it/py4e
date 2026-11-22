@@ -63,6 +63,14 @@ Termini che ricorrono nel testo di più capitoli.
 | collection | collezione | tutorial ufficiale: «collezione» 5 volte, «raccolta» 1; «raccolta» resta per «gather» |
 | list (parola comune, non il tipo di dato) | elenco | «a comma-separated list of values» = «un elenco di valori separati da virgole»; «lista» solo per il tipo di dato |
 | hash order | ordine dell'hash |  |
+| match (verbo), match (nome) | corrispondere a, corrispondenza | soggetto del verbo è l'espressione, non chi programma: «vogliamo la corrispondenza con…» |
+| backslash | backslash | resta in inglese, maschile |
+| raw string | stringa raw | alla prima comparsa «*stringa raw* (raw string)»; tutorial ufficiale: «stringa raw» |
+| caret, at-sign, colon character | accento circonflesso, chiocciola, carattere dei due punti |  |
+| parentheses | parentesi tonde |  |
+| parser | parser | resta in inglese; il verbo «parse» è «analizzare» |
+| quantifier | quantificatore |  |
+| token | token | resta in inglese; tutorial ufficiale: 2 volte su 2 |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -248,14 +256,14 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | tuple | Tupla | tupla |  |
 | tuple assignment | Assegnazione di tupla | assegnazione di tupla |  |
 
-### Capitolo 11 (`11-regex.mkd`), da rivedere
+### Capitolo 11 (`11-regex.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| brittle code | Codice fragile |  |  |
-| greedy matching | Corrispondenza avida |  |  |
-| grep | Grep |  |  |
-| regular expression | Espressione regolare |  |  |
+| brittle code | Codice fragile | codice fragile |  |
+| greedy matching | Corrispondenza avida | corrispondenza avida | greedy = avido, non-greedy = non avido |
+| grep | Grep | grep | nome di un comando: minuscolo e nel carattere da codice |
+| regular expression | Espressione regolare | espressione regolare | «regex» resta in inglese dove l'originale lo usa |
 | wild card | Wild-card | carattere jolly |  |
 
 ### Capitolo 12 (`12-network.mkd`), da rivedere
