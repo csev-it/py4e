@@ -23,10 +23,10 @@ Si dice comunemente che una funzione "accetta" un argomento e "restituisce" un r
 \index{argomento}
 \index{valore di ritorno}
 
-Funzioni integrate
+Funzioni built-in
 ------------------
 
-Python fornisce un buon numero di importanti funzioni integrate, che possiamo usare senza doverne scrivere la definizione. I creatori di Python hanno scritto un insieme di funzioni per risolvere problemi comuni e le hanno incluse in Python perché le potessimo usare.
+Python fornisce un buon numero di importanti funzioni built-in, che possiamo usare senza doverne scrivere la definizione. I creatori di Python hanno scritto un insieme di funzioni per risolvere problemi comuni e le hanno incluse in Python perché le potessimo usare.
 
 Le funzioni `max` e `min` ci danno rispettivamente il valore più grande e il valore più piccolo di una lista:
 
@@ -41,7 +41,7 @@ Le funzioni `max` e `min` ci danno rispettivamente il valore più grande e il va
 
 La funzione `max` ci indica il "carattere più grande" della stringa (che risulta essere la lettera "w"), mentre la funzione `min` ci mostra il carattere più piccolo (che risulta essere uno spazio).
 
-Un'altra funzione integrata molto comune è `len`, che ci dice quanti elementi ci sono nel suo argomento. Se l'argomento di `len` è una stringa, la funzione restituisce il numero di caratteri della stringa.
+Un'altra funzione built-in molto comune è `len`, che ci dice quanti elementi ci sono nel suo argomento. Se l'argomento di `len` è una stringa, la funzione restituisce il numero di caratteri della stringa.
 
 ~~~~ {.python}
 >>> len('Hello world')
@@ -53,14 +53,14 @@ Un'altra funzione integrata molto comune è `len`, che ci dice quanti elementi c
 
 Queste funzioni non si limitano alle stringhe: possono operare su qualsiasi insieme di valori, come vedremo nei prossimi capitoli.
 
-Dovresti trattare i nomi delle funzioni integrate come parole riservate (cioè, evita di usare "max" come nome di variabile).
+Dovresti trattare i nomi delle funzioni built-in come parole riservate (cioè, evita di usare "max" come nome di variabile).
 
 Funzioni di conversione dei tipi di dato
 -------------------------
 
 \index{conversione!tipo}
 \index{conversione tra tipi}
-Altre funzioni integrate in Python ti permettono di convertire i valori da un tipo ad un altro: ad esempio la funzione `int` accetta qualsiasi valore e, qualora sia possibile, lo converte in un numero intero. In caso contrario si "lamenta" visualizzando un messaggio d'errore:
+Altre funzioni built-in di Python ti permettono di convertire i valori da un tipo ad un altro: ad esempio la funzione `int` accetta qualsiasi valore e, qualora sia possibile, lo converte in un numero intero. In caso contrario si "lamenta" visualizzando un messaggio d'errore:
 \index{funzione int}
 \index{funzione!int}
 
@@ -123,7 +123,7 @@ Python ha un modulo `math` che fornisce la maggior parte delle funzioni matemati
 ~~~~
 
 
-Questa istruzione crea un *oggetto modulo* chiamato math. Se visualizzi l'oggetto modulo con `print`, ottieni alcune informazioni su di esso:
+Questa istruzione crea un *oggetto modulo* chiamato math. Se stampi l'oggetto modulo, ottieni alcune informazioni su di esso:
 
 ~~~~ {.python}
 >>> print(math)
@@ -287,7 +287,7 @@ Le parentesi vuote dopo il nome indicano che questa funzione non accetta argomen
 La prima riga della definizione di funzione è chiamata *intestazione*; il resto è chiamato *corpo*. L'intestazione deve terminare con i due punti e il corpo deve essere indentato. Per convenzione, l'indentazione è sempre di quattro spazi. Il corpo può contenere un numero qualsiasi di istruzioni.
 \index{puntini di sospensione}
 
-Se scrivi una definizione di funzione in modalità interattiva, l'interprete visualizza dei puntini di sospensione (*...*) per farti sapere che la definizione non è completa:
+Se scrivi una definizione di funzione in modalità interattiva, l'interprete stampa dei puntini di sospensione (*...*) per farti sapere che la definizione non è completa:
 
 ~~~~ {.python}
 >>> def print_lyrics():
@@ -312,7 +312,7 @@ Il valore di `print_lyrics` è un *oggetto funzione*, che ha tipo "function".
 \index{oggetto funzione}
 \index{oggetto!funzione}
 
-La sintassi per chiamare la nuova funzione è la stessa utilizzata per le funzioni integrate:
+La sintassi per chiamare la nuova funzione è la stessa utilizzata per le funzioni built-in:
 
 ~~~~ {.python}
 >>> print_lyrics()
@@ -386,7 +386,7 @@ Parametri e argomenti
 \index{parametri di una funzione}
 \index{argomento}
 \index{argomento di funzione}
-Alcune delle funzioni integrate che abbiamo visto richiedono degli argomenti. Ad esempio, quando chiami `math.sin` passi un numero come argomento. Alcune funzioni accettano più di un argomento: `math.pow` ne accetta due, la base e l'esponente.
+Alcune delle funzioni built-in che abbiamo visto richiedono degli argomenti. Ad esempio, quando chiami `math.sin` passi un numero come argomento. Alcune funzioni accettano più di un argomento: `math.pow` ne accetta due, la base e l'esponente.
 
 All'interno della funzione, gli argomenti sono assegnati a variabili chiamate *parametri*.
 Ecco un esempio di una funzione definita dall'utente che riceve un argomento:
@@ -400,9 +400,9 @@ def print_twice(bruce):
 ~~~~
 
 
-Questa funzione assegna l'argomento ad un parametro chiamato `bruce`. Quando la funzione viene chiamata, visualizza due volte il valore del parametro (qualunque esso sia).
+Questa funzione assegna l'argomento ad un parametro chiamato `bruce`. Quando la funzione viene chiamata, stampa due volte il valore del parametro (qualunque esso sia).
 
-Questa funzione opera con qualsiasi valore che possa essere visualizzato.
+Questa funzione opera con qualsiasi valore che possa essere stampato.
 
 ~~~~ {.python}
 >>> print_twice('Spam')
@@ -418,7 +418,7 @@ Spam
 ~~~~
 
 
-Dato che le regole di composizione che si applicano alle funzioni integrate si applicano anche a quelle definite dall'utente, possiamo usare qualsiasi tipo di espressione come argomento per `print_twice`:
+Dato che le regole di composizione che si applicano alle funzioni built-in si applicano anche a quelle definite dall'utente, possiamo usare qualsiasi tipo di espressione come argomento per `print_twice`:
 \index{composizione}
 
 
@@ -508,7 +508,7 @@ Per restituire un risultato da una funzione, usiamo l'istruzione `return` nella 
 
 \VerbatimInput{../code3/addtwo.py}
 
-Quando questo script viene eseguito, l'istruzione `print` visualizza "8" perché la funzione `addtwo` è stata chiamata con 3 e 5 come argomenti. All'interno della funzione, i parametri `a` e `b` valevano rispettivamente 3 e 5. La funzione ha calcolato la somma dei due numeri e l'ha inserita in una variabile locale della funzione, chiamata `added`. Poi ha usato l'istruzione `return` per inviare il valore calcolato al codice chiamante come risultato della funzione; il valore è stato assegnato alla variabile `x` e visualizzato.
+Quando questo script viene eseguito, l'istruzione `print` stampa "8" perché la funzione `addtwo` è stata chiamata con 3 e 5 come argomenti. All'interno della funzione, i parametri `a` e `b` valevano rispettivamente 3 e 5. La funzione ha calcolato la somma dei due numeri e l'ha inserita in una variabile locale della funzione, chiamata `added`. Poi ha usato l'istruzione `return` per inviare il valore calcolato al codice chiamante come risultato della funzione; il valore è stato assegnato alla variabile `x` e stampato.
 
 Perché le funzioni?
 --------------
@@ -630,7 +630,7 @@ c) Indica che la seguente sezione di codice indentata deve essere memorizzata pe
 d) b e c sono entrambe vere.\
 e) Nessuna delle precedenti.
 
-**Esercizio 5:** Cosa visualizzerà il seguente programma Python?
+**Esercizio 5:** Cosa stamperà il seguente programma Python?
 
 ~~~~ {.python}
 def fred():
