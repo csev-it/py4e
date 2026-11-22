@@ -82,6 +82,16 @@ Termini che ricorrono nel testo di più capitoli.
 | encode, decode | codificare, decodificare |  |
 | library | libreria |  |
 | will (abitudine) | presente | quando «will» descrive ciò che accade di solito («a search engine will look at…») in italiano va il presente; il futuro resta per il futuro vero |
+| web service | servizio web |  |
+| index operator | operatore di indicizzazione | tutorial ufficiale: «indicizzazione»; «operatore parentesi quadre» resta per «bracket operator» |
+| self-closing tag | tag a chiusura automatica | con l'inglese tra parentesi alla prima comparsa |
+| subtree | sottoalbero |  |
+| top (level) element | elemento di primo livello |  |
+| parent, child (nodi XML) | padre, figlio | per le classi il glossario del capitolo 14 fissa «classe genitore, classe figlia» |
+| vendor | fornitore |  |
+| self-describing | autodescrittivo |  |
+| array, markup | array, markup | restano in inglese |
+| don't have to | non serve, non abbiamo bisogno di | «non dobbiamo» in italiano suona come un divieto |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -287,15 +297,15 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | socket | Socket | socket | maschile |
 | spider | Spider | spider |  |
 
-### Capitolo 13 (`13-web.mkd`), da rivedere
+### Capitolo 13 (`13-web.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| API | API |  |  |
-| ElementTree | ElementTree |  |  |
-| JSON | JSON |  |  |
-| SOA | SOA |  |  |
-| XML | XML |  |  |
+| API | API | API | alla prima comparsa «*interfacce di programmazione delle applicazioni* (API, Application Program Interfaces)» |
+| ElementTree | ElementTree | ElementTree |  |
+| JSON | JSON | JSON | senza articolo quando indica il formato, con l'articolo quando indica un contenuto preciso («il JSON analizzato») |
+| SOA | SOA | SOA | alla prima comparsa «*architettura orientata ai servizi* (SOA, Service-Oriented Architecture)» |
+| XML | XML | XML | come JSON: senza articolo per il formato |
 
 ### Capitolo 14 (`14-objects.mkd`), da rivedere
 
