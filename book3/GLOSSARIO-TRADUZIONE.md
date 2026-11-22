@@ -4,13 +4,12 @@ Questo file serve a chi rivede la traduzione italiana di *Python for Everybody*:
 
 ## Fonti
 
-Non esiste un glossario ufficiale inglese-italiano di Python. Nella documentazione ufficiale in italiano (`docs.python.org/it/3/`) la pagina del glossario non è tradotta (controllo del 22 novembre 2026). Le fonti usate qui sono tre, in quest'ordine:
+Non esiste un glossario ufficiale inglese-italiano di Python. Nella documentazione ufficiale in italiano (`docs.python.org/it/3/`) la pagina del glossario non è tradotta (controllo del 22 novembre 2026). I termini si decidono così:
 
-1. il **tutorial ufficiale** in italiano (sorgenti in `python/python-docs-it`, ramo `3.13`, 950 frasi tradotte): è l'unica traduzione pubblicata dalla Python Software Foundation;
-2. l'**uso prevalente nel libro**, contato sui capitoli 1-16;
-3. i **glossari di fine capitolo** del libro, confrontati voce per voce con l'originale inglese.
+1. con il **tutorial ufficiale** in italiano (sorgenti in `python/python-docs-it`, ramo `3.13`, 950 frasi tradotte), che è l'unica traduzione pubblicata dalla Python Software Foundation: le note riportano quante volte usa ciascuna forma;
+2. dove il tutorial non ha il termine o è incerto, con l'**uso corrente** tra chi programma in italiano, per decisione del revisore.
 
-Quando il tutorial ufficiale e il libro sono d'accordo, la voce è chiusa. Quando non lo sono, ha deciso il revisore; la nota riporta i conteggi.
+Le voci dei glossari di fine capitolo sono elencate qui sotto accanto all'originale inglese. Una voce senza scelta non è ancora stata rivista: si decide quando si lavora al suo capitolo.
 
 ## Scelte trasversali
 
@@ -18,112 +17,116 @@ Termini che ricorrono nel testo di più capitoli.
 
 | Inglese | Italiano | Motivo |
 |---|---|---|
-| loop | ciclo | nel libro «ciclo» 195 volte, «loop» 15; tutorial ufficiale: «ciclo» |
-| nested | annidato | nel libro «annidato» 13 volte, «nidificato» 6; tutorial ufficiale: «annidato» 6, «nidificato» 4 |
-| return (verbo) | restituire | nel libro «restituire» 73 volte, «ritornare» 14; tutorial ufficiale: «restituire» 36, «ritornare» 5 |
-| indentation | indentazione | nel libro «rientro» 5 volte, «indentazione» 3; tutorial ufficiale: «indentazione» 8, «rientro» 1 |
-| built-in | integrato | nel libro «integrato» 21 volte; tutorial ufficiale: «built-in» 15, «integrato» 10 |
-| raise (an exception) | sollevare | tutorial ufficiale: «sollevare» 12 volte su 17; nel libro la forma non compare, da controllare capitolo per capitolo |
+| built-in | built-in | deciso il 22 novembre 2026: resta in inglese («funzione built-in»); tutorial ufficiale: «built-in» 15 volte su 32, «integrato» 10 |
 | default | predefinito | tutorial ufficiale: «predefinito» 21 volte su 25 |
-| traceback | traceback | resta in inglese: è la parola che Python stampa a schermo |
+| header (HTTP, file, istruzione) | intestazione | tutorial ufficiale: sempre «intestazione» |
+| indentation | indentazione | tutorial ufficiale: «indentazione» 8 volte, «rientro» 1 |
+| loop | ciclo | tutorial ufficiale: «ciclo» 14 volte, «loop» 2 |
+| nested | annidato | tutorial ufficiale: «annidato» 6 volte, «nidificato» 4 |
 | newline | newline | resta in inglese; alla prima occorrenza di un capitolo si spiega: «carattere di fine riga» |
+| print (verbo) | stampare | deciso il 22 novembre 2026; tutorial ufficiale: «stampare» 29 volte su 32. «visualizzare» resta per «display» |
+| raise (an exception) | sollevare | tutorial ufficiale: «sollevare» 22 volte su 31 |
+| return (verbo) | restituire | tutorial ufficiale: «restituire» 36 volte, «ritornare» 5 |
+| statement | istruzione | tutorial ufficiale: «istruzione» 76 volte su 84 |
+| line (di codice) | riga |  |
+| traceback | traceback | resta in inglese: è la parola che Python stampa a schermo |
 
 ## Voci dei glossari di fine capitolo
 
-La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è vuota quando la voce resta com'è.
+La colonna «Voce attuale» riporta la voce com'era prima della revisione. La colonna «Scelta» riporta la forma decisa.
 
-### Capitolo 1 (`01-intro.mkd`)
+### Capitolo 1 (`01-intro.mkd`), rivisto
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| bug | Bug |  |  |
-| central processing unit | Central processing unit |  |  |
-| compile | Compilare |  |  |
-| high-level language | Linguaggio di alto livello |  |  |
-| interactive mode | Modalità interattiva |  |  |
-| interpret | Interprete | interpretare | ERRORE: la voce è un verbo, il libro ha il sostantivo «Interprete» |
-| low-level language | Linguaggio di basso livello |  |  |
-| machine code | Codice macchina |  |  |
-| main memory | Memoria principale |  |  |
-| parse | Analizzare |  |  |
-| portability | Portabilità |  |  |
-| print function | Funzione di stampa | funzione print | è il nome della funzione, non una funzione «di stampa» generica |
-| problem solving | Risoluzione dei problemi |  |  |
-| program | Programma |  |  |
-| prompt | Prompt |  |  |
-| secondary memory | Memoria secondaria |  |  |
-| semantics | Semantica |  |  |
-| semantic error | Errore semantico |  |  |
-| source code | Codice sorgente |  |  |
+| bug | Bug | bug |  |
+| central processing unit | Central processing unit | central processing unit |  |
+| compile | Compilare | compilare |  |
+| high-level language | Linguaggio di alto livello | linguaggio di alto livello |  |
+| interactive mode | Modalità interattiva | modalità interattiva |  |
+| interpret | Interprete | interpretare | la voce è un verbo |
+| low-level language | Linguaggio di basso livello | linguaggio di basso livello |  |
+| machine code | Codice macchina | codice macchina |  |
+| main memory | Memoria principale | memoria principale |  |
+| parse | Analizzare | analizzare |  |
+| portability | Portabilità | portabilità |  |
+| print function | Funzione di stampa | funzione print | è il nome della funzione |
+| problem solving | Risoluzione dei problemi | risoluzione dei problemi |  |
+| program | Programma | programma |  |
+| prompt | Prompt | prompt |  |
+| secondary memory | Memoria secondaria | memoria secondaria |  |
+| semantics | Semantica | semantica |  |
+| semantic error | Errore semantico | errore semantico |  |
+| source code | Codice sorgente | codice sorgente |  |
 
-### Capitolo 2 (`02-variables.mkd`)
+### Capitolo 2 (`02-variables.mkd`), rivisto
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| assignment | Istruzione | assegnazione | ERRORE: la voce dice «Istruzione», la definizione è quella di assegnazione |
-| concatenate | Concatenare |  |  |
-| comment | Commento |  |  |
-| evaluate | Calcolare | valutare | «calcolare» restringe il senso: si valuta anche un'espressione non numerica |
-| expression | Espressione |  |  |
-| floating point | Virgola mobile |  |  |
+| assignment | Istruzione | assegnazione | tutorial ufficiale: «assegnazione» |
+| concatenate | Concatenare | concatenare |  |
+| comment | Commento | commento |  |
+| evaluate | Calcolare | valutare | tutorial ufficiale: «valutare» 9 volte su 10 |
+| expression | Espressione | espressione |  |
+| floating point | Virgola mobile | virgola mobile |  |
 | integer | Interi | intero | al singolare, come le altre voci |
-| keyword | Parola chiave o riservata | parola chiave | una sola forma; «parola riservata» solo dove l'inglese dice «reserved word» |
-| mnemonic | Mnemonico |  |  |
-| modulus operator | Operatore modulo |  |  |
-| operand | Operando |  |  |
-| operator | Operatore |  |  |
-| rules of precedence | Regole di precedenza |  |  |
-| statement | Istruzione |  |  |
-| string | Stringa |  |  |
-| type | Tipo |  |  |
-| value | Valore |  |  |
-| variable | Variabile |  |  |
+| keyword | Parola chiave o riservata | parola chiave | «parola riservata» solo dove l'inglese dice «reserved word» |
+| mnemonic | Mnemonico | mnemonico |  |
+| modulus operator | Operatore modulo | operatore modulo |  |
+| operand | Operando | operando |  |
+| operator | Operatore | operatore |  |
+| rules of precedence | Regole di precedenza | regole di precedenza |  |
+| statement | Istruzione | istruzione |  |
+| string | Stringa | stringa |  |
+| type | Tipo | tipo |  |
+| value | Valore | valore |  |
+| variable | Variabile | variabile |  |
 
-### Capitolo 3 (`03-conditional.mkd`)
+### Capitolo 3 (`03-conditional.mkd`), rivisto
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| body | Blocco | corpo | il capitolo 4 usa già «corpo»; tutorial ufficiale: «corpo» |
-| boolean expression | Espressione booleana |  |  |
-| branch | Branch | ramo | Deciso il 22 novembre 2026. nel libro «branch» 11 volte, «ramo» 4; tutorial ufficiale: «ramo» |
-| chained conditional | Condizione concatenata |  |  |
-| comparison operator | Operatore di comparazione | operatore di confronto | nel libro «confronto» 26 volte, «comparazione» 15; tutorial ufficiale: solo «confronto» |
-| conditional statement | Istruzione condizionale |  |  |
-| condition | Condizione |  |  |
-| compound statement | Compound statement |  |  |
-| guardian pattern | Schema del guardiano |  |  |
-| logical operator | Operatore logico |  |  |
-| nested conditional | Condizionale nidificato |  |  |
-| traceback | Traceback |  |  |
-| short circuit | Cortocircuito |  |  |
+| body | Blocco | corpo | tutorial ufficiale: «corpo» |
+| boolean expression | Espressione booleana | espressione booleana |  |
+| branch | Branch | ramo | deciso il 22 novembre 2026; tutorial ufficiale: «ramo» |
+| chained conditional | Condizione concatenata | condizione concatenata |  |
+| comparison operator | Operatore di comparazione | operatore di confronto | tutorial ufficiale: sempre «confronto» |
+| conditional statement | Istruzione condizionale | istruzione condizionale |  |
+| condition | Condizione | condizione |  |
+| compound statement | Compound statement | istruzione composta |  |
+| guardian pattern | Schema del guardiano | schema del guardiano |  |
+| logical operator | Operatore logico | operatore logico |  |
+| nested conditional | Condizionale nidificato | condizione annidata | tutorial ufficiale: «annidato» 6 volte, «nidificato» 4 |
+| traceback | Traceback | traceback |  |
+| short circuit | Cortocircuito | cortocircuito |  |
 
-### Capitolo 4 (`04-functions.mkd`)
+### Capitolo 4 (`04-functions.mkd`), rivisto
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| algorithm | Algoritmo |  |  |
-| argument | Argomento |  |  |
-| body | Corpo |  |  |
-| composition | Composizione |  |  |
-| deterministic | Deterministico |  |  |
-| dot notation | Notazione del punto |  |  |
-| flow of execution | Flusso di esecuzione |  |  |
-| fruitful function | Funzione produttiva |  |  |
-| function | Funzione |  |  |
-| function call | Chiamata di funzione |  |  |
-| function definition | Definizione di funzione |  |  |
-| function object | Oggetto funzione |  |  |
-| header | Header | intestazione | nel libro «intestazione» 19 volte, «header» 5 |
-| import statement | Istruzione import |  |  |
-| module object | Oggetto modulo |  |  |
-| parameter | Parametro |  |  |
-| pseudorandom | Pseudo-casuale |  |  |
-| return value | Valore di ritorno |  |  |
-| void function | Funzione vuota |  |  |
+| algorithm | Algoritmo | algoritmo |  |
+| argument | Argomento | argomento |  |
+| body | Corpo | corpo | tutorial ufficiale: «corpo» |
+| composition | Composizione | composizione |  |
+| deterministic | Deterministico | deterministico |  |
+| dot notation | Notazione del punto | notazione puntata | tutorial ufficiale: «puntato» |
+| flow of execution | Flusso di esecuzione | flusso di esecuzione |  |
+| fruitful function | Funzione produttiva | funzione produttiva |  |
+| function | Funzione | funzione |  |
+| function call | Chiamata di funzione | chiamata di funzione |  |
+| function definition | Definizione di funzione | definizione di funzione |  |
+| function object | Oggetto funzione | oggetto funzione |  |
+| header | Header | intestazione | tutorial ufficiale: sempre «intestazione», anche per «class definition header» |
+| import statement | Istruzione import | istruzione import |  |
+| module object | Oggetto modulo | oggetto modulo |  |
+| parameter | Parametro | parametro |  |
+| pseudorandom | Pseudo-casuale | pseudo-casuale |  |
+| return value | Valore di ritorno | valore di ritorno |  |
+| void function | Funzione vuota | funzione vuota |  |
 
-### Capitolo 5 (`05-iterations.mkd`)
+### Capitolo 5 (`05-iterations.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | accumulator | Accumulatore |  |  |
 | counter | Contatore |  |  |
@@ -133,9 +136,9 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | infinite loop | Ciclo infinito |  |  |
 | iteration | Iterazione |  |  |
 
-### Capitolo 6 (`06-strings.mkd`)
+### Capitolo 6 (`06-strings.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | counter | Contatore |  |  |
 | empty string | Stringa vuota |  |  |
@@ -146,27 +149,27 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | invocation | Invocazione |  |  |
 | immutable | Immutabile |  |  |
 | index | Indice |  |  |
-| item | Item | elemento | il capitolo 9 usa già «elemento»; tutorial ufficiale: «elemento» 26 volte su 27 |
+| item | Item | elemento | tutorial ufficiale: «elemento» 26 volte su 28 |
 | method | Metodo |  |  |
 | object | Oggetto |  |  |
 | search | Ricerca |  |  |
 | sequence | Sequenza |  |  |
-| slice | Segmento | slice | Deciso il 22 novembre 2026. nel libro «slice/slicing» 30 volte, «segmento» 11; tutorial ufficiale: «slice» 9, «fetta» 3 |
-| traverse | Traverse | scorrere | voce lasciata in inglese; nel testo si alterna con «attraversare» |
+| slice | Segmento | slice | deciso il 22 novembre 2026; tutorial ufficiale: «slice» 9 volte, «fetta» 3 |
+| traverse | Traverse | scorrere |  |
 
-### Capitolo 7 (`07-files.mkd`)
+### Capitolo 7 (`07-files.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| catch | Catch | gestire (un'eccezione) | voce lasciata in inglese; tutorial ufficiale: «gestire» |
+| catch | Catch | catturare (un'eccezione) | «gestire» traduce «handle» (tutorial ufficiale: «gestire» 27 volte su 30) |
 | newline | Newline |  |  |
 | Pythonic | Pythonic |  |  |
 | Quality Assurance | Controllo qualità |  |  |
 | text file | File di testo |  |  |
 
-### Capitolo 8 (`08-lists.mkd`)
+### Capitolo 8 (`08-lists.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | aliasing | Alias |  |  |
 | delimiter | Delimitatore |  |  |
@@ -174,56 +177,56 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | equivalent | Equivalente |  |  |
 | index | Indice |  |  |
 | identical | Identico |  |  |
-| list | Elenco | lista | Deciso il 22 novembre 2026. nel libro «elenco» 278 volte, «lista» 24; tutorial ufficiale: «lista» 91 volte su 107 |
-| list traversal | Elaborazione trasversale | scorrimento di una lista | «elaborazione trasversale» non rende «traversal» |
-| nested list | Elenco annidato | lista annidata | segue la scelta su «list» |
+| list | Elenco | lista | deciso il 22 novembre 2026; tutorial ufficiale: «lista» 91 volte su 107 |
+| list traversal | Elaborazione trasversale | scorrimento di una lista |  |
+| nested list | Elenco annidato | lista annidata |  |
 | object | Oggetto |  |  |
 | reference | Riferimento |  |  |
 
-### Capitolo 9 (`09-dictionaries.mkd`)
+### Capitolo 9 (`09-dictionaries.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | dictionary | Dizionario |  |  |
 | hashtable | Tabella di hash |  |  |
 | hash function | Funzione di hash |  |  |
 | histogram | Istogramma |  |  |
 | implementation | Implementazione |  |  |
-| item | Elemento |  |  |
+| item | Elemento | elemento | tutorial ufficiale: «elemento» 26 volte su 28 |
 | key | Chiave |  |  |
 | key-value pair | Coppia chiave-valore |  |  |
 | lookup | Ricerca |  |  |
 | nested loops | Cicli annidati |  |  |
 | value | Valore |  |  |
 
-### Capitolo 10 (`10-tuples.mkd`)
+### Capitolo 10 (`10-tuples.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | comparable | Comparabile |  |  |
 | data structure | Struttura di dati |  |  |
 | DSU | DSU |  |  |
-| gather | Gather | raccolta (gather) | voce lasciata in inglese |
-| hashable | Hashabile | hashable | Deciso il 22 novembre 2026. «hashabile» è un calco; alternativa: lasciare il termine inglese |
-| scatter | Scatter | spacchettamento (scatter) | voce lasciata in inglese |
+| gather | Gather | raccolta (gather) |  |
+| hashable | Hashabile | hashable | deciso il 22 novembre 2026: resta in inglese |
+| scatter | Scatter | spacchettamento (scatter) |  |
 | shape (of a data structure) | Formato (di una struttura dati) |  |  |
 | singleton | Singleton |  |  |
 | tuple | Tupla |  |  |
 | tuple assignment | Assegnazione di tupla |  |  |
 
-### Capitolo 11 (`11-regex.mkd`)
+### Capitolo 11 (`11-regex.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | brittle code | Codice fragile |  |  |
 | greedy matching | Corrispondenza avida |  |  |
 | grep | Grep |  |  |
 | regular expression | Espressione regolare |  |  |
-| wild card | Wild-card | carattere jolly | nel libro compaiono sia «wild-card» sia «carattere jolly» |
+| wild card | Wild-card | carattere jolly |  |
 
-### Capitolo 12 (`12-network.mkd`)
+### Capitolo 12 (`12-network.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | BeautifulSoup | BeautifulSoup |  |  |
 | port | Porta |  |  |
@@ -231,9 +234,9 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | socket | Socket |  |  |
 | spider | Spider |  |  |
 
-### Capitolo 13 (`13-web.mkd`)
+### Capitolo 13 (`13-web.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | API | API |  |  |
 | ElementTree | ElementTree |  |  |
@@ -241,9 +244,9 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | SOA | SOA |  |  |
 | XML | XML |  |  |
 
-### Capitolo 14 (`14-objects.mkd`)
+### Capitolo 14 (`14-objects.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | attribute | Attributo |  |  |
 | class | Classe |  |  |
@@ -255,9 +258,9 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | object | Oggetto |  |  |
 | parent class | Classe genitore |  |  |
 
-### Capitolo 15 (`15-database.mkd`)
+### Capitolo 15 (`15-database.mkd`), da rivedere
 
-| Inglese | Nel libro | Scelta | Nota |
+| Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | attribute | Attributo |  |  |
 | constraint | Vincolo |  |  |
