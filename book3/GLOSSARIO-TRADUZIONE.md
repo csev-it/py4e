@@ -92,6 +92,14 @@ Termini che ricorrono nel testo di più capitoli.
 | self-describing | autodescrittivo |  |
 | array, markup | array, markup | restano in inglese |
 | don't have to | non serve, non abbiamo bisogno di | «non dobbiamo» in italiano suona come un divieto |
+| object-oriented programming | programmazione orientata agli oggetti |  |
+| instance | istanza | tutorial ufficiale: «istanza» |
+| super class, sub class | superclasse, sottoclasse |  |
+| template | modello |  |
+| object lifecycle | ciclo di vita di un oggetto |  |
+| retrieve, extract | recuperare, estrarre | non scambiarli |
+| Summary (titolo) | Riepilogo |  |
+| a number of | diversi, diverse | non «un certo numero di» |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -307,19 +315,19 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | SOA | SOA | SOA | alla prima comparsa «*architettura orientata ai servizi* (SOA, Service-Oriented Architecture)» |
 | XML | XML | XML | come JSON: senza articolo per il formato |
 
-### Capitolo 14 (`14-objects.mkd`), da rivedere
+### Capitolo 14 (`14-objects.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| attribute | Attributo |  |  |
-| class | Classe |  |  |
-| child class | Classe figlia |  |  |
-| constructor | Costruttore |  |  |
-| destructor | Distruttore |  |  |
-| inheritance | Ereditarietà |  |  |
-| method | Metodo |  |  |
-| object | Oggetto |  |  |
-| parent class | Classe genitore |  |  |
+| attribute | Attributo | attributo | «data attributes» = «attributi dati» (tutorial ufficiale: 5 coppie su 6) |
+| class | Classe | classe |  |
+| child class | Classe figlia | classe figlia |  |
+| constructor | Costruttore | costruttore |  |
+| destructor | Distruttore | distruttore |  |
+| inheritance | Ereditarietà | ereditarietà |  |
+| method | Metodo | metodo |  |
+| object | Oggetto | oggetto |  |
+| parent class | Classe genitore | classe padre | tutorial ufficiale: «classe padre» 2 volte su 2; coerente con «elemento padre» del capitolo 13. La traduzione del 2018 aveva «classe genitore» |
 
 ### Capitolo 15 (`15-database.mkd`), da rivedere
 
