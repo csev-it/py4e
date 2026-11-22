@@ -48,6 +48,8 @@ Termini che ricorrono nel testo di più capitoli.
 | whitespace | spazi bianchi | voce d'indice «spazio bianco» |
 | pattern | schema | tutorial ufficiale: «schema» |
 | team | gruppo | non si aggiunge inglese dove non serve; «QA team» è «gruppo QA» |
+| mutable, immutable | mutabile, immutabile |  |
+| mapping | mappatura | tutorial ufficiale: «mappatura» |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -186,21 +188,21 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | Quality Assurance | Controllo qualità | controllo qualità | deciso il 22 novembre 2026: «*controllo qualità* (Quality Assurance, o QA in breve)» alla prima comparsa, poi «QA» |
 | text file | File di testo | file di testo |  |
 
-### Capitolo 8 (`08-lists.mkd`), da rivedere
+### Capitolo 8 (`08-lists.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| aliasing | Alias |  |  |
-| delimiter | Delimitatore |  |  |
-| element | Elemento |  |  |
-| equivalent | Equivalente |  |  |
-| index | Indice |  |  |
-| identical | Identico |  |  |
+| aliasing | Alias | aliasing | deciso il 22 novembre 2026: «aliasing» per il fenomeno (il tutorial ufficiale lo lascia in inglese), «alias» per il nome in più di un oggetto |
+| delimiter | Delimitatore | delimitatore |  |
+| element | Elemento | elemento | «item» resta in inglese solo dove l'originale lo dà come sinonimo di «element» |
+| equivalent | Equivalente | equivalente |  |
+| index | Indice | indice |  |
+| identical | Identico | identico |  |
 | list | Elenco | lista | deciso il 22 novembre 2026; tutorial ufficiale: «lista» 91 volte su 107 |
 | list traversal | Elaborazione trasversale | scorrimento di una lista |  |
 | nested list | Elenco annidato | lista annidata |  |
-| object | Oggetto |  |  |
-| reference | Riferimento |  |  |
+| object | Oggetto | oggetto |  |
+| reference | Riferimento | riferimento |  |
 
 ### Capitolo 9 (`09-dictionaries.mkd`), da rivedere
 
