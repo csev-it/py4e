@@ -8,13 +8,13 @@ Perché dovresti imparare a programmare?
 Scrivere programmi (o programmare) è un'attività molto creativa e gratificante. Puoi scrivere programmi per molte ragioni, per guadagnarti da vivere, per effettuare complesse analisi dei dati, per divertimento o per aiutare qualcun altro a risolvere un problema. Questo libro presuppone che *tutti* abbiano bisogno di saper programmare e che, una volta appreso come programmare, sappiano cosa fare con le nuove capacità acquisite.
 
 
-Ogni giorno siamo circondati da computer che vanno dai portatili agli smartphone. Possiamo pensare a questi computer come ad una sorta di "assistenti personali" che si prendono cura di molti aspetti della nostra vita. L'hardware degli elaboratori moderni è essenzialmente costruito per porci continuamente la domanda: "Cosa vorresti che faccia dopo?"
+Ogni giorno siamo circondati da computer che vanno dai portatili agli smartphone. Possiamo pensare a questi computer come ad una sorta di "assistenti personali" che si prendono cura di molti aspetti della nostra vita. L'hardware degli elaboratori moderni è essenzialmente costruito per porci continuamente la domanda: "Cosa vorresti che facessi dopo?"
 
 ![Assistente Digitale Personale](height=1.0in@../images/pda)
 
 I programmatori hanno affiancato all'hardware un sistema operativo e una serie di applicazioni che hanno permesso di ottenere un assistente personale digitale che si è dimostrato utile e capace di aiutarci svolgendo compiti diversi.
 
-I computer sono dotati di velocità oltre che di una grande quantità di memoria e potrebbero esserci estremamente utili se solo conoscessimo la lingua per spiegare loro quello che vorremmo fosse "fatto dopo". Se così fosse, potremmo dire al computer di svolgere compiti ripetitivi al nostro posto. Va tenuto a mente che il tipo di attività che i computer possono fare meglio sono spesso il genere di cose che noi umani troviamo più noiose e logoranti.
+I computer sono dotati di velocità oltre che di una grande quantità di memoria e potrebbero esserci estremamente utili se solo conoscessimo la lingua per spiegare loro quello che vorremmo fosse "fatto dopo". Se così fosse, potremmo dire al computer di svolgere compiti ripetitivi al nostro posto. Va tenuto a mente che le attività che i computer svolgono meglio sono spesso quelle che noi umani troviamo più noiose e logoranti.
 
 Per esempio, guarda i primi tre paragrafi di questo capitolo e dimmi qual è la parola più usata e quante volte compare. Anche se sei in grado di leggere e capire le parole in pochi secondi, contarle è piuttosto difficoltoso in quanto non è il tipo di problema per cui la nostra mente è stata concepita. Per un computer è l'opposto: leggere e capire il testo scritto su un foglio è difficile, mentre è molto semplice contare le parole e indicarci quante volte è ripetuta la parola più usata.
 
@@ -26,13 +26,13 @@ Per esempio, guarda i primi tre paragrafi di questo capitolo e dimmi qual è la 
 
 Il nostro "assistente personale per l'analisi delle informazioni" ci ha rapidamente detto che la parola "to" è stata usata sedici volte nei primi tre paragrafi di questo capitolo.
 
-Il fatto che i computer siano bravi in attività in cui gli umani non lo sono, è il motivo per cui è necessario che tu diventi abile nel parlare un "linguaggio informatico". Una volta che avrai imparato questa nuova lingua, potrai delegare al tuo partner (il computer) i compiti banali, ritagliandoti più tempo per le attività per cui sei più portato. In altre parole, tu apporti a questa collaborazione creatività, intuizione ed inventiva.
+Il fatto che i computer siano bravi in attività in cui gli umani non lo sono è il motivo per cui è necessario che tu diventi abile nel parlare un "linguaggio informatico". Una volta che avrai imparato questa nuova lingua, potrai delegare al tuo partner (il computer) i compiti banali, ritagliandoti più tempo per le attività per cui sei più portato. In altre parole, tu apporti a questa collaborazione creatività, intuizione ed inventiva.
 
 Creatività e motivazione
 -------------------------
 
 Sebbene questo libro non sia destinato a programmatori professionisti, la programmazione può essere un lavoro molto gratificante sia dal punto di vista finanziario sia da quello personale.
-Scrivere programmi utili, eleganti e intelligenti affinché possano essere utilizzati da altri è un'attività molto creativa. Il tuo computer o il tuo Assistente Personale Digitale (PDA) di solito ha al suo interno molti programmi scritti da svariati team di sviluppatori, ciascuno dei quali in competizione per conquistare la tua attenzione ed interesse. Fanno del loro meglio per soddisfare le tue esigenze e fornirti, nel contempo, una meravigliosa esperienza d'uso. In alcune situazioni, quando si sceglie uno specifico software, i programmatori sono direttamente gratificati dalla tua scelta.
+Scrivere programmi utili, eleganti e intelligenti affinché possano essere utilizzati da altri è un'attività molto creativa. Il tuo computer o il tuo Assistente Personale Digitale (PDA) di solito ha al suo interno molti programmi scritti da svariati team di sviluppatori, ciascuno dei quali in competizione per conquistare la tua attenzione ed interesse. Fanno del loro meglio per soddisfare le tue esigenze e fornirti, nel contempo, una meravigliosa esperienza d'uso. In alcune situazioni, quando scegli un software, i programmatori sono pagati direttamente grazie alla tua scelta.
 
 Se pensiamo ai programmi come alla produzione creativa di team di programmatori, probabilmente la seguente immagine è una visione più ragionevole del nostro PDA:
 
@@ -52,7 +52,7 @@ Prima di iniziare a imparare la lingua che useremo per sviluppare software, abbi
 
 Le definizioni di alto livello di quelle parti sono le seguenti:
 
-- La *Central Processing Unit* (o CPU) è la parte del computer che è stata progettata per essere ossessionata dalla domanda "qual è la prossima istruzione?". Ad esempio se il tuo computer ha una frequenza di 3.0 Gigahertz, significa che la CPU si chiederà "qual è la prossima istruzione?" tre miliardi di volte al secondo. Avrai bisogno di imparare come parlare velocemente per poter stare al passo con la CPU.
+- La *Central Processing Unit* (o CPU) è la parte del computer che è stata progettata per essere ossessionata dalla domanda "qual è la prossima istruzione?". Ad esempio se il tuo computer ha una frequenza di 3,0 Gigahertz, significa che la CPU si chiederà "qual è la prossima istruzione?" tre miliardi di volte al secondo. Avrai bisogno di imparare come parlare velocemente per poter stare al passo con la CPU.
 
 - La *Memoria principale* viene utilizzata per memorizzare le informazioni di cui la CPU ha bisogno nel minore tempo possibile. La memoria principale è veloce quasi quanto la CPU ma le informazioni vengono memorizzate solo fino allo spegnimento del computer.
 
@@ -79,7 +79,7 @@ Nel resto di questo libro cercheremo di trasformarti in una persona esperta nell
 
 In un certo senso, avrai bisogno di due abilità per diventare un programmatore:
 
-Per prima cosa, dovrai conoscere il linguaggio di programmazione (Python) di cui avrai bisogno di padroneggiare vocabolario e grammatica. Dovrai essere in grado di scrivere correttamente le parole e sapere come costruire frasi "ben strutturate".
+Per prima cosa, dovrai conoscere il linguaggio di programmazione (Python): dovrai padroneggiarne vocabolario e grammatica. Dovrai essere in grado di scrivere correttamente le parole e sapere come costruire frasi "ben strutturate".
 
 In secondo luogo, avrai bisogno di "raccontare una storia". Per scrivere una storia, devi combinare parole e frasi allo scopo di trasmettere un'idea al lettore. L'abilità nella produzione di storie è una capacità che si migliora scrivendo e ottenendo feedback. Nell'ambito della programmazione il nostro programma è la "storia" e il problema che stai cercando di risolvere è "l'idea".
 
@@ -146,7 +146,7 @@ Ad un certo punto, potrai aprire un terminale o una finestra di comando e, digit
 Python è pronto per conversare con te: il prompt `>>>` è il modo di chiedere "Cosa vuoi che faccia dopo?" dell'interprete Python. Tutto quello che devi sapere è come comunicare in Python.
 
 
-Supponiamo, per esempio, che tu non sappia nemmeno le più basilari parole o frasi del linguaggio Python. Potresti voler utilizzare le linee guida che usano gli astronauti quando, atterrati su un pianeta lontano, vogliano comunicare con gli autoctoni:
+Supponiamo, per esempio, che tu non sappia nemmeno le più basilari parole o frasi del linguaggio Python. Potresti voler utilizzare la frase di rito che usano gli astronauti quando, atterrati su un pianeta lontano, cercano di comunicare con gli abitanti:
 
 ~~~~ {.python}
     >>> I come in peace, please take me to your leader
@@ -166,7 +166,7 @@ Fortunatamente hai portato con te una copia di questo libro e hai il dito fermo 
     Hello world!
 ~~~~
 
-Questo è molto più chiaro, quindi prova a comunicare ancora:
+Va molto meglio, quindi prova a comunicare ancora:
 
 ~~~~ {.python}
     >>> print('You must be the legendary god that comes from the sky')
@@ -255,7 +255,7 @@ In questo esempio:
 
 Anche se stiamo digitando questi comandi una riga alla volta, Python li tratta come una sequenza ordinata di istruzioni permettendo alle istruzioni successive di recuperare i dati creati dalle precedenti. Abbiamo scritto il nostro primo semplice paragrafo, composto da quattro frasi in un ordine logico e dotato di significato.
 
-L'instaurare una conversazione interattiva simile alla precedente è nella natura di un *interprete*. Un *compilatore* invece necessita di avere l'intero codice sorgente di alto livello prima di avviare il processo di traduzione e successivo salvataggio in un file eseguibile per l'esecuzione.
+L'instaurare una conversazione interattiva simile alla precedente è nella natura di un *interprete*. Un *compilatore* invece ha bisogno di ricevere l'intero programma in un file; poi avvia un processo che traduce il codice sorgente di alto livello in linguaggio macchina e salva il risultato in un file, da eseguire in seguito.
 
 Nel sistema Windows, spesso questi eseguibili hanno un suffisso ".exe" o ".dll" che indicano rispettivamente "eseguibile" e "libreria a collegamento dinamico" (dynamic link library). In Linux e Macintosh, non esiste un suffisso che contrassegni in modo univoco un file come eseguibile.
 
@@ -338,7 +338,7 @@ Non hai nemmeno bisogno di conoscere Python per utilizzare questo script. Hai bi
 
 Questo è un buon esempio di come Python e il linguaggio Python agiscano come intermediario tra te (l'utente finale) e me (lo sviluppatore).
 Python è un modo per scambiare sequenze di istruzioni utili (cioè programmi) in un linguaggio comune che possa essere utilizzato da chiunque installi Python sul proprio computer.
-Nessuno di noi sta quindi parlando a Python, piuttosto comunichiamo con altri *attraverso* Python.
+Nessuno di noi due sta quindi parlando *a Python*: comunichiamo tra di noi *attraverso* Python.
 
 I blocchi per costruire i programmi
 -------------------------------
@@ -351,7 +351,7 @@ input
 : Ottieni dati dal "mondo esterno". Potrebbe trattarsi della lettura di dati contenuti in un file, oppure direttamente da un sensore come un microfono o un GPS. Nei nostri programmi iniziali, il nostro input verrà inserito direttamente dall'utente tramite tastiera.
 
 output
-: Visualizza i risultati su schermo o li memorizza in un file o magari li invia ad un dispositivo come un altoparlante per riprodurre musica o leggere del testo.
+: Visualizza i risultati del programma su schermo, oppure memorizzali in un file o inviali ad un dispositivo come un altoparlante per riprodurre musica o leggere del testo.
 
 esecuzione sequenziale
 : Esegui le istruzioni una dopo l'altra nell'ordine in cui sono state scritte nel codice.
@@ -363,7 +363,7 @@ esecuzione ripetuta
 : Esegui ripetutamente alcune istruzioni, spesso con alcune variazioni.
 
 riutilizzo
-: Scrivi una volta una serie di istruzioni e dai loro un nome per poi, eventualmente, riutilizzare quelle istruzioni durante l'esecuzione del programma.
+: Scrivi una volta una serie di istruzioni e dai loro un nome per poi riutilizzarle, dove servono, nel resto del programma.
 
 Sembra quasi troppo semplice per essere vero e, ovviamente, non è mai così semplice. Sarebbe come dire che camminare è semplicemente "mettere un piede davanti all'altro". L'"arte" di scrivere un programma è il comporre ed unire molte volte questi elementi di base per produrre un qualcosa che sia utile ai propri utenti.
 
@@ -408,14 +408,14 @@ Python è molto più simile a un cane che, amandoti incondizionatamente e conosc
 Man mano che i tuoi programmi diventeranno più sofisticati, incontrerai tre tipi generali di errore:
 
 Errori di sintassi
-: Questi sono i primi errori che farai e sono i più facili da correggere. Un errore di sintassi indica che hai violato le regole della "grammatica" di Python. Python farà del suo meglio per puntare direttamente alla riga e al carattere in cui ha rilevato un errore. L'unico inconveniente degli errori di sintassi è che a volte l'errore che deve essere corretto è in realtà in una fase precedente del programma rispetto al punto in cui Python *si è accorto* di essere confuso. Quindi la riga e il carattere in cui Python indica la presenza di un errore di sintassi potrebbe rappresentare solo il punto di partenza della tua ricerca.
+: Questi sono i primi errori che farai e sono i più facili da correggere. Un errore di sintassi indica che hai violato le regole della "grammatica" di Python. Python farà del suo meglio per puntare direttamente alla riga e al carattere in cui ha rilevato un errore. L'unico inconveniente degli errori di sintassi è che a volte l'errore che deve essere corretto è in realtà in una fase precedente del programma rispetto al punto in cui Python *si è accorto* di essere confuso. Quindi la riga e il carattere in cui Python indica la presenza di un errore di sintassi potrebbero rappresentare solo il punto di partenza della tua ricerca.
 
 Errori di logica
 : Un errore logico si verifica quando il tuo programma ha una buona sintassi ma c'è un errore nell'ordine delle istruzioni o forse un errore nel come queste si relazionino l'una all'altra. Un buon esempio di errore di logica potrebbe essere: "bevi un sorso dalla tua bottiglia d'acqua, mettila nel tuo zaino, cammina fino alla biblioteca e poi rimetti il tappo alla bottiglia".
 
 
 Errori di semantica
-: Un errore semantico si verifica quando la descrizione dei passaggi da eseguire è sintatticamente perfetta e nel giusto ordine, ma c'è un errore nel programma. Il programma è completamente corretto ma non fa ciò che *intendi* fargli fare. Un semplice esempio potrebbe essere il dare ad una persona le indicazioni per un ristorante dicendo: "... quando raggiungi l'incrocio con la stazione di benzina, gira a sinistra e procedi per 1 km. Il ristorante è l'edificio rosso sulla sinistra." Il tuo amico è molto in ritardo e ti chiama per dirti di trovarsi in una fattoria e che si sta aggirando dietro un granaio, senza trovare alcuna traccia del ristorante. "Ma hai girato a sinistra o a destra alla stazione di servizio?" e lui risponde "ho seguito le tue indicazioni alla lettera, le ho perfino annotate: dicono di girare a sinistra dal distributore di benzina e procedere per 1 km." "Mi dispiace molto, perché nonostante le mie istruzioni fossero sintatticamente corrette, purtroppo contenevano un piccolo errore semantico non rilevato".
+: Un errore semantico si verifica quando la descrizione dei passaggi da eseguire è sintatticamente perfetta e nel giusto ordine, ma c'è un errore nel programma. Il programma è completamente corretto ma non fa ciò che *intendi* fargli fare. Un semplice esempio potrebbe essere il dare ad una persona le indicazioni per un ristorante dicendo: "... quando raggiungi l'incrocio con il distributore di benzina, gira a sinistra e procedi per 1 km. Il ristorante è l'edificio rosso sulla sinistra." Il tuo amico è molto in ritardo e ti chiama per dirti di trovarsi in una fattoria e che si sta aggirando dietro un granaio, senza trovare alcuna traccia del ristorante. "Ma hai girato a sinistra o a destra al distributore di benzina?" e lui risponde "ho seguito le tue indicazioni alla lettera, le ho perfino annotate: dicono di girare a sinistra dal distributore di benzina e procedere per 1 km." "Mi dispiace molto, perché nonostante le mie istruzioni fossero sintatticamente corrette, purtroppo contenevano un piccolo errore semantico non rilevato".
 
 Ribadisco che in tutte e tre le tipologie di errori, Python sta semplicemente facendo del suo meglio per fare esattamente quello che gli hai chiesto.
 
@@ -470,6 +470,7 @@ Sfogliando il materiale più avanzato senza comprenderne appieno i dettagli, pot
 Rivedendo il materiale precedente o rifacendo gli esercizi precedenti, realizzerai che in realtà hai imparato molto anche se il materiale che stai fissando ora sembra un po' imperscrutabile.
 
 Capita spesso che quando stai imparando il tuo primo linguaggio di programmazione, ci siano alcuni meravigliosi momenti di stupore in cui, mentre sei intento a scalfire la tua pietra con martello e scalpello, puoi alzare lo sguardo e cominciare a vedere che stai davvero realizzando una bellissima scultura.
+
 Di solito è inutile restare svegli tutta la notte a fissare qualcosa che sembra particolarmente difficile. Fai una pausa, fai un pisolino, mangia uno spuntino, spiega a qualcuno in cosa stai avendo problemi (magari solo al tuo cane), così da ritornare al problema con occhi nuovi. Ti assicuro che, una volta acquisiti i rudimenti della programmazione descritti nel libro, ti guarderai indietro e vedrai che tutto è stato molto semplice ed elegante e ti ha solo richiesto un po' di tempo per assimilarlo.
 
 Glossario
@@ -481,7 +482,7 @@ Glossario
 
 **Central processing unit**
 : Chiamato anche "CPU" o "processore". È il cuore di qualsiasi computer ed è ciò che gestisce il codice che scriviamo.
-\index{Unità Centrale di Elaborazione}
+\index{unità centrale di elaborazione}
 \index{CPU}
 
 **Compilare**
@@ -505,7 +506,7 @@ Glossario
 \index{linguaggio di basso livello}
 
 **Codice macchina**
-: Il linguaggio di livello più basso, è il linguaggio che viene eseguito direttamente dall'unità di elaborazione centrale (CPU).
+: Il linguaggio di livello più basso, cioè il linguaggio che viene eseguito direttamente dall'unità centrale di elaborazione (CPU).
 \index{codice macchina}
 
 **Memoria principale**
@@ -580,7 +581,7 @@ d) Un documento di elaborazione di testo
     >>> primt 'Hello world!'
       File "<stdin>", line 1
         primt 'Hello world!'
-              ^^^^^^^^^^^^^^
+                           ^
     SyntaxError: invalid syntax
     >>>
 ~~~~
