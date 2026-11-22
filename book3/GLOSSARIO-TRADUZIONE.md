@@ -50,6 +50,12 @@ Termini che ricorrono nel testo di più capitoli.
 | team | gruppo | non si aggiunge inglese dove non serve; «QA team» è «gruppo QA» |
 | mutable, immutable | mutabile, immutabile |  |
 | mapping | mappatura | tutorial ufficiale: «mappatura» |
+| maps to | corrisponde a, fa corrispondere | per una mappatura: «ogni chiave corrisponde a un valore» |
+| membership | appartenenza | voci d'indice: «appartenenza!lista», «appartenenza!dizionario» |
+| curly brackets, square brackets | parentesi graffe, parentesi quadre |  |
+| sanity check, consistency check | controllo di plausibilità, controllo di coerenza | con l'inglese tra parentesi alla prima comparsa |
+| scaffolding | impalcatura | «Pensare in Python»: «impalcature» |
+| idiom | idioma |  |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -204,21 +210,21 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | object | Oggetto | oggetto |  |
 | reference | Riferimento | riferimento |  |
 
-### Capitolo 9 (`09-dictionaries.mkd`), da rivedere
+### Capitolo 9 (`09-dictionaries.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| dictionary | Dizionario |  |  |
-| hashtable | Tabella di hash |  |  |
-| hash function | Funzione di hash |  |  |
-| histogram | Istogramma |  |  |
-| implementation | Implementazione |  |  |
+| dictionary | Dizionario | dizionario |  |
+| hashtable | Tabella di hash | tabella hash | alla prima comparsa «*tabella hash* (hash table)» |
+| hash function | Funzione di hash | funzione hash |  |
+| histogram | Istogramma | istogramma |  |
+| implementation | Implementazione | implementazione |  |
 | item | Elemento | elemento | tutorial ufficiale: «elemento» 26 volte su 28 |
-| key | Chiave |  |  |
-| key-value pair | Coppia chiave-valore |  |  |
-| lookup | Ricerca |  |  |
-| nested loops | Cicli annidati |  |  |
-| value | Valore |  |  |
+| key | Chiave | chiave |  |
+| key-value pair | Coppia chiave-valore | coppia chiave-valore |  |
+| lookup | Ricerca | ricerca |  |
+| nested loops | Cicli annidati | cicli annidati | voce d'indice al singolare: «ciclo annidato» |
+| value | Valore | valore |  |
 
 ### Capitolo 10 (`10-tuples.mkd`), da rivedere
 
