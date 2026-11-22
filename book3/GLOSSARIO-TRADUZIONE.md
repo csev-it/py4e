@@ -71,6 +71,17 @@ Termini che ricorrono nel testo di più capitoli.
 | parser | parser | resta in inglese; il verbo «parse» è «analizzare» |
 | quantifier | quantificatore |  |
 | token | token | resta in inglese; tutorial ufficiale: 2 volte su 2 |
+| web, web page, web server | web, pagina web, server web | «web» minuscolo, salvo «World Wide Web» |
+| retrieve, download | recuperare, scaricare |  |
+| request, response | richiesta, risposta |  |
+| URL, tag | URL, tag | maschili: «un URL», «un tag» |
+| anchor tag | tag ancora | alla prima comparsa «*tag ancora* (anchor tag, `a`)» |
+| bytes object | oggetto bytes | tutorial ufficiale: «oggetto bytes»; «byte» per la misura |
+| plain text | solo testo | «un file di solo testo» |
+| flow control | controllo di flusso |  |
+| encode, decode | codificare, decodificare |  |
+| library | libreria |  |
+| will (abitudine) | presente | quando «will» descrive ciò che accade di solito («a search engine will look at…») in italiano va il presente; il futuro resta per il futuro vero |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -266,15 +277,15 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | regular expression | Espressione regolare | espressione regolare | «regex» resta in inglese dove l'originale lo usa |
 | wild card | Wild-card | carattere jolly |  |
 
-### Capitolo 12 (`12-network.mkd`), da rivedere
+### Capitolo 12 (`12-network.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| BeautifulSoup | BeautifulSoup |  |  |
-| port | Porta |  |  |
-| scrape | Scrape | scraping | in italiano si usa il sostantivo |
-| socket | Socket |  |  |
-| spider | Spider |  |  |
+| BeautifulSoup | BeautifulSoup | BeautifulSoup |  |
+| port | Porta | porta |  |
+| scrape | Scrape | scraping | in italiano si usa il sostantivo: «fare lo scraping»; voce di glossario «Scraping» |
+| socket | Socket | socket | maschile |
+| spider | Spider | spider |  |
 
 ### Capitolo 13 (`13-web.mkd`), da rivedere
 
