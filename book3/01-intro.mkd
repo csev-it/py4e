@@ -251,7 +251,7 @@ In questo esempio:
 - chiediamo a Python di memorizzare il valore 6 e di adottare l'etichetta *x* per poter recuperare il valore in un secondo momento;
 - poi, tramite *print*, verifichiamo che Python abbia effettivamente memorizzato il valore;
 - poi chiediamo a Python di recuperare *x*, moltiplicarlo per 7 e mettere il nuovo risultato in *y*;
-- infine chiediamo a Python di visualizzare il valore attualmente contenuto in *y*.
+- infine chiediamo a Python di stampare il valore attualmente contenuto in *y*.
 
 Anche se stiamo digitando questi comandi una riga alla volta, Python li tratta come una sequenza ordinata di istruzioni permettendo alle istruzioni successive di recuperare i dati creati dalle precedenti. Abbiamo scritto il nostro primo semplice paragrafo, composto da quattro frasi in un ordine logico e dotato di significato.
 
@@ -598,7 +598,7 @@ c) Memoria Secondaria\
 d) Dispositivi di input\
 e) Dispositivi di output
 
-**Esercizio 7:** Cosa verrà visualizzato da questo programma?
+**Esercizio 7:** Che cosa stamperà questo programma?
 
 ~~~~ {.python}
     x = 43
