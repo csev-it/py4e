@@ -83,7 +83,7 @@ Per suddividere il file in righe, c'è un carattere speciale che rappresenta la 
 
 \index{newline}
 
-In Python rappresentiamo il carattere *newline* come backslash-n nelle costanti stringa. Anche se sembrano due caratteri, in realtà è un carattere solo. Quando guardiamo la variabile inserendo `stuff` nell'interprete, questo ci mostra il `\n` nella stringa, ma quando usiamo `print` per mostrare la stringa, vediamo la stringa spezzata su due righe dal carattere newline.
+In Python rappresentiamo il carattere *newline* come backslash-n nelle costanti stringa. Anche se sembra formato da due caratteri, in realtà è un carattere solo. Quando guardiamo la variabile inserendo `stuff` nell'interprete, questo ci mostra il `\n` nella stringa, ma quando usiamo `print` per mostrare la stringa, vediamo la stringa spezzata su due righe dal carattere newline.
 
 ~~~~ {.python}
 >>> stuff = 'Hello\nWorld!'
@@ -272,7 +272,7 @@ Non ridere. Prima o poi gli utenti faranno ogni cosa possibile per rompere i tuo
 \index{controllo qualità}
 \index{QA}
 
-Il gruppo QA ha il compito di trovare i difetti nei programmi prima di aver consegnato il programma agli utenti finali, che magari acquistano il software o ci pagano lo stipendio per scrivere il software. Quindi il gruppo QA è il migliore amico del programmatore.
+Il gruppo QA ha il compito di trovare i difetti nei programmi prima che consegniamo il programma agli utenti finali, che magari acquistano il software o ci pagano lo stipendio per scrivere il software. Quindi il gruppo QA è il migliore amico del programmatore.
 
 \index{istruzione try}
 \index{istruzione!try}
