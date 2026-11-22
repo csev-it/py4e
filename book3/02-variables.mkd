@@ -1,13 +1,17 @@
 
 Variabili, espressioni e istruzioni
 ======================================
+
 Valori e tipi
 ----------------
 
 \index{valore}
 \index{tipo}
 \index{stringa}
-Un *valore* è uno degli elementi di base con cui lavora un programma, come una lettera o un numero. I valori che abbiamo visto finora sono `1`, `2` e `'Hello, World!'`. Questi valori appartengono a diversi *tipi*: `2` è un numero intero mentre `'Hello, World!'` è una *stringa*, così chiamata perché composta da una "stringa" di lettere. Tu (insieme all'interprete) puoi identificare le stringhe poiché racchiuse tra virgolette.\index{virgolette}
+Un *valore* è uno degli elementi di base con cui lavora un programma, come una lettera o un numero. I valori che abbiamo visto finora sono `1`, `2` e `'Hello, World!'`.
+
+Questi valori appartengono a diversi *tipi*: `2` è un numero intero mentre `'Hello, World!'` è una *stringa*, così chiamata perché composta da una "stringa" di lettere. Tu (insieme all'interprete) puoi identificare le stringhe poiché racchiuse tra virgolette.\index{virgolette}
+
 L'istruzione `print` funziona anche con i numeri interi. Usiamo il comando `python` per avviare l'interprete.
 
 ~~~~ {.python}
@@ -56,6 +60,7 @@ E per quanto riguarda valori come `'17'` e `'3.2'`? Pur sembrando numeri sono ra
 
 
 In realtà sono stringhe vere e proprie.
+
 Quando digiti un numero intero di grandi dimensioni, come `1,000,000`, potresti essere tentato di mettere le virgole tra i gruppi di tre cifre. In Python questo non è un numero intero valido, ma è comunque un'espressione valida:
 
 ~~~~ {.python height="120"}
@@ -65,6 +70,7 @@ Quando digiti un numero intero di grandi dimensioni, come `1,000,000`, potresti 
 
 
 Beh, non è per niente quello che ci aspettavamo! Python interpreta `1,000,000` come se fosse una sequenza di numeri interi separati da virgole, che stampa inserendo uno spazio in corrispondenza della virgola.\index{errore semantico}\index{errore!semantico}\index{messaggio di errore}
+
 Questo è il primo esempio di errore semantico che vediamo: il codice viene eseguito senza produrre messaggi di errore ma non fa l'operazione per la quale pensavamo di averlo progettato.  
 
 Variabili
@@ -73,7 +79,9 @@ Variabili
 \index{variabile}
 \index{istruzione di assegnazione}
 \index{istruzione!assegnazione}
-Una delle più potenti funzionalità di un linguaggio di programmazione è la capacità di manipolare *variabili*. Una variabile è un nome che si riferisce a un valore. Tramite un'*istruzione di assegnazione* hai la capacità di creare nuove variabili e assegnare loro un valore:
+Una delle più potenti funzionalità di un linguaggio di programmazione è la capacità di manipolare *variabili*. Una variabile è un nome che si riferisce a un valore.
+
+Tramite un'*istruzione di assegnazione* hai la capacità di creare nuove variabili e assegnare loro un valore:
 
 ~~~~ {.python}
 >>> message = 'And now for something completely different'
@@ -83,6 +91,7 @@ Una delle più potenti funzionalità di un linguaggio di programmazione è la ca
 
 
 In questo esempio vengono fatte tre assegnazioni: la prima assegna una stringa a una nuova variabile chiamata `message`, la seconda assegna il numero intero `17` alla variabile `n`, la terza assegna il valore (approssimativo) di $\pi$ a `pi`.
+
 Per visualizzare il valore di una variabile, puoi usare l'istruzione `print`:
 
 ~~~~ {.python}
@@ -109,7 +118,12 @@ Nomi delle variabili e parole chiave
 ---------------------------
 
 \index{parola chiave}
-Normalmente i programmatori scelgono nomi per le loro variabili che siano significativi e documentino l'utilizzo della variabile.  Questi nomi, di lunghezza arbitraria, possono contenere sia lettere sia numeri ma non possono iniziare con un numero. Anche se è possibile utilizzare lettere maiuscole, è preferibile iniziare i nomi delle variabili con una lettera minuscola (in seguito ne vedremo il motivo). Il carattere underscore (`_`) può comparire nel nome di una variabile ed è spesso utilizzato in nomi composti da più parole, come `my_name` o `airspeed_of_unladen_swallow`. I nomi delle variabili possono iniziare con il carattere underscore, ma generalmente evitiamo di farlo a meno che il codice che stiamo scrivendo sia contenuto in librerie che verranno utilizzate da altri.\index{carattere underscore}
+Normalmente i programmatori scelgono nomi per le loro variabili che siano significativi e documentino l'utilizzo della variabile.
+
+Questi nomi, di lunghezza arbitraria, possono contenere sia lettere sia numeri ma non possono iniziare con un numero. Anche se è possibile utilizzare lettere maiuscole, è preferibile iniziare i nomi delle variabili con una lettera minuscola (in seguito ne vedremo il motivo).
+
+Il carattere underscore (`_`) può comparire nel nome di una variabile ed è spesso utilizzato in nomi composti da più parole, come `my_name` o `airspeed_of_unladen_swallow`. I nomi delle variabili possono iniziare con il carattere underscore, ma generalmente evitiamo di farlo a meno che il codice che stiamo scrivendo sia contenuto in librerie che verranno utilizzate da altri.\index{carattere underscore}
+
 Se assegni a una variabile un nome non valido, ottieni un errore di sintassi:
 
 ~~~~ {.python height="450"}
@@ -123,6 +137,7 @@ SyntaxError: invalid syntax
 
 
 Il nome `76trombones` non è valido perché inizia con un numero, `more@`, invece, perché contiene il carattere non ammesso '@'. Ma cosa c'è di errato in `class`?
+
 Il fatto è che `class` è una delle *parole chiave* di Python. L'interprete utilizza queste parole per riconoscere la struttura del programma, quindi non possono essere usate come nomi di variabili.\index{parola chiave}
 
 Python si riserva 35 parole chiave:
@@ -144,8 +159,12 @@ Istruzioni
 ----------
 
 L'*istruzione* è un'unità di codice che può essere eseguita dall'interprete di Python. Abbiamo visto due tipi di istruzioni: `print`, che è un'istruzione di espressione, e l'assegnazione.\index{istruzione}\index{modalità interattiva}\index{modalità script}
+
 Quando digiti un'istruzione in modalità interattiva, l'interprete la esegue e, nel caso esista, ne visualizza il risultato.
-Generalmente uno script contiene una sequenza di istruzioni. Se c'è più di un'istruzione, i risultati compaiono uno alla volta, man mano che le istruzioni vengono eseguite. Ad esempio, lo script
+
+Generalmente uno script contiene una sequenza di istruzioni. Se c'è più di un'istruzione, i risultati compaiono uno alla volta, man mano che le istruzioni vengono eseguite.
+
+Ad esempio, lo script
 
 ~~~~ {.python}
 print(1)
@@ -167,7 +186,9 @@ Operatori e operandi
 ----------------------
 
 \index{operatore aritmetico}\index{operando}\index{espressione}
-Gli *operatori* sono simboli speciali che rappresentano calcoli come l'addizione e la moltiplicazione. I valori a cui è applicato l'operatore sono chiamati *operandi*. Gli operatori `+`, `-`, `*`, `/`, e `**` eseguono rispettivamente le operazioni di addizione, sottrazione, moltiplicazione, divisione, ed elevamento a potenza, come illustrato negli esempi seguenti:
+Gli *operatori* sono simboli speciali che rappresentano calcoli come l'addizione e la moltiplicazione. I valori a cui è applicato l'operatore sono chiamati *operandi*.
+
+Gli operatori `+`, `-`, `*`, `/`, e `**` eseguono rispettivamente le operazioni di addizione, sottrazione, moltiplicazione, divisione, ed elevamento a potenza, come illustrato negli esempi seguenti:
 
 ~~~~ {.python}
 20+32
@@ -281,7 +302,10 @@ L'operatore *modulo* viene applicato a numeri interi e fornisce come risultato i
 ~~~~
 
 
-Quindi 7 diviso per 3 fa 2 con il resto di 1. L'operatore modulo si può rivelare sorprendentemente utile. Ad esempio, puoi verificare se un numero è divisibile per un altro: se `x % y` fa zero, allora `x` è divisibile per `y`.\index{divisibilità}
+Quindi 7 diviso per 3 fa 2 con il resto di 1.
+
+L'operatore modulo si può rivelare sorprendentemente utile. Ad esempio, puoi verificare se un numero è divisibile per un altro: se `x % y` fa zero, allora `x` è divisibile per `y`.\index{divisibilità}
+
 Puoi anche ricavare da un numero quale sia il valore della cifra o delle cifre più a destra. Ad esempio, `x % 10` restituisce la cifra più a destra di `x` (in base 10). In modo simile, `x % 100` restituisce le ultime due cifre.  
 
 Operazioni con le stringhe
@@ -345,6 +369,7 @@ Chuck
 
 
 La sequenza `\n` alla fine del prompt rappresenta un *newline* (carattere di fine riga), un carattere speciale che manda a capo il testo. Ecco perché l'input dell'utente appare sotto il prompt.\index{newline}\index{a capo}
+
 Se ti aspetti che l'utente digiti un intero, puoi provare a convertire il valore restituito in `int` usando la funzione `int()`.
 
 ~~~~ {.python}
@@ -379,7 +404,9 @@ Commenti
 --------
 
 \index{commento}
-Man mano che i programmi diventano più grandi e complessi, questi diventano più difficili da leggere. I linguaggi formali sono densi ed è spesso difficile esaminare un pezzo di codice e capire cosa fa, o perché lo fa.  Per questo motivo, è una buona idea aggiungere alcune note ai tuoi programmi per spiegare in linguaggio naturale cosa stia facendo il programma. Queste note, che in Python iniziano con il simbolo `#`, sono chiamate *commenti*:
+Man mano che i programmi diventano più grandi e complessi, questi diventano più difficili da leggere. I linguaggi formali sono densi ed è spesso difficile esaminare un pezzo di codice e capire cosa fa, o perché lo fa.
+
+Per questo motivo, è una buona idea aggiungere alcune note ai tuoi programmi per spiegare in linguaggio naturale cosa stia facendo il programma. Queste note, che in Python iniziano con il simbolo `#`, sono chiamate *commenti*:
 
 ~~~~ {.python}
 # compute the percentage of the hour that has elapsed
@@ -394,7 +421,11 @@ percentage = (minute * 100) / 60     # percentage of an hour
 ~~~~
 
 
-Tutto ciò che è compreso tra `#` e la fine della riga viene ignorato e non ha alcun effetto sul programma. I commenti sono più utili quando documentano funzionalità del codice non così evidenti. Anche se è ragionevole presumere che chi legge il codice possa capire *cosa* questo faccia, è molto più utile spiegarne il *perché*. Questo commento al codice è superfluo e inutile:
+Tutto ciò che è compreso tra `#` e la fine della riga viene ignorato e non ha alcun effetto sul programma.
+
+I commenti sono più utili quando documentano funzionalità del codice non così evidenti. Anche se è ragionevole presumere che chi legge il codice possa capire *cosa* questo faccia, è molto più utile spiegarne il *perché*.
+
+Questo commento al codice è superfluo e inutile:
 
 ~~~~ {.python}
 v = 5     # assign 5 to v
@@ -444,7 +475,13 @@ print(x1q3p9afd)
 ~~~~
 
 
-Python interpreta tutti e tre *esattamente allo stesso modo* mentre noi umani leggiamo e comprendiamo questi programmi in modo abbastanza diverso. Si capisce velocemente lo *scopo* del secondo esempio poiché il programmatore ha scelto il nome delle variabili pensando a quali dati saranno memorizzati in ciascuna di esse. Chiamiamo questi nomi di variabili così saggiamente scelti "nomi mnemonici delle variabili". La parola *mnemonico*^[ Vedi <http://www.treccani.it/vocabolario/mnemonico/> per un'estesa descrizione della parola "mnemonico".] significa letteralmente "aiuto per la memoria". Scegliamo nomi mnemonici per le variabili per aiutarci a ricordare perché le abbiamo create. Anche se tutto ciò sembra ottimo, ed è davvero una buona idea usare nomi mnemonici, questi nomi possono essere d'intralcio alla capacità di un programmatore alle prime armi di analizzare e comprendere un codice. Questo perché i programmatori principianti non hanno ancora memorizzato le parole riservate (ce ne sono solo 35) e talvolta variabili con nomi troppo descrittivi iniziano a sembrare parte del linguaggio e non solo nomi di variabili ben scelti. Dai una rapida occhiata al seguente codice di esempio, che esegue un ciclo su alcuni dati. Affronteremo presto i cicli, ma per ora cerca di capire cosa significhi:
+Python interpreta tutti e tre *esattamente allo stesso modo* mentre noi umani leggiamo e comprendiamo questi programmi in modo abbastanza diverso. Si capisce velocemente lo *scopo* del secondo esempio poiché il programmatore ha scelto il nome delle variabili pensando a quali dati saranno memorizzati in ciascuna di esse.
+
+Chiamiamo questi nomi di variabili così saggiamente scelti "nomi mnemonici delle variabili". La parola *mnemonico*^[ Vedi <http://www.treccani.it/vocabolario/mnemonico/> per un'estesa descrizione della parola "mnemonico".] significa letteralmente "aiuto per la memoria". Scegliamo nomi mnemonici per le variabili per aiutarci a ricordare perché le abbiamo create.
+
+Anche se tutto ciò sembra ottimo, ed è davvero una buona idea usare nomi mnemonici, questi nomi possono essere d'intralcio alla capacità di un programmatore alle prime armi di analizzare e comprendere un codice. Questo perché i programmatori principianti non hanno ancora memorizzato le parole riservate (ce ne sono solo 35) e talvolta variabili con nomi troppo descrittivi iniziano a sembrare parte del linguaggio e non solo nomi di variabili ben scelti.
+
+Dai una rapida occhiata al seguente codice di esempio, che esegue un ciclo su alcuni dati. Affronteremo presto i cicli, ma per ora cerca di capire cosa significhi:
 
 ~~~~ {.python}
 for word in words:
@@ -452,7 +489,9 @@ for word in words:
 ~~~~
 
 
-Cosa sta succedendo? Quali parole (for, word, in, ecc.) sono parole riservate e quali sono solo variabili? Python riesce a capire a livello fondamentale la nozione di parole? I programmatori principianti hanno difficoltà a distinguere quali parti del codice *debbano* restare invariate, come in questo esempio, e quali parti del codice siano semplicemente scelte fatte dal programmatore. Il seguente codice equivale al precedente:
+Cosa sta succedendo? Quali parole (for, word, in, ecc.) sono parole riservate e quali sono solo variabili? Python riesce a capire a livello fondamentale la nozione di parole? I programmatori principianti hanno difficoltà a distinguere quali parti del codice *debbano* restare invariate, come in questo esempio, e quali parti del codice siano semplicemente scelte fatte dal programmatore.
+
+Il seguente codice equivale al precedente:
 
 ~~~~ {.python}
 for slice in pizza:
@@ -460,7 +499,11 @@ for slice in pizza:
 ~~~~
 
 
-Per il programmatore alle prime armi è più facile leggere questo codice per sapere quali parti siano parole riservate di Python e quali parti siano semplicemente nomi di variabili scelti dal programmatore. È abbastanza chiaro che Python non conosce la nozione di pizza e trancio (slice), né il fatto che una pizza è composta da uno o più tranci. Ma se il nostro programma riguarda veramente la lettura di dati e la ricerca di parole nei dati, `pizza` e `slice` non sono per niente nomi mnemonici di variabili. Sceglierli come nomi di variabili ci distrae dallo scopo del programma. Dopo un breve periodo di tempo, conoscerai le più comuni parole riservate e inizieranno a saltarti agli occhi:
+Per il programmatore alle prime armi è più facile leggere questo codice per sapere quali parti siano parole riservate di Python e quali parti siano semplicemente nomi di variabili scelti dal programmatore. È abbastanza chiaro che Python non conosce la nozione di pizza e trancio (slice), né il fatto che una pizza è composta da uno o più tranci.
+
+Ma se il nostro programma riguarda veramente la lettura di dati e la ricerca di parole nei dati, `pizza` e `slice` non sono per niente nomi mnemonici di variabili. Sceglierli come nomi di variabili ci distrae dallo scopo del programma.
+
+Dopo un breve periodo di tempo, conoscerai le più comuni parole riservate e inizieranno a saltarti agli occhi:
 
 <pre>
 <b>for</b> word <b>in</b> words<b>:</b>
@@ -474,6 +517,7 @@ Debug
 
 \index{debug}
 A questo punto, l'errore di sintassi più probabile che tu possa fare è scegliere un nome di variabile non consentito, come `class` e `yield`, che sono parole chiave, o `odd~job` e `US$`, che contengono caratteri non consentiti.\index{errore di sintassi}\index{errore!sintassi}
+
 Se inserisci uno spazio nel nome di variabile, Python riterrà che si tratti di due operandi senza un operatore:
 
 ~~~~ {.python}
@@ -483,6 +527,7 @@ SyntaxError: invalid syntax
 
 
 Per quanto riguarda gli errori di sintassi, bisogna dire che i messaggi di errore non sono di grande aiuto. Il messaggio più comune è `SyntaxError: invalid syntax`, che è poco esplicativo.\index{messaggio di errore}\index{uso prima di def}\index{eccezione}\index{errore di runtime}\index{errore!runtime}
+
 L'errore di runtime più comune è l'"uso prima della definizione" (use before def), cioè l'utilizzo di una variabile prima di averle assegnato un valore. Può verificarsi se scrivi in modo errato il nome di una variabile:
 
 ~~~~ {.python}
@@ -493,6 +538,7 @@ NameError: name 'principle' is not defined
 
 
 I nomi delle variabili sono case-sensitive: `LaTeX` non è la stessa cosa di `latex`.\index{case-sensitive!nomi delle variabili}\index{errore semantico}\index{errore!semantico}
+
 A questo punto la causa più probabile di un errore semantico è l'ordine delle operazioni. Ad esempio, per calcolare $1/2\pi$, potresti essere tentato di scrivere:
 
 ~~~~ {.python}
