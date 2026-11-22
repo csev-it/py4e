@@ -1,45 +1,45 @@
 
-Elenchi
+Liste
 =====
 
-\index{elenco}
-\index{tipo!elenco}
+\index{lista}
+\index{tipo!lista}
 
-Un elenco è una sequenza
-------------------------
+Una lista è una sequenza
+--------------------
 
-Similmente ad una stringa, un *elenco* è una sequenza di valori. Ma mentre in una stringa i valori sono costituiti solo da caratteri, in un elenco questi possono essere di qualsiasi tipo e sono chiamati *elementi* o talvolta *oggetti*.
+Come una stringa, una *lista* è una sequenza di valori. In una stringa i valori sono caratteri; in una lista possono essere di qualsiasi tipo. I valori di una lista sono chiamati *elementi* o a volte *item*.
 
 \index{elemento}
 \index{sequenza}
 \index{item}
 
-Esistono diversi modi per creare un elenco; il più semplice è racchiudere gli elementi tra parentesi quadre (`[` e `]`):
+Ci sono diversi modi per creare una nuova lista; il più semplice è racchiudere gli elementi tra parentesi quadre (`[` e `]`):
 
 ~~~~ {.python}
 [10, 20, 30, 40]
 ['crunchy frog', 'ram bladder', 'lark vomit']
 ~~~~
 
-
-Il primo esempio è un elenco di quattro numeri interi, il secondo è un elenco di tre stringhe. Non è necessario che gli elementi di un elenco debbano essere dello stesso tipo: il seguente elenco contiene una stringa, un float, un intero e (sorpresa!) un'altra lista:
+Il primo esempio è una lista di quattro interi. Il secondo è una lista di tre stringhe. Gli elementi di una lista non devono essere dello stesso tipo. La lista seguente contiene una stringa, un numero in virgola mobile, un intero e (guarda un po'!) un'altra lista:
 
 ~~~~ {.python}
 ['spam', 2.0, 5, [10, 20]]
-~~~~
+~~~~ 
 
+Una lista dentro un'altra lista è *annidata*.
 
-Un elenco contenuto all'interno di un altro elenco è definito elenco *nidificato*.
 \index{lista annidata}
-\index{elenco!inestata}
+\index{lista!annidata}
 
-Un elenco senza elementi è chiamato elenco vuoto: puoi crearne uno semplicemente scrivendo due parentesi quadre vuote: `[]`.
-\index{elenco vuoto}
-\index{elenco!vuoto}
+Una lista che non contiene elementi è chiamata lista vuota; puoi crearne una con le parentesi quadre vuote, `[]`.
 
-Come puoi immaginare, puoi assegnare un elenco a una variabile:
+\index{lista vuota}
+\index{lista!vuota}
 
-~~~~ {.python .trinket}
+Come puoi aspettarti, puoi assegnare valori di tipo lista alle variabili:
+
+~~~~ {.python}
 >>> cheeses = ['Cheddar', 'Edam', 'Gouda']
 >>> numbers = [17, 123]
 >>> empty = []
@@ -47,67 +47,65 @@ Come puoi immaginare, puoi assegnare un elenco a una variabile:
 ['Cheddar', 'Edam', 'Gouda'] [17, 123] []
 ~~~~
 
-
-
 \index{assegnazione}
 
-Gli elenchi sono mutabili
+Le liste sono mutabili
 -----------------
 
-\index{elenco!elemento}
+\index{lista!elemento}
 \index{accesso}
 \index{indice}
+\index{operatore parentesi quadre}
+\index{operatore!parentesi quadre}
 
-\index{operatore parentesi}
-\index{operatore!parentesi}
-La sintassi per accedere agli elementi di un elenco è la stessa usata per i caratteri di una stringa: l'operatore rappresentato dalle parentesi. L'espressione tra parentesi specifica l'indice. Ricorda che l'indice inizia da 0:
+La sintassi per accedere agli elementi di una lista è la stessa usata per accedere ai caratteri di una stringa: l'operatore parentesi quadre. L'espressione dentro le parentesi quadre specifica l'indice. Ricorda che gli indici partono da 0:
 
 ~~~~ {.python}
 >>> print(cheeses[0])
 Cheddar
 ~~~~
 
-
-A differenza delle stringhe, gli elenchi sono modificabili in quanto è possibile modificare l'ordine degli elementi in un elenco o riassegnare un elemento in un elenco. Quando la parentesi è visualizzata sul lato sinistro di un'assegnazione, identifica l'elemento dell'elenco che verrà modificato.
+A differenza delle stringhe, le liste sono mutabili, perché puoi cambiare l'ordine degli elementi di una lista o riassegnare un elemento di una lista. Quando l'operatore parentesi quadre compare sul lato sinistro di un'assegnazione, identifica l'elemento della lista a cui verrà assegnato il valore.
 
 \index{mutabilità}
 
-
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> numbers = [17, 123]
 >>> numbers[1] = 5
 >>> print(numbers)
 [17, 5]
 ~~~~
 
+L'elemento numero 1 ("unesimo") di `numbers`, che prima era `123`, ora è `5`.
 
-L'elemento di indice uno di `numbers`, 123, è stato sostituito da 5.
+\index{indice!che parte da zero}
+\index{zero!indice che parte da}
 
-\index{indice!partenza da zero}
-\index{zero, partenza dell'indice da}
+Puoi pensare a una lista come a una relazione tra indici ed elementi. Questa relazione è chiamata *mappatura* (mapping); ogni indice "corrisponde a" uno degli elementi.
 
-Gli elenchi possono essere immaginati come una relazione tra indici ed elementi. Questa relazione è chiamata *mappatura*; ogni indice "mappa" uno degli elementi.
+\index{assegnazione di un elemento}
+\index{assegnazione!elemento}
 
-\index{assegnazione di un item}
-\index{assegnazione!item}
+Gli indici delle liste funzionano come gli indici delle stringhe:
 
-Gli indici degli elenchi funzionano allo stesso modo di quelli delle stringhe:
+-   Qualsiasi espressione intera può essere usata come indice.
 
-- Qualsiasi espressione di tipo intero può essere utilizzata come indice.
+-   Se provi a leggere o a scrivere un elemento che non esiste, ottieni un `IndexError`.
 
-- Se provi a leggere o scrivere un elemento che non esiste, otterrai un 'IndexError`;
 \index{eccezione!IndexError}
 \index{IndexError}
 
-- Con un indice negativo, il conteggio inizia a ritroso partendo dalla fine dell'elenco.
-\index{elenco!indice}
-\index{elenco!membership}
-\index{membership!list}
+-   Se un indice ha un valore negativo, conta all'indietro dalla fine della lista.
+
+\index{lista!indice}
+\index{lista!appartenenza}
+\index{appartenenza!lista}
 \index{operatore in}
 \index{operatore!in}
-L'operatore `in` funziona anche sugli elenchi:
 
-~~~~ {.python .trinket}
+Anche l'operatore `in` funziona sulle liste.
+
+~~~~ {.python}
 >>> cheeses = ['Cheddar', 'Edam', 'Gouda']
 >>> 'Edam' in cheeses
 True
@@ -115,68 +113,64 @@ True
 False
 ~~~~
 
-
-Scorrere un elenco
+Scorrere una lista
 -----------------
 
-\index{elenco!traversal}
-\index{traversal!list}
+\index{lista!scorrimento}
+\index{scorrimento!lista}
 \index{ciclo for}
 \index{ciclo!for}
 \index{istruzione!for}
-Il modo più comune di scorrere gli elementi di un elenco è un ciclo `for`. La sintassi è la stessa delle stringhe:
+
+Il modo più comune di scorrere gli elementi di una lista è con un ciclo `for`. La sintassi è la stessa usata per le stringhe:
 
 ~~~~ {.python}
 for cheese in cheeses:
     print(cheese)
 ~~~~
 
-Funziona bene solo se devi leggere gli elementi di un elenco. Se vuoi scrivere o aggiornare degli elementi, devi lavorare con gli indici. Un modo comune per farlo è combinare le funzioni `range` e `len`:
+Questo funziona bene se devi solo leggere gli elementi della lista. Ma se vuoi scrivere o aggiornare gli elementi, ti servono gli indici. Un modo comune per farlo è combinare le funzioni `range` e `len`:
 
-\index{ciclo!con indici}
-\index{indice!looping con}
-
+\index{ciclo!con gli indici}
+\index{indice!ciclo con}
 
 ~~~~ {.python}
 for i in range(len(numbers)):
     numbers[i] = numbers[i] * 2
 ~~~~
 
+Questo ciclo scorre la lista e aggiorna ogni elemento. `len` restituisce il numero di elementi della lista. `range` restituisce una lista di indici da 0 a $n-1$, dove $n$ è la lunghezza della lista. A ogni passaggio del ciclo, `i` riceve l'indice dell'elemento successivo. L'istruzione di assegnazione nel corpo usa `i` per leggere il vecchio valore dell'elemento e per assegnare il nuovo valore.
 
-Questo ciclo scorre l'elenco e aggiorna ciascun elemento. `len` restituisce il numero di elementi dell'elenco. `range` restituisce un elenco di indici da 0 a $n-1$, dove $n$ è la lunghezza dell'elenco. Ad ogni ripetizione del ciclo, `i` assume l'indice dell'elemento successivo. L'istruzione di assegnazione nel corpo usa `i` per leggere il vecchio valore dell'elemento e assegnare quello nuovo.
+\index{aggiornamento di un elemento}
+\index{aggiornamento!elemento}
 
-\index{aggiornamento di un item}
-\index{update!item}
-Un ciclo `for` su una lista vuota non esegue mai il blocco:
+Un ciclo `for` su una lista vuota non esegue mai il corpo:
 
 ~~~~ {.python}
 for x in empty:
     print('This never happens.')
 ~~~~
 
+Anche se una lista può contenere un'altra lista, la lista annidata conta comunque come un singolo elemento. La lunghezza di questa lista è quattro:
 
-Come ti ho scritto, un elenco può contenere un altro elenco, che comunque conta come se fosse un singolo elemento. Per farti un esempio, la lunghezza di questo elenco è pari a quattro:
 \index{lista annidata}
-\index{elenco!inestata}
-
+\index{lista!annidata}
 
 ~~~~ {.python}
 ['spam', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]
 ~~~~
 
-
-Operazioni sugli elenchi
+Operazioni sulle liste
 ---------------
 
-\index{elenco!operazione}
+\index{lista!operazione}
 
-L'operatore `+` concatena gli elenchi:
+L'operatore `+` concatena le liste:
 
-\index{concatezione!list}
-\index{elenco!concantenazione}
+\index{concatenazione!lista}
+\index{lista!concatenazione}
 
-
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> a = [1, 2, 3]
 >>> b = [4, 5, 6]
 >>> c = a + b
@@ -184,35 +178,32 @@ L'operatore `+` concatena gli elenchi:
 [1, 2, 3, 4, 5, 6]
 ~~~~
 
-
-L'operatore `*` ripete un elenco un dato numero di volte:
+In modo simile, l'operatore `*` ripete una lista un dato numero di volte:
 
 \index{ripetizione!lista}
-\index{elenco!ripetizione}
+\index{lista!ripetizione}
 
-
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> [0] * 4
 [0, 0, 0, 0]
 >>> [1, 2, 3] * 3
 [1, 2, 3, 1, 2, 3, 1, 2, 3]
 ~~~~
 
+Il primo esempio ripete `[0]` quattro volte. Il secondo esempio ripete la lista tre volte.
 
-Nel primo esempio 0 viene ripetuto quattro volte, nel secondo l'elenco viene ripetuto tre volte.
-
-Slicing degli elenchi
+Slice di liste
 -----------
 
 \index{operatore slice}
 \index{operatore!slice}
-\index{indice!divisione}
-\index{elenco!slice}
-\index{tagliare!list}
+\index{indice!slice}
+\index{lista!slice}
+\index{slice!lista}
 
-L'operatore slice può essere utilizzato anche con gli elenchi:
+Anche l'operatore slice funziona sulle liste:
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['a', 'b', 'c', 'd', 'e', 'f']
 >>> t[1:3]
 ['b', 'c']
@@ -222,11 +213,10 @@ L'operatore slice può essere utilizzato anche con gli elenchi:
 ['d', 'e', 'f']
 ~~~~
 
+Se ometti il primo indice, la slice parte dall'inizio. Se ometti il secondo, la slice arriva fino alla fine. Quindi, se li ometti entrambi, la slice è una copia dell'intera lista.
 
-Se ometti il primo indice, lo slicing comincia dall'inizio. Se ometti il secondo, lo slicing termina alla fine. Di conseguenza se mancano entrambi, lo slicing è una copia dell'intero elenco.
-
-\index{elenco!copia}
-\index{tagliare!copy}
+\index{lista!copia}
+\index{slice!copia}
 \index{copia!slice}
 
 ~~~~ {.python}
@@ -234,47 +224,46 @@ Se ometti il primo indice, lo slicing comincia dall'inizio. Se ometti il secondo
 ['a', 'b', 'c', 'd', 'e', 'f']
 ~~~~
 
-
-Poiché gli elenchi sono editabili, spesso è utile farne prima una copia e poi eseguire operazioni che le aggreghino, le invertano o le tronchino.
+Poiché le liste sono mutabili, spesso è utile farne una copia prima di eseguire operazioni che piegano, infilzano o mutilano le liste.
 
 \index{mutabilità}
 
-Un operatore di slicing posto sul lato sinistro di un'assegnazione ti permette di aggiornare più elementi:
+Un operatore slice sul lato sinistro di un'assegnazione può aggiornare più elementi:
 
-\index{tagliare!aggiornamento}
-\index{update!slice}
+\index{slice!aggiornamento}
+\index{aggiornamento!slice}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['a', 'b', 'c', 'd', 'e', 'f']
 >>> t[1:3] = ['x', 'y']
 >>> print(t)
 ['a', 'x', 'y', 'd', 'e', 'f']
 ~~~~
 
-Metodi degli elenchi
+Metodi delle liste
 ------------
 
-\index{elenco!metodo}
-\index{metodo!list}
+\index{lista!metodo}
+\index{metodo!lista}
 
-Python ti mette a disposizione diversi metodi per operare sugli elenchi. Ad esempio tramite `append` puoi aggiungere un nuovo elemento alla fine di un elenco:
+Python fornisce metodi che operano sulle liste. Ad esempio, `append` aggiunge un nuovo elemento alla fine di una lista:
 
 \index{metodo append}
 \index{metodo!append}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['a', 'b', 'c']
 >>> t.append('d')
 >>> print(t)
 ['a', 'b', 'c', 'd']
 ~~~~
 
-`extend` accetta un elenco come argomento e ne accoda tutti gli elementi all'elenco specificato:
+`extend` accetta una lista come argomento e ne aggiunge in coda tutti gli elementi:
 
 \index{metodo extend}
 \index{metodo!extend}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t1 = ['a', 'b', 'c']
 >>> t2 = ['d', 'e']
 >>> t1.extend(t2)
@@ -282,40 +271,39 @@ Python ti mette a disposizione diversi metodi per operare sugli elenchi. Ad esem
 ['a', 'b', 'c', 'd', 'e']
 ~~~~
 
-In questo esempio l'elenco `t2` rimane immutato.
+Questo esempio lascia `t2` invariata.
 
-Tramite `sort` puoi ordinare gli elementi dell'elenco in ordine crescente:
+`sort` dispone gli elementi della lista dal più piccolo al più grande:
 
 \index{metodo sort}
 \index{metodo!sort}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['d', 'c', 'e', 'b', 'a']
 >>> t.sort()
 >>> print(t)
 ['a', 'b', 'c', 'd', 'e']
 ~~~~
 
-La maggior parte dei metodi applicabili agli elenchi non accettano argomenti: modificano l'elenco e restituiscono `None`.
-Se scrivessi accidentalmente `t = t.sort()`, rimarresti molto deluso dal risultato.
+La maggior parte dei metodi delle liste è vuota: modificano la lista e restituiscono `None`. Se per sbaglio scrivi `t = t.sort()`, resterai deluso dal risultato.
 
-\index{metodo void}
-\index{metodo!nullo}
-\index{Valore speciale!None}
+\index{metodo vuoto}
+\index{metodo!vuoto}
+\index{valore speciale None}
 \index{valore speciale!None}
 
-Eliminazione di elementi
+Eliminare elementi
 -----------------
 
-\index{cancellazione elemento}
-\index{cancellare, elemento di una lista}
+\index{eliminazione di un elemento}
+\index{eliminazione!elemento di una lista}
 
-Esistono diversi modi per eliminare elementi da un elenco: Se conosci l'indice dell'elemento desiderato, puoi usare `pop`:
+Ci sono diversi modi per eliminare elementi da una lista. Se conosci l'indice dell'elemento che vuoi, puoi usare `pop`:
 
 \index{metodo pop}
 \index{metodo!pop}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['a', 'b', 'c']
 >>> x = t.pop(1)
 >>> print(t)
@@ -324,52 +312,54 @@ Esistono diversi modi per eliminare elementi da un elenco: Se conosci l'indice d
 b
 ~~~~
 
-`pop` modifica l'elenco e restituisce l'elemento rimosso. Se non fornisci un indice, il metodo elimina e restituisce l'ultimo elemento dell'elenco. Se non ti serve il valore rimosso, puoi usare l'operatore `del`:
+`pop` modifica la lista e restituisce l'elemento che è stato rimosso. Se non fornisci un indice, elimina e restituisce l'ultimo elemento.
 
-\index{operatore del}
-\index{operatore!del}
+Se non ti serve il valore rimosso, puoi usare l'istruzione `del`:
 
-~~~~ {.python .trinket}
+\index{istruzione del}
+\index{istruzione!del}
+
+~~~~ {.python}
 >>> t = ['a', 'b', 'c']
 >>> del t[1]
 >>> print(t)
 ['a', 'c']
 ~~~~
 
-Se conosci l'elemento da rimuovere (ma non l'indice), puoi utilizzare `remove`:
+Se conosci l'elemento che vuoi rimuovere (ma non l'indice), puoi usare `remove`:
 
 \index{metodo remove}
 \index{metodo!remove}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['a', 'b', 'c']
 >>> t.remove('b')
 >>> print(t)
 ['a', 'c']
 ~~~~
 
-Il valore restituito da `remove` è `None`.
+Il valore di ritorno di `remove` è `None`.
 
-\index{Valore speciale!None}
+\index{valore speciale None}
 \index{valore speciale!None}
 
-Per rimuovere più di un elemento, utilizza `del` con un indice di slicing:
+Per rimuovere più di un elemento, puoi usare `del` con un indice di slice:
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['a', 'b', 'c', 'd', 'e', 'f']
 >>> del t[1:5]
 >>> print(t)
 ['a', 'f']
 ~~~~
 
-Come al solito, lo slice seleziona tutti gli elementi fino al secondo indice escluso.
+Come al solito, la slice seleziona tutti gli elementi fino al secondo indice, escluso.
 
-Elenchi e funzioni
+Liste e funzioni
 -------------------
 
-Esistono numerose funzioni integrate dedicate agli elenchi che consentono di scorrere rapidamente un elenco senza scrivere del codice apposito:
+Ci sono diverse funzioni built-in che si possono usare sulle liste e che ti permettono di esaminare rapidamente una lista senza scrivere i tuoi cicli:
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> nums = [3, 41, 12, 9, 74, 15]
 >>> print(len(nums))
 6
@@ -383,46 +373,49 @@ Esistono numerose funzioni integrate dedicate agli elenchi che consentono di sco
 25
 ~~~~
 
-Puoi utilizzare la funzione `sum()` che funziona solo se tutti gli elementi dell'elenco sono numeri. Le altre funzioni (`max()`, `len()`, ecc.) funzionano con stringhe e altri elementi che possano essere comparati.  
-Potremmo riscrivere un programma visto in precedenza che calcolava la media di un insieme di numeri immessi dall'utente utilizzando, stavolta, un elenco.  
-Innanzitutto ecco lo script che abbiamo scritto per calcolare la media dei numeri inseriti:
+La funzione `sum()` funziona solo quando gli elementi della lista sono numeri. Le altre funzioni (`max()`, `len()`, ecc.) funzionano con liste di stringhe e di altri tipi che possono essere confrontati.
+
+Usando una lista potremmo riscrivere un programma precedente, che calcolava la media di una lista di numeri inseriti dall'utente.
+
+Per prima cosa, il programma per calcolare una media senza una lista:
 
 \VerbatimInput{../code3/avenum.py}
 
-In questo programma le variabili `count` e `total` servono per memorizzare il numero e il totale parziale dei numeri inseriti dall'utente mentre viene ripetutamente richiesto all'utente di digitare un numero.
+In questo programma abbiamo le variabili `count` e `total` per tenere il numero e il totale parziale dei numeri dell'utente mentre chiediamo ripetutamente un numero all'utente.
 
-Potremmo semplicemente memorizzare progressivamente ogni numero inserito dall'utente e utilizzare le funzioni integrate per calcolare somma e numero degli elementi al termine della loro immissione.
+Potremmo semplicemente ricordare ogni numero man mano che l'utente lo inserisce e usare le funzioni built-in per calcolare la somma e il conteggio alla fine.
 
 \VerbatimInput{../code3/avelist.py}
 
-nell'esempio precedente abbiamo creato un elenco vuoto prima che inizi il ciclo, e ogni volta che veniva inserito un numero lo abbiamo aggiunto all'elenco. Alla fine del programma, abbiamo calcolato semplicemente la somma dei numeri dell'elenco e la dividiamo per il conteggio degli elementi inseriti per ottenere la media.  
+Creiamo una lista vuota prima che il ciclo inizi, e poi ogni volta che abbiamo un numero lo aggiungiamo in coda alla lista. Alla fine del programma calcoliamo semplicemente la somma dei numeri della lista e la dividiamo per il conteggio dei numeri della lista per ottenere la media.
 
-Elenchi e stringhe
+Liste e stringhe
 -----------------
 
-\index{elenco}
+\index{lista}
 \index{stringa}
 \index{sequenza}
 
-Ti ho già scritto che una stringa ed un elenco non sono la stessa cosa: una stringa è una sequenza di caratteri mentre un elenco è una sequenza di valori. Per convertire una stringa in un elenco di caratteri, puoi usare `list`:
+Una stringa è una sequenza di caratteri e una lista è una sequenza di valori, ma una lista di caratteri non è la stessa cosa di una stringa. Per convertire una stringa in una lista di caratteri puoi usare `list`:
 
-\index{elenco!funzione}
+\index{lista!funzione}
 \index{funzione!list}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> s = 'spam'
 >>> t = list(s)
 >>> print(t)
 ['s', 'p', 'a', 'm']
 ~~~~
 
-dato che `list` è un nome riservato, evita di usarlo come nome per una variabile. Ti consiglio anche di evitare la lettera `l` perché assomiglia troppo al numero `1`. Personalmente preferisco la `t`.  
-La funzione `list` suddivide una stringa in singole lettere. Se invece vuoi dividere una stringa in singole parole, ti torna utile il metodo `split`:
+Poiché `list` è il nome di una funzione built-in, dovresti evitare di usarlo come nome di variabile. Io evito anche la lettera `l`, perché somiglia troppo al numero `1`. Ecco perché uso `t`.
+
+La funzione `list` spezza una stringa in singole lettere. Se vuoi spezzare una stringa in parole, puoi usare il metodo `split`:
 
 \index{metodo split}
 \index{metodo!split}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> s = 'pining for the fjords'
 >>> t = s.split()
 >>> print(t)
@@ -431,55 +424,51 @@ La funzione `list` suddivide una stringa in singole lettere. Se invece vuoi divi
 the
 ~~~~
 
+Una volta usato `split` per spezzare la stringa in una lista di parole, puoi usare l'operatore indice (parentesi quadre) per guardare una particolare parola della lista.
 
-Dopo aver usato `split` per spezzare la stringa in un elenco di parole, puoi usare l'operatore indice (parentesi quadre) per cercare una particolare parola nell'elenco.  
-Puoi chiamare `split` con un argomento opzionale chiamato *delimitatore* che specifica quali caratteri usare come separatore delle parole. Nell'esempio seguente viene utilizzato un trattino come delimitatore:
+Puoi chiamare `split` con un argomento opzionale chiamato *delimitatore*, che specifica quali caratteri usare come confini delle parole. L'esempio seguente usa un trattino come delimitatore:
 
 \index{argomento opzionale}
 \index{argomento!opzionale}
 \index{delimitatore}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> s = 'spam-spam-spam'
 >>> delimiter = '-'
 >>> s.split(delimiter)
 ['spam', 'spam', 'spam']
 ~~~~
 
-`join` è l'inverso di `split`. Prende un elenco di stringhe e ne concatena gli elementi. `join` è un metodo delle stringhe, quindi lo devi richiamare per mezzo del delimitatore passando l'elenco come parametro:
+`join` è l'inverso di `split`. Accetta una lista di stringhe e ne concatena gli elementi. `join` è un metodo delle stringhe, quindi devi invocarlo sul delimitatore e passare la lista come parametro:
 
 \index{metodo join}
 \index{metodo!join}
 \index{concatenazione}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t = ['pining', 'for', 'the', 'fjords']
 >>> delimiter = ' '
 >>> delimiter.join(t)
 'pining for the fjords'
 ~~~~
 
-In questo caso il delimitatore è uno spazio, perciò `join` ne aggiunge uno tra le varie parole. Se dovessi aver bisogno di concatenare delle stringhe senza spazi, puoi usare come delimitatore una stringa vuota "".
+In questo caso il delimitatore è un carattere di spazio, quindi `join` mette uno spazio tra le parole. Per concatenare stringhe senza spazi puoi usare come delimitatore la stringa vuota, `""`.
 
 \index{stringa vuota}
 \index{stringa!vuota}
 
-Analisi di righe
+Analisi delle righe
 -------------
 
-Di solito, quando analizziamo un file, vogliamo fare qualcosa di diverso dalla semplice visualizzazione di riga per riga. Spesso vogliamo trovare le "righe interessanti" e poi *analizzare* la riga per trovare la *parte* che stiamo cercando della riga stessa.
-E se volessimo estrarre il giorno della settimana da quelle righe che iniziano con "From"?  
+Di solito, quando leggiamo un file, vogliamo fare con le righe qualcosa di diverso dallo stampare soltanto l'intera riga. Spesso vogliamo trovare le "righe interessanti" e poi *analizzare* la riga per trovarne qualche *parte* interessante. E se volessimo stampare il giorno della settimana delle righe che iniziano con `"From "`?
 
-`From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008`
+~~~~
+From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
+~~~~
 
-Il metodo `split` è molto efficace nel risolvere questo tipo di problema. Possiamo scrivere un piccolo programma che cerca le righe che iniziano con "From ", le "divide" in parole e poi ne visualizza la terza parola:
+Il metodo `split` è molto efficace di fronte a questo tipo di problema. Possiamo scrivere un piccolo programma che cerca le righe che iniziano con `"From "`, divide queste righe con `split` e poi stampa la terza parola della riga:
 
 \VerbatimInput{../code3/search5.py}
-\begin{trinketfiles}
-../code3/mbox-short.txt
-\end{trinketfiles}
-
-Abbiamo usato anche la forma contratta dell'istruzione `if` e messo `continue` sulla stessa riga di `if`. Questa forma contratta funziona come se `continue` fosse messo nella riga successiva indentata.  
 
 Il programma produce il seguente output:
 
@@ -489,7 +478,7 @@ Il programma produce il seguente output:
     Fri
     ...
 
-In seguito impareremo tecniche sempre più sofisticate per scegliere le righe su cui lavorare e come smontarle per trovare l'informazione precisa che stiamo cercando.
+Più avanti impareremo tecniche sempre più sofisticate per scegliere le righe su cui lavorare e per scomporre quelle righe fino a trovare l'esatta informazione che stiamo cercando.
 
 Oggetti e valori
 ------------------
@@ -504,71 +493,71 @@ a = 'banana'
 b = 'banana'
 ~~~~
 
-sappiamo che `a` e `b` si riferiscono entrambi a una stringa, ma non sappiamo se si riferiscono alla *stessa* stringa. Ci sono due possibili stati:
+sappiamo che `a` e `b` si riferiscono entrambe a una stringa, ma non sappiamo se si riferiscono alla *stessa* stringa. Ci sono due stati possibili:
 
 \index{aliasing}
 
 ![Variabili e oggetti](height=0.5in@../images/list1)
 
-Nel primo caso `a` e `b` si riferiscono a due oggetti diversi che hanno lo stesso valore mentre nel secondo caso si riferiscono allo stesso oggetto.
+In un caso, `a` e `b` si riferiscono a due oggetti diversi che hanno lo stesso valore. Nel secondo caso, si riferiscono allo stesso oggetto.
 
 \index{operatore is}
 \index{operatore!is}
 
-Puoi usare l'operatore `is` per verificare se due variabili si riferiscono allo stesso oggetto.
+Per controllare se due variabili si riferiscono allo stesso oggetto, puoi usare l'operatore `is`.
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> a = 'banana'
 >>> b = 'banana'
 >>> a is b
 True
 ~~~~
 
-In questo esempio, Python ha creato un unico oggetto stringa a cui fanno riferimento sia `a` che `b`.
+In questo esempio Python ha creato un solo oggetto stringa, e sia `a` sia `b` si riferiscono a esso.
 
-Se invece crei due elenchi, otterrai due oggetti:
+Ma quando crei due liste, ottieni due oggetti:
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> a = [1, 2, 3]
 >>> b = [1, 2, 3]
 >>> a is b
 False
 ~~~~
 
-In questo caso, potremmo dire che i due elenchi sono *equivalenti*, dato che contengono gli stessi elementi, ma non *identici*, perché non sono lo stesso oggetto. Se due oggetti sono identici sono anche equivalenti, ma se sono equivalenti non sono necessariamente identici.
+In questo caso diremmo che le due liste sono *equivalenti*, perché hanno gli stessi elementi, ma non *identiche*, perché non sono lo stesso oggetto. Se due oggetti sono identici, sono anche equivalenti, ma se sono equivalenti non sono necessariamente identici.
 
 \index{equivalenza}
 \index{identità}
 
-Anche se fino ad ora abbiamo usato "oggetto" e "valore" in modo intercambiabile, è più preciso dire che un oggetto ha un valore. Se esegui `a = [1,2,3]`, `a` si riferisce ad un oggetto elenco il cui valore è una particolare sequenza di elementi. Se un altro elenco ha gli stessi elementi diremo che ha lo stesso valore.
+Finora abbiamo usato "oggetto" e "valore" in modo intercambiabile, ma è più preciso dire che un oggetto ha un valore. Se esegui `a = [1,2,3]`, `a` si riferisce a un oggetto lista il cui valore è una particolare sequenza di elementi. Se un'altra lista ha gli stessi elementi, diremmo che ha lo stesso valore.
 
 \index{oggetto}
 \index{valore}
 
-Alias
+Aliasing
 --------
 
 \index{aliasing}
 \index{riferimento!aliasing}
 
-Se `a` si riferisce ad un oggetto e assegni `b = a`, allora entrambe le variabili si riferiscono allo stesso oggetto:
+Se `a` si riferisce a un oggetto e assegni `b = a`, allora entrambe le variabili si riferiscono allo stesso oggetto:
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> a = [1, 2, 3]
 >>> b = a
 >>> b is a
 True
 ~~~~
 
-L'associazione tra una variabile e un oggetto è chiamata *riferimento*. In questo esempio, ci sono due riferimenti allo stesso oggetto.
+L'associazione di una variabile con un oggetto è chiamata *riferimento*. In questo esempio ci sono due riferimenti allo stesso oggetto.
 
 \index{riferimento}
 
-Quando un oggetto ha più di un riferimento, ha di conseguenza più di un nome, che chiameremo *alias*.
+Un oggetto con più di un riferimento ha più di un nome, quindi diciamo che l'oggetto ha degli *alias*.
 
 \index{mutabilità}
 
-Se l'oggetto con alias è modificabile, le modifiche apportate su un alias si riflettono sugli altri:
+Se l'oggetto con più alias è mutabile, le modifiche fatte con un alias hanno effetto sull'altro:
 
 ~~~~ {.python}
 >>> b[0] = 17
@@ -576,38 +565,38 @@ Se l'oggetto con alias è modificabile, le modifiche apportate su un alias si ri
 [17, 2, 3]
 ~~~~
 
-Sebbene questo comportamento possa essere utile, è spesso fonte di errori. In generale, è meglio evitare gli alias quando si lavora con oggetti mutabili.
+Anche se questo comportamento può essere utile, è soggetto a errori. In generale, è più sicuro evitare l'aliasing quando lavori con oggetti mutabili.
 
-\index{immutabile}
+\index{immutabilità}
 
-Nel caso di oggetti immutabili come le stringhe gli alias non sono un problema. In questo esempio non fa quasi mai differenza se `a` e `b` si riferiscono alla stessa stringa o meno:
+Per gli oggetti immutabili come le stringhe, l'aliasing non è un gran problema. In questo esempio:
 
 ~~~~ {.python}
 a = 'banana'
 b = 'banana'
 ~~~~
 
+non fa quasi mai differenza se `a` e `b` si riferiscono alla stessa stringa o no.
 
-Elenchi come argomenti
+Liste come argomenti
 --------------
 
-\index{elenco!come argomento}
+\index{lista!come argomento}
 \index{argomento}
-\index{argomento!elenco}
+\index{argomento!lista}
 \index{riferimento}
 \index{parametro}
 
-Quando passate un elenco a una funzione, questa ottiene un riferimento all'elenco. Se la funzione modifica un parametro dell'elenco, il chiamante vede la modifica. Ad esempio `delete_head` rimuove il primo elemento di un elenco:
+Quando passi una lista a una funzione, la funzione riceve un riferimento alla lista. Se la funzione modifica un parametro di tipo lista, il chiamante vede la modifica. Ad esempio, `delete_head` rimuove il primo elemento da una lista:
 
 ~~~~ {.python}
 def delete_head(t):
     del t[0]
 ~~~~
 
+Ecco come si usa:
 
-Ecco come puoi utilizzarlo:
-
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> letters = ['a', 'b', 'c']
 >>> delete_head(letters)
 >>> print(letters)
@@ -616,14 +605,14 @@ Ecco come puoi utilizzarlo:
 
 Il parametro `t` e la variabile `letters` sono alias dello stesso oggetto.
 
-È importante distinguere tra operazioni che modificano elenchi e operazioni che creano nuovi elenchi. Nel prossimo esempio, il metodo `append` modifica un elenco, mentre l'operatore `+` ne crea uno nuovo:
+È importante distinguere tra le operazioni che modificano le liste e le operazioni che creano nuove liste. Ad esempio, il metodo `append` modifica una lista, ma l'operatore `+` crea una nuova lista:
 
 \index{metodo append}
 \index{metodo!append}
-\index{elenco!concantenazione}
-\index{concatezione!list}
+\index{lista!concatenazione}
+\index{concatenazione!lista}
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> t1 = [1, 2]
 >>> t2 = t1.append(3)
 >>> print(t1)
@@ -634,132 +623,123 @@ None
 >>> t3 = t1 + [3]
 >>> print(t3)
 [1, 2, 3]
->>> t2 is t3
+>>> t1 is t3
 False
 ~~~~
 
-
-Questa differenza è importante quando devi scrivere funzioni in grado di modificare degli elenchi. Ad esempio questa funzione *non* elimina il primo elemento di un elenco:
+Questa differenza è importante quando scrivi funzioni che devono modificare le liste. Ad esempio, questa funzione *non* elimina la testa di una lista:
 
 ~~~~ {.python}
 def bad_delete_head(t):
-    t = t[1:]              # ERRATO!
+    t = t[1:]              # WRONG!
 ~~~~
 
-
-L'operatore slice crea un nuovo elenco e l'assegnazione fa in modo che "t" si riferisca ad esso, senza che tutto questo abbia effetto sull'elenco che è stato passato come argomento.
-
+L'operatore slice crea una nuova lista e l'assegnazione fa sì che `t` si riferisca a essa, ma niente di tutto ciò ha effetto sulla lista che è stata passata come argomento.
 
 \index{operatore slice}
 \index{operatore!slice}
 
-
-Un'alternativa è scrivere una funzione che crei e restituisca un nuovo elenco. Ad esempio `tail` restituisce tutti gli elementi di un
-elenco tranne il primo:
+Un'alternativa è scrivere una funzione che crea e restituisce una nuova lista. Ad esempio, `tail` restituisce tutti gli elementi di una lista tranne il primo:
 
 ~~~~ {.python}
 def tail(t):
     return t[1:]
 ~~~~
 
-Ricorda che questa funzione lascia intatto l'elenco originale. Ecco come viene utilizzata:
+Questa funzione lascia invariata la lista originale. Ecco come si usa:
 
-~~~~ {.python .trinket}
+~~~~ {.python}
 >>> letters = ['a', 'b', 'c']
 >>> rest = tail(letters)
 >>> print(rest)
 ['b', 'c']
 ~~~~
 
-**Esercizio 1:** Scrivi una funzione chiamata `chop` che prenda un elenco, lo modifichi rimuovendo il primo e l'ultimo elemento e restituisca `None`.  
-
-Quindi scrivi una funzione chiamata `middle` che prenda un elenco e restituisca un nuovo elenco contenente tutti gli elementi tranne il primo e l'ultimo.
+**Esercizio 1:** Scrivi una funzione chiamata `chop` che accetta una lista e la modifica, rimuovendo il primo e l'ultimo elemento, e restituisce `None`. Poi scrivi una funzione chiamata `middle` che accetta una lista e restituisce una nuova lista che contiene tutti gli elementi tranne il primo e l'ultimo.
 
 Debug
 ---------
 
-\index{debugging}
+\index{debug}
 
-L'uso incauto degli elenchi (e di altri oggetti mutabili) può portarti a passare lunghe ore nelle operazioni di debug.
+Un uso disattento delle liste (e di altri oggetti mutabili) può portare a lunghe ore di debug. Ecco alcune trappole comuni e i modi per evitarle:
 
-Ecco alcuni problemi comuni e dei suggerimenti su come evitarli:
+1.  Non dimenticare che la maggior parte dei metodi delle liste modifica l'argomento e restituisce `None`. È l'opposto dei metodi delle stringhe, che restituiscono una nuova stringa e lasciano stare l'originale.
 
-1.  Non dimenticare che la maggior parte dei metodi applicabili agli elenchi modificano l'argomento e restituiscono `None`.
-    Questo è l'opposto del comportamento dei metodi di stringa che restituiscono una nuova stringa e lasciano immutato l'originale.
-
-    Stai attento se sei abituato a scrivere codice per le stringhe come questo:
-
+    Se sei abituato a scrivere codice per le stringhe come questo:
 
     ~~~~ {.python}
-        word = word.strip ()
+    word = word.strip()
     ~~~~
 
-    perché allora sarai tentato di scrivere codice come questo:
+    Viene la tentazione di scrivere codice per le liste come questo:
 
     ~~~~ {.python}
-        t = t.sort()           # ERRATO!
+    t = t.sort()           # WRONG!
     ~~~~
 
     \index{metodo sort}
     \index{metodo!sort}
 
-    Poiché `sort` restituisce `None`, la successiva operazione che eseguirai su `t` probabilmente fallirà.
+    Poiché `sort` restituisce `None`, è probabile che la successiva operazione che esegui con `t` fallisca.
 
-    Prima di utilizzare i metodi e gli operatori utilizzabili sugli elenchi, è necessario che tu legga attentamente la documentazione e li testi in modalità interattiva.
-    I metodi e gli operatori che gli elenchi condividono con altre sequenze (come le stringhe) sono documentati su
-    <https://docs.python.org/3.5/library/stdtypes.html#common-sequence-operations>.
-    I metodi e gli operatori che si applicano solo alle sequenze mutabili sono documentati su
-    <https://docs.python.org/3.5/library/stdtypes.html#mutable-sequence-types>.
+    Prima di usare i metodi e gli operatori delle liste, dovresti leggere con attenzione la documentazione e poi testarli in modalità interattiva. I metodi e gli operatori che le liste condividono con altre sequenze (come le stringhe) sono documentati su:
 
-2.  Scegliere sempre un solo idioma.
+    [docs.python.org/library/stdtypes.html#common-sequence-operations](https://docs.python.org/library/stdtypes.html#common-sequence-operations)
+
+    I metodi e gli operatori che si applicano solo alle sequenze mutabili sono documentati su:
+
+    [docs.python.org/library/stdtypes.html#mutable-sequence-types](https://docs.python.org/library/stdtypes.html#mutable-sequence-types)
+
+2.  Scegli un idioma e attieniti a quello.
 
     \index{idioma}
 
-    Parte dei problemi che hai con gli elenchi deriva dal fatto che ci sono troppi modi per fare le stesse cose.
-    Ad esempio, per rimuovere un elemento da un elenco, puoi usare `pop`, `remove`, `del`, o anche lo slice.
+    Parte del problema con le liste è che ci sono troppi modi di fare le cose. Ad esempio, per rimuovere un elemento da una lista puoi usare `pop`, `remove`, `del` o perfino un'assegnazione a una slice.
 
-    Per aggiungere un elemento puoi usare il metodo `append` o l'operatore `+`. Ma non dimenticare che questi sono corretti:
+    Per aggiungere un elemento puoi usare il metodo `append` o l'operatore `+`. Ma non dimenticare che questi sono giusti:
 
     ~~~~ {.python}
-        t.append (x)
-        t = t + [x]
+    t.append(x)
+    t = t + [x]
     ~~~~
 
     E questi sono sbagliati:
 
     ~~~~ {.python}
-        t.append([x])          # ERRATO!
-        t = t.append(x)        # ERRATO!
-        t + [x]                # ERRATO!
-        t = t + x              # ERRATO!
+    t.append([x])          # WRONG!
+    t = t.append(x)        # WRONG!
+    t + [x]                # WRONG!
+    t = t + x              # WRONG!
     ~~~~
 
-    Prova ognuno di questi esempi in modalità interattiva per assicurarti di capire come funzionano.
-    Noterai che solo l'ultima espressione genera un errore di esecuzione; le altre tre sono consentite ma fanno la cosa sbagliata.
+    Prova ognuno di questi esempi in modalità interattiva per assicurarti di capire cosa fanno. Nota che solo l'ultimo causa un errore di runtime; gli altri tre sono leciti, ma fanno la cosa sbagliata.
 
-3.  Fare delle copie per evitare gli alias.
+3.  Fai delle copie per evitare l'aliasing.
 
     \index{aliasing!copiare per evitare}
-    \index{copia!per evitare aliasing}
+    \index{copia!per evitare l'aliasing}
 
-    Se vuoi utilizzare un metodo come `sort` per modificare l'argomento ma hai la necessità di mantenere inalterato l'elenco originale, puoi farne una copia.
+    Se vuoi usare un metodo come `sort`, che modifica l'argomento, ma devi conservare anche la lista originale, puoi farne una copia.
 
     ~~~~ {.python}
-        orig = t [:]
-        t.sort ()
+    orig = t[:]
+    t.sort()
     ~~~~
 
-    In questo esempio puoi anche usare la funzione `sorted`, che ti restituisce un nuovo elenco ordinato lasciando intatto l'originale. Ma in tal caso devi evitare di usare `sorted` come nome di variabile!
+    In questo esempio potresti usare anche la funzione built-in `sorted`, che restituisce una nuova lista ordinata e lascia stare l'originale. Ma in quel caso dovresti evitare di usare `sorted` come nome di variabile!
 
-4.  Elenchi, `split` e file
+4.  Liste, `split` e file
 
-    Quando leggiamo e analizziamo file ci sono molte opportunità di imbattersi in input che possano mandare in crash il nostro programma, quindi è una buona idea rivisitare lo schema del *guardiano* quando capita di scrivere programmi che leggono cercando il classico "ago nel pagliaio".
+    Quando leggiamo e analizziamo i file, ci sono molte occasioni di incontrare un input che può mandare in crash il nostro programma, quindi è una buona idea riprendere lo schema del *guardiano* quando si tratta di scrivere programmi che leggono un file e cercano un "ago nel pagliaio".
 
-    Riprendiamo il programma che cerca il giorno della settimana nelle righe del nostro file:
+    Riprendiamo il nostro programma che cerca il giorno della settimana nelle righe `From` del nostro file:
 
-    `From stephen.marquard@uct.ac.za  Sat Jan  5 09:14:16 2008`
+    ~~~~
+    From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
+    ~~~~
 
-    Considerato che stiamo dividendo in parole questa frase, potremmo fare a meno dell'uso di `startswith` ed esaminare semplicemente la prima parola per determinare se ci interessa questa riga. Possiamo usare `continue` per saltare le righe che non hanno "From" come prima parola:
+    Dato che stiamo spezzando questa riga in parole, potremmo fare a meno di `startswith` e guardare semplicemente la prima parola della riga per stabilire se la riga ci interessa. Possiamo usare `continue` per saltare le righe che non hanno `From` come prima parola, come segue:
 
     ~~~~ {.python}
     fhand = open('mbox-short.txt')
@@ -769,124 +749,120 @@ Ecco alcuni problemi comuni e dei suggerimenti su come evitarli:
         print(words[2])
     ~~~~
 
-    Sembra molto più semplice e non abbiamo nemmeno bisogno di fare un `rstrip` per cancellare il fine stringa alla fine del file.
-    Ma è meglio?
+    Sembra molto più semplice e non dobbiamo nemmeno usare `rstrip` per rimuovere il newline alla fine del file. Ma è meglio?
 
     ~~~~
-            python search8.py
-            Sat
-            Traceback (most recent call last):
-              File "search8.py", line 5, in <module>
-                if words[0] != 'From' : continue
-            IndexError: list index out of range
+    python search8.py
+    Sat
+    Traceback (most recent call last):
+      File "search8.py", line 5, in <module>
+        if words[0] != 'From' : continue
+    IndexError: list index out of range
     ~~~~
 
-    Sembra funzionare dato che riusciamo a visualizzare il giorno della settimana della prima riga (Sat) ma poi il programma fallisce mostrando un errore di traceback. Cosa è andato storto? Quali dati hanno causato il blocco del nostro programma elegante, intelligente e molto "Pythonic"?
+    Più o meno funziona e vediamo il giorno della prima riga (`Sat`), ma poi il programma fallisce con un errore di traceback. Cos'è andato storto? Quali dati pasticciati hanno fatto fallire il nostro programma elegante, intelligente e molto Pythonic?
 
-    Potresti fissarlo a lungo scervellandoti o chiedere aiuto a qualcuno, ma l'approccio più rapido e intelligente è quello di aggiungere un'istruzione `print`. Il posto migliore per aggiungerla è proprio prima della riga in cui il programma ha dato errore e visualizzare i dati che sembrano causare l'errore.
+    Potresti fissarlo a lungo e scervellarti oppure chiedere aiuto a qualcuno, ma l'approccio più rapido e intelligente è aggiungere un'istruzione `print`. Il posto migliore per aggiungere l'istruzione `print` è subito prima della riga in cui il programma è fallito, per stampare i dati che sembrano causare l'errore.
 
-    Questo approccio può generare molte righe di output ma almeno avrai immediatamente qualche indizio su quale sia il problema. Quindi aggiungiamo un comando `print` della variabile `words` prima della riga cinque. Aggiungiamo persino un prefisso "Debug:" alla riga in modo da poter mantenere separato l'output normale da quello di debug.
+    Ora, questo approccio può generare molte righe di output, ma almeno avrai subito qualche indizio sul problema in questione. Quindi aggiungiamo una stampa della variabile `words` subito prima della riga cinque. Aggiungiamo anche un prefisso `Debug:` alla riga, così da tenere separati il nostro output normale e il nostro output di debug.
 
     ~~~~ {.python}
-        for line in fhand:
-            words = line.split()
-            print('Debug:', words)
-            if words[0] != 'From' : continue
-            print(words[2])
+    for line in fhand:
+        words = line.split()
+        print('Debug:', words)
+        if words[0] != 'From' : continue
+        print(words[2])
     ~~~~
 
-    Quando eseguiremo il programma, sullo schermo verranno visualizzati un mucchio di output ma alla fine vedremo il nostro output di debug seguito dal traceback e potremo sapere cosa è successo appena prima del messaggio d'errore.
+    Quando eseguiamo il programma, molto output scorre via dallo schermo, ma alla fine vediamo il nostro output di debug e il traceback, quindi sappiamo cos'è successo subito prima del traceback.
 
     ~~~~
-            Debug: ['X-DSPAM-Confidence:', '0.8475']
-            Debug: ['X-DSPAM-Probability:', '0.0000']
-            Debug: []
-            Traceback (most recent call last):
-              File "search9.py", line 6, in <module>
-                if words[0] != 'From' : continue
-            IndexError: list index out of range
+    Debug: ['X-DSPAM-Confidence:', '0.8475']
+    Debug: ['X-DSPAM-Probability:', '0.0000']
+    Debug: []
+    Traceback (most recent call last):
+      File "search9.py", line 6, in <module>
+        if words[0] != 'From' : continue
+    IndexError: list index out of range
     ~~~~
 
-    In ogni riga di debug viene visualizzato l'elenco di parole che otteniamo quando segmentiamo una riga. L'elenco di parole rimane vuoto  `[]` quando il programma si blocca. Se esaminiamo il file con un editor di testo potremo leggere in quel punto quanto segue:
+    Ogni riga di debug stampa la lista di parole che otteniamo quando dividiamo la riga in parole con `split`. Quando il programma fallisce, la lista di parole è vuota: `[]`. Se apriamo il file in un editor di testo e lo guardiamo, in quel punto appare così:
 
     ~~~~
-            X-DSPAM-Result: Innocent
-            X-DSPAM-Processed: Sat Jan  5 09:14:16 2008
-            X-DSPAM-Confidence: 0.8475
-            X-DSPAM-Probability: 0.0000
+    X-DSPAM-Result: Innocent
+    X-DSPAM-Processed: Sat Jan  5 09:14:16 2008
+    X-DSPAM-Confidence: 0.8475
+    X-DSPAM-Probability: 0.0000
 
-            Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39772
+    Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39772
     ~~~~
 
-    L'errore si verifica quando il nostro programma incappa in una riga vuota! Perché non abbiamo pensato quando stavamo scrivendo il codice che, ovviamente, ci sono "zero parole" su una riga vuota? In altre parole non abbiamo previsto che quando il codice cerca in una riga vuota la prima parola (`word [0]`) per verificare se corrisponde a "From", si blocca ed otteniamo l'errore "index out of range".
+    L'errore si verifica quando il nostro programma incontra una riga vuota! Naturalmente in una riga vuota ci sono "zero parole". Perché non ci abbiamo pensato quando scrivevamo il codice? Quando il codice cerca la prima parola (`word[0]`) per controllare se corrisponde a `From`, otteniamo un errore "index out of range".
 
-    Questo è ovviamente il posto perfetto per aggiungere un codice *guardiano* per evitare di controllare la prima parola se questa non è presente. Pur esistendo molti modi per proteggere questo codice, noi sceglieremo di verificare il numero di parole, prima di leggere la prima parola:
+    Questo naturalmente è il posto perfetto per aggiungere del codice *guardiano*, per evitare di controllare la prima parola se la prima parola non c'è. Ci sono molti modi per proteggere questo codice; noi sceglieremo di controllare il numero di parole che abbiamo prima di guardare la prima parola:
 
     ~~~~ {.python}
     fhand = open('mbox-short.txt')
     count = 0
     for line in fhand:
         words = line.split()
-        # print 'Debug:', words
+        # print('Debug:', words)
         if len(words) == 0 : continue
         if words[0] != 'From' : continue
         print(words[2])
-    ~~~~
+    ~~~~ 
 
-    Per prima cosa abbiamo "commentato" l'istruzione di debug `print` invece di rimuoverla, nel caso in cui avessimo nuovamente bisogno di eseguire il debug. Poi abbiamo aggiunto una istruzione "guardiana" che controlla se abbiamo zero parole e, se così fosse, usiamo `continue` per saltare alla riga successiva nel file.
+    Per prima cosa abbiamo trasformato in commento l'istruzione `print` di debug invece di rimuoverla, nel caso in cui la nostra modifica fallisca e dobbiamo fare di nuovo il debug. Poi abbiamo aggiunto un'istruzione guardiana che controlla se abbiamo zero parole e, in tal caso, usiamo `continue` per saltare alla riga successiva del file.
 
-    Possiamo pensare che le due istruzioni `continue` ci stiano aiutando a perfezionare l'insieme di righe "interessanti" per le nostre elaborazioni. Una riga che non ha parole è "poco interessante", quindi è meglio saltare alla riga successiva. Anche una riga che non inizi con "From" è poco interessante, quindi la ignoriamo.
+    Possiamo pensare alle due istruzioni `continue` come a un aiuto per affinare l'insieme delle righe che per noi sono "interessanti" e che vogliamo elaborare ancora. Una riga che non ha parole per noi è "non interessante", quindi saltiamo alla riga successiva. Una riga che non ha `From` come prima parola per noi non è interessante, quindi la saltiamo.
 
-    Dato che il nostro script viene eseguito regolarmente, forse ora è corretto.
-    La nostra istruzione guardiana fa in modo che il `words [0]` non generi mai un errore, ma forse non basta. Quando programmi, devi sempre pensare: "Cosa potrebbe andare storto?"
+    Il programma così modificato viene eseguito con successo, quindi forse è corretto. La nostra istruzione guardiana garantisce che `words[0]` non fallirà mai, ma forse non basta. Quando programmiamo, dobbiamo sempre pensare: "Cosa potrebbe andare storto?"
 
-**Esercizio 2:** scopri quale riga del programma precedente non è ancora adeguatamente protetta. Cerca di costruire un file di testo che faccia fallire il programma e quindi modifica il programma in modo che la riga sia adeguatamente protetta e testala nuovamente per essere sicuro che gestisca correttamente il nuovo file di testo.
+**Esercizio 2:** Scopri quale riga del programma qui sopra non è ancora protetta nel modo giusto. Vedi se riesci a costruire un file di testo che fa fallire il programma, poi modifica il programma in modo che la riga sia protetta nel modo giusto e testalo per assicurarti che gestisca il tuo nuovo file di testo.
 
-**Esercizio 3:** riscrivi il codice guardiano dell'esempio precedente senza le due istruzioni `if`.
-Usa invece un'espressione logica composta dall'operatore `and` e una singola istruzione `if`.
+**Esercizio 3:** Riscrivi il codice guardiano dell'esempio qui sopra senza due istruzioni `if`. Usa invece un'espressione logica composta, con l'operatore logico `or` e una sola istruzione `if`.
 
 Glossario
 --------
 
-**Alias**
-: Circostanza in cui due o più variabili si riferiscono allo stesso oggetto.
+**Aliasing**
+: Una circostanza in cui due o più variabili si riferiscono allo stesso oggetto.
 \index{aliasing}
 
 **Delimitatore**
-: Un carattere o una stringa utilizzata per indicare il punto in cui deve essere divisa una stringa.
+: Un carattere o una stringa usati per indicare dove va divisa una stringa.
 \index{delimitatore}
 
 **Elemento**
-: Uno dei valori in un elenco (o altra sequenza); viene chiamato anche oggetto.
+: Uno dei valori di una lista (o di un'altra sequenza); detto anche item.
 \index{elemento}
 
 **Equivalente**
-: Avere lo stesso valore.
+: Relativo a oggetti che hanno lo stesso valore.
 \index{equivalente}
 
 **Indice**
-: Un valore intero che indica la posizione di un elemento in un elenco.
+: Un valore intero che indica un elemento di una lista.
 \index{indice}
 
-
 **Identico**
-: Essere lo stesso oggetto (che implica l'equivalenza).
+: Relativo a oggetti che sono lo stesso oggetto (il che implica l'equivalenza).
 \index{identico}
 
-**Elenco**
+**Lista**
 : Una sequenza di valori.
-\index{elenco}
+\index{lista}
 
-**Elaborazione trasversale**
-: Accesso sequenziale a ciascun elemento in un elenco.
-\index{elenco!traversal}
+**Scorrimento di una lista**
+: L'accesso in sequenza a ogni elemento di una lista.
+\index{lista!scorrimento}
 
-**Elenco annidato**
-: Un elenco contenuto all'interno di un altro elenco.
+**Lista annidata**
+: Una lista che è un elemento di un'altra lista.
 \index{lista annidata}
 
 **Oggetto**
-: Qualcosa a cui una variabile può riferirsi. Un oggetto è caratterizzato da un tipo e un valore.
+: Qualcosa a cui una variabile può riferirsi. Un oggetto ha un tipo e un valore.
 \index{oggetto}
 
 **Riferimento**
@@ -896,14 +872,15 @@ Glossario
 Esercizi
 ---------
 
-**Esercizio 4:** scarica una copia del file
-[www.py4e.com/code3/romeo.txt](http://www.py4e.com/code3/romeo.txt)
-
 \index{Romeo e Giulietta}
 
-Scrivi un programma che lo apra e lo legga riga per riga. Dividi la riga in un elenco di parole usando la funzione `split`.
+**Esercizio 4: Trova tutte le parole uniche di un file**
 
-Controlla se ogni parola è già presente in un elenco. Se la parola non è nell'elenco, aggiungila. Al termine del programma, ordina e visualizza in ordine alfabetico le parole risultanti.
+Shakespeare ha usato oltre 20.000 parole nelle sue opere. Ma come faresti a stabilirlo? Come produrresti la lista di tutte le parole che Shakespeare ha usato? Scaricheresti tutte le sue opere, le leggeresti e terresti traccia a mano di tutte le parole uniche?
+
+Usiamo invece Python per riuscirci. Elenca tutte le parole uniche, in ordine alfabetico, memorizzate in un file `romeo.txt` che contiene una parte dell'opera di Shakespeare.
+
+Per cominciare, scarica una copia del file [www.py4e.com/code3/romeo.txt](http://www.py4e.com/code3/romeo.txt). Crea una lista di parole uniche, che conterrà il risultato finale. Scrivi un programma che apra il file `romeo.txt` e lo legga riga per riga. Per ogni riga, dividi la riga in una lista di parole usando la funzione `split`. Per ogni parola, controlla se la parola è già nella lista delle parole uniche. Se la parola non è nella lista delle parole uniche, aggiungila alla lista. Quando il programma ha finito, ordina e stampa la lista delle parole uniche in ordine alfabetico.
 
 ~~~~
 Enter file: romeo.txt
@@ -914,13 +891,17 @@ Enter file: romeo.txt
 'with', 'yonder']
 ~~~~
 
-**Esercizio 5:** Scrivi un programma per leggere i dati della casella di posta e quando trova la riga che inizia con "From", divida la riga in parole usando la funzione `split`. Siamo interessati a sapere chi ha inviato il messaggio indicato nella parola delle righe che iniziano con From.
+**Esercizio 5: Client di posta minimalista.**
 
-`From stephen.marquard@uct.ac.za Sat 5 Jan 09:14:16 2008`
+MBOX (mail box) è un formato di file molto diffuso per memorizzare e condividere una raccolta di email. Era usato dai primi server di posta e dalle prime applicazioni desktop. Senza entrare troppo nei dettagli, MBOX è un file di testo che memorizza le email una dopo l'altra. Le email sono separate da una riga speciale che inizia con `From ` (nota lo spazio). È importante: le righe che iniziano con `From:` (nota i due punti) descrivono l'email stessa e non fanno da separatore. Immagina di aver scritto un'applicazione di posta minimalista, che elenca gli indirizzi email dei mittenti nella posta in arrivo dell'utente e conta il numero di email.
 
-Analizza la riga From per visualizzarne la seconda parola, quindi conta anche il numero di righe From (non From:), visualizzandone il risultato alla fine.  
+Scrivi un programma che legga i dati della casella di posta e, quando trovi una riga che inizia con `From`, dividi la riga in parole usando la funzione `split`. Ci interessa chi ha inviato il messaggio, che è la seconda parola della riga `From`.
 
-Questo è un buon esempio di output con poche righe rimosse:
+~~~~
+From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008
+~~~~
+
+Analizzerai la riga `From` e stamperai la seconda parola di ogni riga `From`, poi conterai anche il numero di righe `From` (non `From:`) e stamperai il conteggio alla fine. Questo è un buon esempio di output, con alcune righe rimosse:
 
 ~~~~
 python fromcount.py
@@ -938,8 +919,9 @@ cwen@iupui.edu
 There were 27 lines in the file with From as the first word
 ~~~~
 
-**Esercizio 6:** Riscrivi il programma che richiede all'utente un elenco di numeri e ne visualizza il maggiore ed il minore, quando riceve in input la stringa "done".
-Il programma ora memorizzerà i numeri inseriti dall'utente in un elenco e tramite le funzioni `max()` e `min()` fornirà i numeri massimo e minimo quando l'utente fornisce in input la parola "done".  
+**Esercizio 6:**
+
+Riscrivi il programma che chiede all'utente una lista di numeri e stampa alla fine il massimo e il minimo dei numeri, quando l'utente inserisce `done`. Scrivi il programma in modo che memorizzi in una lista i numeri che l'utente inserisce e usi le funzioni `max()` e `min()` per calcolare il numero massimo e il numero minimo dopo la fine del ciclo.
 
 ~~~~
 Enter a number: 6
