@@ -19,9 +19,9 @@ I computer sono dotati di velocità oltre che di una grande quantità di memoria
 Ad esempio, guarda i primi tre paragrafi di questo capitolo e dimmi qual è la parola più usata e quante volte compare. Anche se sei in grado di leggere e capire le parole in pochi secondi, contarle è piuttosto difficoltoso in quanto non è il tipo di problema per cui la nostra mente è stata concepita. Per un computer è l'opposto: leggere e capire il testo scritto su un foglio è difficile, mentre è molto semplice contare le parole e indicarci quante volte è ripetuta la parola più usata.
 
 ~~~~ {.python}
-    python words.py
-    Enter file: words.txt
-    to 16
+python words.py
+Enter file: words.txt
+to 16
 ~~~~
 
 Il nostro "assistente personale per l'analisi delle informazioni" ci ha rapidamente detto che la parola `to` è stata usata sedici volte nei primi tre paragrafi di questo capitolo.
@@ -119,7 +119,7 @@ Questo è tutto e, a differenza di un cane, Python è già stato completamente a
 A tempo debito impareremo l'utilizzo di queste parole riservate. Per ora ci concentreremo sull'equivalente in Python di "parlare" (in linguaggio uomo-cane). Il bello di dire a Python di parlare è che possiamo persino indicargli cosa dire includendo un messaggio tra virgolette:
 
 ~~~~ {.python}
-    print('Hello world!')
+print('Hello world!')
 ~~~~
 
 E abbiamo anche scritto la nostra prima frase Python sintatticamente corretta. La frase inizia con la funzione `print` seguita da una stringa di testo a nostra scelta racchiusa tra virgolette singole. Le stringhe nelle istruzioni `print` sono racchiuse tra virgolette. Le virgolette singole e le virgolette doppie hanno la stessa funzione; la maggior parte delle persone utilizza le virgolette singole tranne nei casi in cui una virgoletta singola (che è anche un apostrofo) appare nella stringa.
@@ -136,11 +136,11 @@ A un certo punto, potrai aprire un terminale o una finestra di comando e, digita
 \index{modalità interattiva}
 
 ~~~~ {.python}
-    Python 3.11.6 (main, Nov  2 2023, 04:39:43)
-       [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
-    Type "help", "copyright", "credits" or "license" for more
-    information.
-    >>>
+Python 3.11.6 (main, Nov  2 2023, 04:39:43)
+   [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more
+information.
+>>>
 ~~~~
 
 Python è pronto per conversare con te: il prompt `>>>` è il modo di chiedere "Cosa vuoi che faccia dopo?" dell'interprete Python. Tutto quello che devi sapere è come comunicare in Python.
@@ -149,12 +149,12 @@ Python è pronto per conversare con te: il prompt `>>>` è il modo di chiedere "
 Supponiamo, ad esempio, che tu non sappia nemmeno le più basilari parole o frasi del linguaggio Python. Potresti voler utilizzare la frase di rito che usano gli astronauti quando, atterrati su un pianeta lontano, cercano di comunicare con gli abitanti:
 
 ~~~~ {.python}
-    >>> I come in peace, please take me to your leader
-      File "<stdin>", line 1
-        I come in peace, please take me to your leader
-          ^^^^
-    SyntaxError: invalid syntax
-    >>>
+>>> I come in peace, please take me to your leader
+File "<stdin>", line 1
+    I come in peace, please take me to your leader
+      ^^^^
+SyntaxError: invalid syntax
+>>>
 ~~~~
 
 Non sta andando molto bene: a meno che tu non pensi qualcosa velocemente, è probabile che gli abitanti del pianeta ti pugnalino con le loro lance, ti mettano su uno spiedo, ti arrostiscano sopra un fuoco e ti trasformino nel piatto principale della cena.
@@ -162,25 +162,25 @@ Non sta andando molto bene: a meno che tu non pensi qualcosa velocemente, è pro
 Fortunatamente hai portato con te una copia di questo libro e hai il dito fermo in questa pagina. Riprova:
 
 ~~~~ {.python}
-    >>> print('Hello world!')
-    Hello world!
+>>> print('Hello world!')
+Hello world!
 ~~~~
 
 Va molto meglio, quindi prova a comunicare ancora:
 
 ~~~~ {.python}
-    >>> print('You must be the legendary god that comes from the sky')
-    You must be the legendary god that comes from the sky
-    >>> print('We have been waiting for you for a long time')
-    We have been waiting for you for a long time
-    >>> print('Our legend says you will be very tasty with mustard')
-    Our legend says you will be very tasty with mustard
-    >>> print 'We will have a feast tonight unless you say
-      File "<stdin>", line 1
-        print 'We will have a feast tonight unless you say
-              ^
-    SyntaxError: unterminated string literal (detected at line 1)
-    >>>
+>>> print('You must be the legendary god that comes from the sky')
+You must be the legendary god that comes from the sky
+>>> print('We have been waiting for you for a long time')
+We have been waiting for you for a long time
+>>> print('Our legend says you will be very tasty with mustard')
+Our legend says you will be very tasty with mustard
+>>> print 'We will have a feast tonight unless you say
+  File "<stdin>", line 1
+    print 'We will have a feast tonight unless you say
+          ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>>
 ~~~~
 
 La conversazione stava andando così bene, poi quando hai fatto l'errore più piccolo che si possa fare usando il linguaggio Python, Python ha tirato di nuovo fuori le lance.
@@ -194,16 +194,16 @@ In un certo senso, quando utilizzi un programma scritto da qualcun altro, la con
 Prima di lasciare la nostra prima conversazione con l'interprete Python, dovresti probabilmente conoscere il modo corretto per dire "arrivederci" alla fine di una conversazione con gli abitanti del Pianeta Python:
 
 ~~~~ {.python}
-    >>> good-bye
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    NameError: name 'good' is not defined
-    >>> if you don't mind, I need to leave
-      File "<stdin>", line 1
-        if you don't mind, I need to leave
-                  ^
-    SyntaxError: unterminated string literal (detected at line 1)
-    >>> quit()
+>>> good-bye
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'good' is not defined
+>>> if you don't mind, I need to leave
+  File "<stdin>", line 1
+    if you don't mind, I need to leave
+              ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> quit()
 ~~~~
 
 Noterai che, nei due tentativi errati precedenti, l'errore è diverso. Nel secondo caso, `if` è una parola riservata e Python, vedendo la parola riservata, pensava che stessimo cercando di dirgli qualcosa, utilizzando una sintassi errata.
@@ -220,9 +220,9 @@ La CPU comprende solo quello che chiamiamo *linguaggio macchina*.
 Il linguaggio macchina è molto basilare e francamente molto stancante da scrivere poiché composto esclusivamente da zeri e uno:
 
 ~~~~
-    001010001110100100101010000001111
-    11100110000011101010010101101101
-    ...
+001010001110100100101010000001111
+11100110000011101010010101101101
+...
 ~~~~
 
 Il linguaggio macchina a prima vista sembra abbastanza semplice, dato che ci sono solo zeri e uno, ma la sua sintassi è molto più complessa e molto più intricata di quella del Python. Pertanto pochissimi programmatori scrivono in linguaggio macchina. Piuttosto si preferisce utilizzare vari "traduttori" per consentire ai programmatori di scrivere in linguaggi di alto livello come Python o JavaScript e lasciare a questi traduttori la conversione in linguaggio macchina per l'esecuzione da parte della CPU.
@@ -237,13 +237,13 @@ Python è un interprete e, quando lo avviamo in modalità interattiva, digitiamo
 Alcune delle righe di Python avvisano Python che vuoi che lui ricordi un valore per un secondo momento. Va quindi scelto un nome per quel valore da ricordare e da utilizzare per recuperarlo in un secondo momento. Con il termine *variabile* facciamo riferimento alle etichette che usiamo per riferirci a questi dati memorizzati.
 
 ~~~~ {.python}
-    >>> x = 6
-    >>> print(x)
-    6
-    >>> y = x * 7
-    >>> print(y)
-    42
-    >>>
+>>> x = 6
+>>> print(x)
+6
+>>> y = x * 7
+>>> print(y)
+42
+>>>
 ~~~~
 
 In questo esempio:
@@ -262,12 +262,12 @@ Nel sistema Windows, spesso questi eseguibili hanno un suffisso `.exe` o `.dll` 
 Se aprissimo un file eseguibile con un editor di testo, il contenuto ci sembrerebbe completamente folle e illeggibile:
 
 ~~~~
-    ^?ELF^A^A^A^@^@^@^@^@^@^@^@^@^B^@^C^@^A^@^@^@\xa0\x82
-    ^D^H4^@^@^@\x90^]^@^@^@^@^@^@4^@ ^@^G^@(^@$^@!^@^F^@
-    ^@^@4^@^@^@4\x80^D^H4\x80^D^H\xe0^@^@^@\xe0^@^@^@^E
-    ^@^@^@^D^@^@^@^C^@^@^@^T^A^@^@^T\x81^D^H^T\x81^D^H^S
-    ^@^@^@^S^@^@^@^D^@^@^@^A^@^@^@^A\^D^HQVhT\x83^D^H\xe8
-    ....
+^?ELF^A^A^A^@^@^@^@^@^@^@^@^@^B^@^C^@^A^@^@^@\xa0\x82
+^D^H4^@^@^@\x90^]^@^@^@^@^@^@4^@ ^@^G^@(^@$^@!^@^F^@
+^@^@4^@^@^@4\x80^D^H4\x80^D^H\xe0^@^@^@\xe0^@^@^@^E
+^@^@^@^D^@^@^@^C^@^@^@^T^A^@^@^T\x81^D^H^T\x81^D^H^S
+^@^@^@^S^@^@^@^D^@^@^@^A^@^@^@^A\^D^HQVhT\x83^D^H\xe8
+....
 ~~~~
 
 Non è semplice leggere o scrivere in linguaggio macchina, quindi è utile che si possa disporre di *interpreti* e *compilatori* che permettano di scrivere in linguaggi di alto livello come Python o C.
@@ -278,7 +278,7 @@ L'interprete di Python è scritto in un linguaggio di alto livello chiamato "C".
 Quindi Python è esso stesso un programma compilato in linguaggio macchina. Quando hai installato Python nel tuo computer (o se è stato installato dal venditore), hai copiato una versione in linguaggio macchina adatta per il tuo sistema. In Windows, il linguaggio macchina eseguibile per lo stesso Python è probabilmente in un file con un nome simile a:
 
 ~~~~
-    C:\Python35\python.exe
+C:\Python35\python.exe
 ~~~~
 
 Questo è più di quanto tu abbia davvero bisogno di sapere per essere un programmatore Python, ma a volte è utile rispondere subito a quelle piccole fastidiose domande.
@@ -296,10 +296,10 @@ Per eseguire uno script, devi indicare all'interprete Python il nome del file.
 In una finestra di comando puoi digitare `python hello.py` come nel codice sottostante:
 
 ~~~~ {.bash}
-    $ cat hello.py
-    print('Hello world!')
-    $ python hello.py
-    Hello world!
+$ cat hello.py
+print('Hello world!')
+$ python hello.py
+Hello world!
 ~~~~
 
 Il `$` è il prompt del sistema operativo e `cat hello.py` mostra che il file `hello.py` ha una riga di codice Python per stampare una stringa.
@@ -321,8 +321,8 @@ Potresti stampare il flusso dei post di Facebook e scorrere il testo per cercare
 Ad esempio, considera il seguente testo riguardante un clown e una macchina. Guarda il testo e cerca di capire quale sia la parola più comune e quante volte si ripete.
 
 ~~~~
-    the clown ran after the car and the car ran into the tent
-    and the tent fell down on the clown and the car
+the clown ran after the car and the car ran into the tent
+and the tent fell down on the clown and the car
 ~~~~
 
 Ora immagina di svolgere questo compito guardando milioni di righe di testo. Onestamente, è più rapido imparare Python e scrivere un programma per contare le parole, di quanto non sia fare la scansione manuale delle parole.
@@ -377,28 +377,28 @@ Come abbiamo visto nelle nostre precedenti conversazioni con Python, dobbiamo co
 I programmatori alle prime armi spesso citano il fatto che Python non lasci spazio a errori come prova che Python sia cattivo, odioso e crudele. Anche se sembra collaborare con tutti gli altri, Python riconosce i principianti e porta loro rancore. A causa di questo rancore, Python prende i nostri programmi scritti in maniera impeccabile e li rigetta come "inadatti" solo per tormentarci.
 
 ~~~~ {.python}
-    >>> primt 'Hello world!'
-      File "<stdin>", line 1
-        primt 'Hello world!'
-              ^^^^^^^^^^^^^^
-    SyntaxError: invalid syntax
+>>> primt 'Hello world!'
+File "<stdin>", line 1
+    primt 'Hello world!'
+          ^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
 
-    >>> primt ('Hello world')
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    NameError: name 'primt' is not defined. Did you mean: 'print'?
+>>> primt ('Hello world')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'primt' is not defined. Did you mean: 'print'?
 
-    >>> I hate you Python!
-      File "<stdin>", line 1
-        I hate you Python!
-          ^^^^
-    SyntaxError: invalid syntax
-    >>> if you come out of there, I would teach you a lesson
-      File "<stdin>", line 1
-        if you come out of there, I would teach you a lesson
-               ^^^^
-    SyntaxError: invalid syntax
-    >>>
+>>> I hate you Python!
+File "<stdin>", line 1
+    I hate you Python!
+      ^^^^
+SyntaxError: invalid syntax
+>>> if you come out of there, I would teach you a lesson
+File "<stdin>", line 1
+    if you come out of there, I would teach you a lesson
+           ^^^^
+SyntaxError: invalid syntax
+>>>
 ~~~~
 
 Si ottiene poco discutendo con Python: è solo uno strumento, non ha emozioni ed è felice e pronto a servirti ogni volta che tu ne abbia bisogno. I suoi messaggi di errore sono inclementi, ma rappresentano solo la richiesta di aiuto di Python: ha esaminato ciò che hai digitato e semplicemente non riesce a capire cosa tu voglia da lui.
@@ -578,18 +578,18 @@ d) Un documento di elaborazione di testo
 **Esercizio 5:** Cosa c'è di errato nel codice seguente?
 
 ~~~~ {.python}
-    >>> primt 'Hello world!'
-      File "<stdin>", line 1
-        primt 'Hello world!'
-                           ^
-    SyntaxError: invalid syntax
-    >>>
+>>> primt 'Hello world!'
+File "<stdin>", line 1
+  primt 'Hello world!'
+                     ^
+SyntaxError: invalid syntax
+>>>
 ~~~~
 
 **Esercizio 6:** In quale parte del computer viene memorizzata una variabile come `x` dopo l'esecuzione della seguente riga di Python?
 
 ~~~~ {.python}
-    x = 123
+x = 123
 ~~~~
 
 a\) CPU\
@@ -601,9 +601,9 @@ e) Dispositivi di output
 **Esercizio 7:** Cosa stamperà questo programma?
 
 ~~~~ {.python}
-    x = 43
-    x = x - 1
-    print(x)
+x = 43
+x = x - 1
+print(x)
 ~~~~
 
 a\) 43\
