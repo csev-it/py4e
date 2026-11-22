@@ -21,7 +21,7 @@ Ci sono diversi modi per creare una nuova lista; il più semplice è racchiudere
 ['crunchy frog', 'ram bladder', 'lark vomit']
 ~~~~
 
-Il primo esempio è una lista di quattro interi. Il secondo è una lista di tre stringhe. Gli elementi di una lista non devono essere dello stesso tipo. La lista seguente contiene una stringa, un numero in virgola mobile, un intero e (guarda un po'!) un'altra lista:
+Il primo esempio è una lista di quattro interi. Il secondo è una lista di tre stringhe. Gli elementi di una lista non devono per forza essere dello stesso tipo. La lista seguente contiene una stringa, un numero in virgola mobile, un intero e (guarda un po'!) un'altra lista:
 
 ~~~~ {.python}
 ['spam', 2.0, 5, [10, 20]]
@@ -37,7 +37,7 @@ Una lista che non contiene elementi è chiamata lista vuota; puoi crearne una co
 \index{lista vuota}
 \index{lista!vuota}
 
-Come puoi aspettarti, puoi assegnare valori di tipo lista alle variabili:
+Come potresti aspettarti, puoi assegnare valori di tipo lista alle variabili:
 
 ~~~~ {.python}
 >>> cheeses = ['Cheddar', 'Edam', 'Gouda']
@@ -285,7 +285,7 @@ Questo esempio lascia `t2` invariata.
 ['a', 'b', 'c', 'd', 'e']
 ~~~~
 
-La maggior parte dei metodi delle liste è vuota: modificano la lista e restituiscono `None`. Se per sbaglio scrivi `t = t.sort()`, resterai deluso dal risultato.
+La maggior parte dei metodi delle liste è vuota: modifica la lista e restituisce `None`. Se per sbaglio scrivi `t = t.sort()`, resterai deluso dal risultato.
 
 \index{metodo vuoto}
 \index{metodo!vuoto}
@@ -749,7 +749,7 @@ Un uso disattento delle liste (e di altri oggetti mutabili) può portare a lungh
         print(words[2])
     ~~~~
 
-    Sembra molto più semplice e non dobbiamo nemmeno usare `rstrip` per rimuovere il newline alla fine del file. Ma è meglio?
+    Sembra molto più semplice e non dobbiamo nemmeno usare `rstrip` per rimuovere il newline (il carattere di fine riga) alla fine del file. Ma è meglio?
 
     ~~~~
     python search8.py
@@ -895,7 +895,7 @@ Enter file: romeo.txt
 
 MBOX (mail box) è un formato di file molto diffuso per memorizzare e condividere una raccolta di email. Era usato dai primi server di posta e dalle prime applicazioni desktop. Senza entrare troppo nei dettagli, MBOX è un file di testo che memorizza le email una dopo l'altra. Le email sono separate da una riga speciale che inizia con `From ` (nota lo spazio). È importante: le righe che iniziano con `From:` (nota i due punti) descrivono l'email stessa e non fanno da separatore. Immagina di aver scritto un'applicazione di posta minimalista, che elenca gli indirizzi email dei mittenti nella posta in arrivo dell'utente e conta il numero di email.
 
-Scrivi un programma che legga i dati della casella di posta e, quando trovi una riga che inizia con `From`, dividi la riga in parole usando la funzione `split`. Ci interessa chi ha inviato il messaggio, che è la seconda parola della riga `From`.
+Scrivi un programma che legga i dati della casella di posta e, quando trovi una riga che inizia con `From`, dividerai la riga in parole usando la funzione `split`. Ci interessa chi ha inviato il messaggio, che è la seconda parola della riga `From`.
 
 ~~~~
 From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008
