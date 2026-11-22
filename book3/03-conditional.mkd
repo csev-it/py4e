@@ -432,8 +432,6 @@ In questo esempio il problema è che la seconda riga è indentata di uno spazio.
 
 In generale, i messaggi di errore dicono dove è stato scoperto il problema, ma spesso quel punto non coincide con il punto dove è stato causato.  
 
-\pagebreak
-
 Glossario
 --------
 
