@@ -113,6 +113,15 @@ Termini che ricorrono nel testo di più capitoli.
 | track | brano |  |
 | capabilities | capacità | tutorial ufficiale: 3 volte su 3 |
 | numeri di quattro cifre | senza punto | «1200», «3000»; il punto delle migliaia da cinque cifre in su («100.000») |
+| data visualization, to visualize | visualizzazione dei dati, visualizzare |  |
+| to crawl, to spider | scansionare | «scansione» per il nome; «spider» resta per il programma |
+| word cloud | nuvola di parole | con l'inglese tra parentesi alla prima comparsa |
+| map pin | segnaposto |  |
+| rate limit | limite di frequenza delle richieste | con l'inglese tra parentesi alla prima comparsa |
+| hard-coded | scritto direttamente nel codice |  |
+| cache, repository, dump, mailing list | cache, repository, dump, mailing list | restano in inglese |
+| ranking | classificazione | «PageRank» è il nome dell'algoritmo e resta com'è |
+| several | diversi | come «a number of» |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
