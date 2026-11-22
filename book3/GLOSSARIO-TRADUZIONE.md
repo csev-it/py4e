@@ -10,7 +10,7 @@ Non esiste un glossario ufficiale inglese-italiano di Python. Nella documentazio
 2. l'**uso prevalente nel libro**, contato sui capitoli 1-16;
 3. i **glossari di fine capitolo** del libro, confrontati voce per voce con l'originale inglese.
 
-Quando il tutorial ufficiale e il libro sono d'accordo, la voce è chiusa. Quando non lo sono, la voce è marcata «DA DECIDERE».
+Quando il tutorial ufficiale e il libro sono d'accordo, la voce è chiusa. Quando non lo sono, ha deciso il revisore; la nota riporta i conteggi.
 
 ## Scelte trasversali
 
@@ -85,7 +85,7 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 |---|---|---|---|
 | body | Blocco | corpo | il capitolo 4 usa già «corpo»; tutorial ufficiale: «corpo» |
 | boolean expression | Espressione booleana |  |  |
-| branch | Branch | ramo | DA DECIDERE: nel libro «branch» 11 volte, «ramo» 4; tutorial ufficiale: «ramo» |
+| branch | Branch | ramo | Deciso il 22 novembre 2026. nel libro «branch» 11 volte, «ramo» 4; tutorial ufficiale: «ramo» |
 | chained conditional | Condizione concatenata |  |  |
 | comparison operator | Operatore di comparazione | operatore di confronto | nel libro «confronto» 26 volte, «comparazione» 15; tutorial ufficiale: solo «confronto» |
 | conditional statement | Istruzione condizionale |  |  |
@@ -151,7 +151,7 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | object | Oggetto |  |  |
 | search | Ricerca |  |  |
 | sequence | Sequenza |  |  |
-| slice | Segmento | slice | DA DECIDERE: nel libro «slice/slicing» 30 volte, «segmento» 11; tutorial ufficiale: «slice» 9, «fetta» 3 |
+| slice | Segmento | slice | Deciso il 22 novembre 2026. nel libro «slice/slicing» 30 volte, «segmento» 11; tutorial ufficiale: «slice» 9, «fetta» 3 |
 | traverse | Traverse | scorrere | voce lasciata in inglese; nel testo si alterna con «attraversare» |
 
 ### Capitolo 7 (`07-files.mkd`)
@@ -174,7 +174,7 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | equivalent | Equivalente |  |  |
 | index | Indice |  |  |
 | identical | Identico |  |  |
-| list | Elenco | lista | DA DECIDERE: nel libro «elenco» 278 volte, «lista» 24; tutorial ufficiale: «lista» 91 volte su 107 |
+| list | Elenco | lista | Deciso il 22 novembre 2026. nel libro «elenco» 278 volte, «lista» 24; tutorial ufficiale: «lista» 91 volte su 107 |
 | list traversal | Elaborazione trasversale | scorrimento di una lista | «elaborazione trasversale» non rende «traversal» |
 | nested list | Elenco annidato | lista annidata | segue la scelta su «list» |
 | object | Oggetto |  |  |
@@ -204,7 +204,7 @@ La colonna «Nel libro» riporta la voce com'è oggi. La colonna «Scelta» è v
 | data structure | Struttura di dati |  |  |
 | DSU | DSU |  |  |
 | gather | Gather | raccolta (gather) | voce lasciata in inglese |
-| hashable | Hashabile | hashable | DA DECIDERE: «hashabile» è un calco; alternativa: lasciare il termine inglese |
+| hashable | Hashabile | hashable | Deciso il 22 novembre 2026. «hashabile» è un calco; alternativa: lasciare il termine inglese |
 | scatter | Scatter | spacchettamento (scatter) | voce lasciata in inglese |
 | shape (of a data structure) | Formato (di una struttura dati) |  |  |
 | singleton | Singleton |  |  |
