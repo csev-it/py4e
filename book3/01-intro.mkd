@@ -79,9 +79,9 @@ Nel resto di questo libro cercheremo di trasformarti in una persona esperta nell
 
 In un certo senso, avrai bisogno di due abilità per diventare un programmatore:
 
-Per prima cosa, dovrai conoscere il linguaggio di programmazione (Python): dovrai padroneggiarne vocabolario e grammatica. Dovrai essere in grado di scrivere correttamente le parole e sapere come costruire frasi "ben strutturate".
+- Per prima cosa, dovrai conoscere il linguaggio di programmazione (Python): dovrai padroneggiarne vocabolario e grammatica. Dovrai essere in grado di scrivere correttamente le parole e sapere come costruire frasi "ben strutturate".
 
-In secondo luogo, avrai bisogno di "raccontare una storia". Per scrivere una storia, devi combinare parole e frasi allo scopo di trasmettere un'idea al lettore. L'abilità nella produzione di storie è una capacità che si migliora scrivendo e ottenendo feedback. Nell'ambito della programmazione il nostro programma è la "storia" e il problema che stai cercando di risolvere è "l'idea".
+- In secondo luogo, avrai bisogno di "raccontare una storia". Per scrivere una storia, devi combinare parole e frasi allo scopo di trasmettere un'idea al lettore. L'abilità nella produzione di storie è una capacità che si migliora scrivendo e ottenendo feedback. Nell'ambito della programmazione il nostro programma è la "storia" e il problema che stai cercando di risolvere è "l'idea".
 
 Una volta che avrai imparato un linguaggio di programmazione come Python, sarà molto più facile impararne un secondo come JavaScript o C++. Sebbene il nuovo linguaggio di programmazione abbia un vocabolario e una grammatica molto diversi rispetto a Python, la modalità di affrontare un problema è la stessa in tutti i linguaggi di programmazione.
 
@@ -246,12 +246,7 @@ Alcune delle righe di Python avvisano Python che vuoi che lui ricordi un valore 
 >>>
 ~~~~
 
-In questo esempio:
-
-- chiediamo a Python di memorizzare il valore 6 e di adottare l'etichetta `x` per poter recuperare il valore in un secondo momento;
-- poi, tramite `print`, verifichiamo che Python abbia effettivamente memorizzato il valore;
-- poi chiediamo a Python di recuperare `x`, moltiplicarlo per 7 e mettere il nuovo risultato in `y`;
-- infine chiediamo a Python di stampare il valore attualmente contenuto in `y`.
+In questo esempio chiediamo a Python di memorizzare il valore sei e di adottare l'etichetta `x` per poter recuperare il valore in un secondo momento. Verifichiamo con `print` che Python abbia effettivamente memorizzato il valore. Poi chiediamo a Python di recuperare `x`, moltiplicarlo per sette e mettere il nuovo risultato in `y`. Poi chiediamo a Python di stampare il valore attualmente contenuto in `y`.
 
 Anche se stiamo digitando questi comandi una riga alla volta, Python li tratta come una sequenza ordinata di istruzioni permettendo alle istruzioni successive di recuperare i dati creati dalle precedenti. Abbiamo scritto il nostro primo semplice paragrafo, composto da quattro frasi in un ordine logico e dotato di significato.
 
