@@ -100,6 +100,19 @@ Termini che ricorrono nel testo di più capitoli.
 | retrieve, extract | recuperare, estrarre | non scambiarli |
 | Summary (titolo) | Riepilogo |  |
 | a number of | diversi, diverse | non «un certo numero di» |
+| database, query, join | database, query, join | restano in inglese: «il database» (invariato al plurale), «la query», «il join»; `JOIN` come codice quando è la parola chiave |
+| table, row, column, field | tabella, riga, colonna, campo |  |
+| data model, data modeling | modello dei dati, modellazione dei dati |  |
+| one-to-many, many-to-many | uno-a-molti, molti-a-molti |  |
+| junction / through / connector / join table | tabella di giunzione / intermedia / di collegamento / di join | con l'inglese tra parentesi alla prima comparsa |
+| crow's foot diagram | diagramma a zampa di gallina | forma in uso in italiano (pagine italiane di Lucid); alla prima comparsa «*diagrammi a zampa di gallina* (crow's foot diagrams)» |
+| embedded | incorporato | alla prima comparsa «*incorporato* (embedded)» |
+| directory, folder | directory, cartella | tutorial ufficiale: «directory» 25 volte su 26 |
+| connection, link (tra righe e tabelle) | connessione, collegamento | «connessione» solo per la connessione al database |
+| unique | univoco |  |
+| track | brano |  |
+| capabilities | capacità | tutorial ufficiale: 3 volte su 3 |
+| numeri di quattro cifre | senza punto | «1200», «3000»; il punto delle migliaia da cinque cifre in su («100.000») |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -329,19 +342,19 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | object | Oggetto | oggetto |  |
 | parent class | Classe genitore | classe padre | tutorial ufficiale: «classe padre» 2 volte su 2; coerente con «elemento padre» del capitolo 13. La traduzione del 2018 aveva «classe genitore» |
 
-### Capitolo 15 (`15-database.mkd`), da rivedere
+### Capitolo 15 (`15-database.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| attribute | Attributo |  |  |
-| constraint | Vincolo |  |  |
-| cursor | Cursore |  |  |
-| database browser | Browser del database |  |  |
-| foreign key | Chiave esterna |  |  |
-| index | Indice |  |  |
-| logical key | Chiave logica |  |  |
-| normalization | Normalizzazione |  |  |
-| primary key | Chiave primaria |  |  |
-| relation | Relazione |  |  |
-| tuple | Tupla |  |  |
+| attribute | Attributo | attributo |  |
+| constraint | Vincolo | vincolo | «uniqueness constraint» = «vincolo di unicità» |
+| cursor | Cursore | cursore |  |
+| database browser | Browser del database | browser di database | «Database Browser for SQLite» è il nome del prodotto e resta in inglese |
+| foreign key | Chiave esterna | chiave esterna |  |
+| index | Indice | indice |  |
+| logical key | Chiave logica | chiave logica |  |
+| normalization | Normalizzazione | normalizzazione |  |
+| primary key | Chiave primaria | chiave primaria |  |
+| relation | Relazione | relazione |  |
+| tuple | Tupla | tupla |  |
 
