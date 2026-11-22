@@ -433,7 +433,9 @@ Spam Spam Spam Spam
 
 
 L'argomento viene valutato prima che venga chiamata la funzione, quindi negli esempi precedenti le espressioni `'Spam '*4` e `math.cos(math.pi)` vengono valutate una sola volta.
+
 \index{argomento}
+
 Puoi anche usare una variabile come argomento:
 
 ~~~~ {.python}
