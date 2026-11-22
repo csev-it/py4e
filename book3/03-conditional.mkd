@@ -39,13 +39,13 @@ False
 L'operatore `==` è uno degli *operatori di confronto*; gli altri sono:
 
 ~~~~ {.python}
-      x != y               # x is not equal to y
-      x > y                # x is greater than y
-      x < y                # x is less than y
-      x >= y               # x is greater than or equal to y
-      x <= y               # x is less than or equal to y
-      x is y               # x is the same as y
-      x is not y           # x is not the same as y
+x != y               # x is not equal to y
+x > y                # x is greater than y
+x < y                # x is less than y
+x >= y               # x is greater than or equal to y
+x <= y               # x is less than or equal to y
+x is y               # x is the same as y
+x is not y           # x is not the same as y
 ~~~~
 
 
@@ -116,10 +116,10 @@ L'espressione booleana dopo l'istruzione `if` è chiamata *condizione*. L'istruz
 
 Se la condizione logica è vera, l'istruzione indentata viene eseguita. Se la condizione logica è falsa, l'istruzione indentata viene saltata.
 \index{condizione}
-\index{istruzioni composte}
+\index{istruzione composta}
 \index{istruzione!composta}
 
-Le istruzioni `if` hanno la stessa struttura delle definizioni di funzione o dei cicli `for`^[Impareremo a conoscere funzioni e cicli rispettivamente nel Capitolo 4 e 5.]. L'istruzione è composta da una riga di intestazione che termina con i due punti (:) seguita da un blocco indentato. Istruzioni come questa sono chiamate *istruzioni composte* perché si estendono su più righe.
+Le istruzioni `if` hanno la stessa struttura delle definizioni di funzione o dei cicli `for`^[Impareremo a conoscere funzioni e cicli rispettivamente nei capitoli 4 e 5.]. L'istruzione è composta da una riga di intestazione che termina con i due punti (:) seguita da un blocco indentato. Istruzioni come questa sono chiamate *istruzioni composte* perché si estendono su più righe.
 
 ~~~~ {.python}
 if x > y:
@@ -268,15 +268,15 @@ if 0 < x and x < 10:
 ~~~~
 
 
-Gestione delle eccezioni usando try ed except
+Catturare le eccezioni usando try ed except
 ----------------------------------------
 
 In precedenza abbiamo esaminato un segmento di codice in cui abbiamo utilizzato le funzioni `input` e `int` per leggere e analizzare un numero intero inserito dall'utente. Abbiamo anche visto che questo potrebbe risultare insidioso:
 
 ~~~~ {.python}
->>> prompt = "What...is the airspeed velocity of an unladen swallow?\n"
+>>> prompt = "What is the air velocity of an unladen swallow?\n"
 >>> speed = input(prompt)
-What...is the airspeed velocity of an unladen swallow?
+What is the air velocity of an unladen swallow?
 What do you mean, an African or a European swallow?
 >>> int(speed)
 ValueError: invalid literal for int() with
@@ -469,7 +469,7 @@ Glossario
 
 **Istruzione composta**
 : Un'istruzione formata da un'intestazione e da un corpo. L'intestazione termina con i due punti (:). Il corpo è indentato rispetto all'intestazione.
-\index{istruzioni composte}
+\index{istruzione composta}
 
 **Schema del guardiano**
 : La costruzione di un'espressione logica con confronti aggiuntivi, per sfruttare il comportamento di cortocircuito.
@@ -477,9 +477,7 @@ Glossario
 \index{schema!guardiano}
 
 **Operatore logico**
-: Uno degli operatori che combina espressioni booleane: `and`, `or`, e `not`.
-\index{operatore logico}
-\index{operatore!logico}
+: Uno degli operatori che combinano espressioni booleane: `and`, `or` e `not`.
 
 **Condizione annidata**
 : Un'istruzione condizionale che appare in uno dei rami di un'altra istruzione condizionale.
