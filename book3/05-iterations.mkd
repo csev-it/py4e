@@ -119,7 +119,9 @@ Ad esempio, supponi di voler ricevere input dall'utente finché non digita `done
 
 \VerbatimInput{../code3/copytildone1.py}
 
-La condizione del ciclo è `True`, che è sempre vera, quindi il ciclo viene ripetuto finché non incontra l'istruzione `break`. A ogni passaggio il programma mostra all'utente una parentesi angolare come prompt. Se l'utente digita `done`, l'istruzione `break` esce dal ciclo. Altrimenti il programma ripete qualsiasi cosa scriva l'utente e torna all'inizio del ciclo. Ecco un esempio di esecuzione:
+La condizione del ciclo è `True`, che è sempre vera, quindi il ciclo viene ripetuto finché non incontra l'istruzione `break`.
+
+A ogni passaggio il programma mostra all'utente una parentesi angolare come prompt. Se l'utente digita `done`, l'istruzione `break` esce dal ciclo. Altrimenti il programma ripete qualsiasi cosa scriva l'utente e torna all'inizio del ciclo. Ecco un esempio di esecuzione:
 
 ~~~~
 > hello there
@@ -144,7 +146,7 @@ Ecco un esempio di un ciclo che copia il suo input finché l'utente non digita "
 
 \VerbatimInput{../code3/copytildone2.py}
 
-Ecco un esempio di questo nuovo programma con l'aggiunta di `continue`.
+Ecco un esempio di esecuzione di questo nuovo programma con l'aggiunta di `continue`.
 
 ~~~~
 > hello there
@@ -187,7 +189,7 @@ Done!
 ~~~~
 
 
-La traduzione in inglese di questo ciclo `for` non è diretta come il `while`, ma se pensi agli amici come ad un *insieme*, funziona così: "Esegui le istruzioni nel corpo del ciclo `for` una volta per ogni amico (friend) *contenuto* nell'insieme chiamato amici (friends)."
+La traduzione in linguaggio naturale di questo ciclo `for` non è diretta come quella del `while`, ma se pensi agli amici come ad un *insieme*, funziona così: "Esegui le istruzioni nel corpo del ciclo `for` una volta per ogni amico (friend) *contenuto* nell'insieme chiamato amici (friends)."
 
 Guardando il ciclo `for`, *for* e *in* sono parole chiave riservate di Python, mentre `friend` e `friends` sono variabili.
 
@@ -213,7 +215,7 @@ Questi cicli sono generalmente costruiti in questo modo:
 
 - Osservazione delle variabili risultanti al termine del ciclo.
 
-Useremo una lista di numeri per dimostrare i concetti e la costruzione di questi schemi di ciclo.
+Useremo una lista di numeri per illustrare i concetti e la costruzione di questi schemi di ciclo.
 
 ### Cicli per contare e sommare
 
@@ -285,7 +287,7 @@ Largest: 74
 ~~~~
 
 
-La variabile `largest` si può pensare come il "valore più grande che abbiamo visto finora". Prima del ciclo impostiamo `largest` alla costante `None`. `None` è un valore costante speciale che possiamo memorizzare in una variabile per contrassegnarla come "vuota".
+È meglio considerare la variabile `largest` come il "valore più grande che abbiamo visto finora". Prima del ciclo impostiamo `largest` alla costante `None`. `None` è un valore costante speciale che possiamo memorizzare in una variabile per contrassegnarla come "vuota".
 
 Prima che il ciclo inizi, il valore più grande che abbiamo visto finora è `None`, poiché non abbiamo ancora visto alcun valore. Mentre il ciclo è in esecuzione, se `largest` è `None` prendiamo il primo valore che vediamo come il più grande finora. Puoi vedere che nella prima iterazione, quando il valore di `itervar` è 3, poiché `largest` è `None` impostiamo subito `largest` a 3.
 
