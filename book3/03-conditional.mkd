@@ -344,7 +344,7 @@ Please enter a number
 ~~~~
 
 
-Gestire un'eccezione con un'istruzione `try` si dice *catturare* (catch) un'eccezione. In questo esempio, la clausola `except` visualizza un messaggio di errore. In generale, catturare un'eccezione ti dà la possibilità di risolvere il problema, di riprovare o almeno di terminare il programma in modo elegante.  
+Gestire un'eccezione con un'istruzione `try` si dice *catturare* (catch) un'eccezione. In questo esempio, la clausola `except` stampa un messaggio di errore. In generale, catturare un'eccezione ti dà la possibilità di risolvere il problema, di riprovare o almeno di terminare il programma in modo elegante.  
 
 Valutazione in cortocircuito delle espressioni logiche
 -----------------------------------------------
@@ -485,7 +485,7 @@ Glossario
 \index{condizione!annidata}
 
 **Traceback**
-: Elenco delle funzioni in esecuzione che viene visualizzato quando si verifica un'eccezione.
+: Elenco delle funzioni in esecuzione, che viene stampato quando si verifica un'eccezione.
 \index{traceback}
 
 **Cortocircuito**
@@ -504,7 +504,7 @@ Pay: 475.0
 ~~~~
 
 
-**Esercizio 2:** Riscrivi il programma per il calcolo della retribuzione utilizzando `try` ed `except`, in modo che gestisca in maniera elegante gli input non numerici, visualizzando un messaggio e uscendo dal programma. Di seguito vengono mostrate due esecuzioni del programma:
+**Esercizio 2:** Riscrivi il programma per il calcolo della retribuzione utilizzando `try` ed `except`, in modo che gestisca in maniera elegante gli input non numerici, stampando un messaggio e uscendo dal programma. Di seguito vengono mostrate due esecuzioni del programma:
 
 ~~~~
 Enter Hours: 20
@@ -521,7 +521,7 @@ Error, please enter numeric input
 ~~~~
 
 
-**Esercizio 3:** Scrivi un programma che chieda un punteggio compreso tra 0.0 e 1.0. Se il punteggio è fuori dall'intervallo, visualizza un messaggio di errore. Se il punteggio è compreso tra 0.0 e 1.0, visualizza un voto utilizzando la seguente tabella:
+**Esercizio 3:** Scrivi un programma che chieda un punteggio compreso tra 0.0 e 1.0. Se il punteggio è fuori dall'intervallo, stampa un messaggio di errore. Se il punteggio è compreso tra 0.0 e 1.0, stampa un voto utilizzando la seguente tabella:
 
 ~~~~
  Score   Grade
