@@ -44,6 +44,10 @@ Termini che ricorrono nel testo di più capitoli.
 | central processing unit | CPU | deciso il 22 novembre 2026: «*unità centrale di elaborazione* (CPU, Central Processing Unit)» alla prima comparsa, poi «CPU» |
 | error message | messaggio di errore | tutorial ufficiale: «di errore» 9 volte, «d'errore» 0 |
 | debugging | debug | tutorial ufficiale: «debug» 5 volte, «debugging» 0 |
+| file handle | handle del file | deciso il 22 novembre 2026: «handle» resta in inglese; alla prima comparsa «*handle del file* (file handle)». Il tutorial ufficiale non ha il termine |
+| whitespace | spazi bianchi | voce d'indice «spazio bianco» |
+| pattern | schema | tutorial ufficiale: «schema» |
+| team | gruppo | non si aggiunge inglese dove non serve; «QA team» è «gruppo QA» |
 | nomi del codice nel testo | carattere da codice | deciso il 22 novembre 2026: funzioni, parole chiave, valori, variabili, file e ciò che l'utente digita vanno nel carattere da codice, anche dove l'originale usa corsivo o virgolette |
 
 ## Voci dei glossari di fine capitolo
@@ -172,15 +176,15 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | slice | Segmento | slice | deciso il 22 novembre 2026; tutorial ufficiale: «slice» 9 volte, «fetta» 3 |
 | traverse | Traverse | scorrere |  |
 
-### Capitolo 7 (`07-files.mkd`), da rivedere
+### Capitolo 7 (`07-files.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| catch | Catch | catturare (un'eccezione) | «gestire» traduce «handle» (tutorial ufficiale: «gestire» 27 volte su 30) |
-| newline | Newline |  |  |
-| Pythonic | Pythonic |  |  |
-| Quality Assurance | Controllo qualità |  |  |
-| text file | File di testo |  |  |
+| catch | Catch | catturare | «gestire» traduce «handle» (tutorial ufficiale: «gestire» 27 volte su 30) |
+| newline | Newline | newline | resta in inglese |
+| Pythonic | Pythonic | Pythonic | deciso il 22 novembre 2026: resta in inglese |
+| Quality Assurance | Controllo qualità | controllo qualità | deciso il 22 novembre 2026: «*controllo qualità* (Quality Assurance, o QA in breve)» alla prima comparsa, poi «QA» |
+| text file | File di testo | file di testo |  |
 
 ### Capitolo 8 (`08-lists.mkd`), da rivedere
 
