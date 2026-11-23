@@ -493,7 +493,7 @@ Glossario
 Esercizi
 ---------
 
-**Esercizio 1:** Riscrivi il tuo calcolo della retribuzione in modo da dare al dipendente 1,5 volte la tariffa oraria per le ore lavorate oltre le 40.
+**Esercizio 1:** Riscrivi il tuo calcolo della paga in modo da dare al dipendente 1,5 volte la tariffa oraria per le ore lavorate oltre le 40.
 
 ~~~~
 Enter Hours: 45
@@ -502,7 +502,7 @@ Pay: 475.0
 ~~~~
 
 
-**Esercizio 2:** Riscrivi il tuo programma della retribuzione usando `try` ed `except`, in modo che gestisca con eleganza un input non numerico, stampando un messaggio e uscendo dal programma. Ecco due esecuzioni del programma:
+**Esercizio 2:** Riscrivi il tuo programma della paga usando `try` ed `except`, in modo che gestisca con eleganza un input non numerico, stampando un messaggio e uscendo dal programma. Ecco due esecuzioni del programma:
 
 ~~~~
 Enter Hours: 20
