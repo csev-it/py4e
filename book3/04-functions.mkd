@@ -592,7 +592,7 @@ Glossario
 : La prima riga di una definizione di funzione.
 \index{intestazione}
 
-**Istruzione import**
+**Istruzione `import`**
 : Un'istruzione che legge il file di un modulo e crea un oggetto modulo.
 \index{istruzione import}
 \index{istruzione!import}
@@ -626,7 +626,7 @@ Esercizi
 
 **Esercizio 4:** A cosa serve la parola chiave `def` in Python?
 
-a\) È gergale e significa "il codice seguente è veramente fico"\
+a\) È un'espressione gergale che significa "il codice seguente è veramente fico"\
 b) Indica l'inizio di una funzione\
 c) Indica che la seguente sezione di codice indentata deve essere memorizzata per un uso successivo\
 d) b e c sono entrambe vere\
@@ -653,7 +653,7 @@ c) ABC Zap jane \
 d) ABC Zap ABC \
 e) Zap Zap Zap
 
-**Esercizio 6:** Riscrivi il calcolo della retribuzione con gli straordinari pagati il 50% in più e crea una funzione chiamata `computepay` che accetta due parametri (`hours` e `rate`).
+**Esercizio 6:** Riscrivi il calcolo della paga con gli straordinari pagati il 50% in più e crea una funzione chiamata `computepay` che accetta due parametri (`hours` e `rate`).
 
 ~~~~
 Enter Hours: 45
