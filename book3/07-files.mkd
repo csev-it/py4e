@@ -11,7 +11,7 @@ Persistenza
 \index{persistenza}
 \index{memoria secondaria}
 
-Finora abbiamo imparato a scrivere programmi e a comunicare le nostre intenzioni alla CPU usando l'esecuzione condizionale, le funzioni e le iterazioni. Abbiamo imparato a creare e usare strutture di dati nella *memoria principale*. La CPU e la memoria sono i luoghi in cui il nostro software lavora e viene eseguito. È lì che avviene tutto il "pensiero".
+Finora abbiamo imparato a scrivere programmi e a comunicare le nostre intenzioni alla CPU usando l'esecuzione condizionale, le funzioni e le iterazioni. Abbiamo imparato a creare e usare strutture dati nella *memoria principale*. La CPU e la memoria sono i luoghi in cui il nostro software lavora e viene eseguito. È lì che avviene tutto il "pensiero".
 
 Ma se ricordi i nostri discorsi sull'architettura hardware, una volta tolta l'alimentazione tutto ciò che è memorizzato nella CPU o nella memoria principale viene cancellato. Quindi finora i nostri programmi sono stati solo fugaci esercizi divertenti per imparare Python.
 
@@ -28,7 +28,7 @@ Aprire i file
 \index{funzione open}
 \index{funzione!open}
 
-Quando vogliamo leggere o scrivere un file (ad esempio sul tuo disco rigido), dobbiamo prima *aprire* il file. Aprirlo significa comunicare con il sistema operativo, che sa dove sono memorizzati i dati di ogni file. Quando apri un file, chiedi al sistema operativo di trovare il file in base al nome e di assicurarsi che esista. In questo esempio apriamo il file `mbox.txt`, che dovrebbe essere memorizzato nella stessa cartella in cui ti trovi quando avvii Python. Puoi scaricare questo file da [www.py4e.com/code3/mbox.txt](http://www.py4e.com/code3/mbox.txt)
+Quando vogliamo leggere o scrivere un file (ad esempio sul tuo disco rigido), dobbiamo prima *aprire* il file. Aprirlo significa comunicare con il sistema operativo, che sa dove sono memorizzati i dati di ogni file. Quando apri un file, chiedi al sistema operativo di trovare il file in base al nome e di assicurarsi che esista. In questo esempio apriamo il file `mbox.txt`, che dovrebbe essere memorizzato nella stessa cartella in cui ti trovi quando avvii Python. Puoi scaricare questo file da [www.py4e.com/code3/mbox.txt](http://www.py4e.com/code3/mbox.txt).
 
 ~~~~ {.python}
 >>> fhand = open('mbox.txt')
@@ -422,7 +422,7 @@ RECEIVED: FROM MURDER (MAIL.UMICH.EDU [141.211.14.90])
      SAT, 05 JAN 2008 09:14:16 -0500
 ~~~~
 
-Puoi scaricare il file da [www.py4e.com/code3/mbox-short.txt](http://www.py4e.com/code3/mbox-short.txt)
+Puoi scaricare il file da [www.py4e.com/code3/mbox-short.txt](http://www.py4e.com/code3/mbox-short.txt).
 
 **Esercizio 2:** Scrivi un programma che chieda il nome di un file, poi legga il file e cerchi le righe della forma:
 
