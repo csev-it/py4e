@@ -24,7 +24,7 @@ Enter file: words.txt
 to 16
 ~~~~
 
-Il nostro "assistente personale per l'analisi delle informazioni" ci ha detto subito che la parola `to` è stata usata sedici volte nei primi tre paragrafi di questo capitolo.
+Il nostro "assistente personale per l'analisi delle informazioni" ci ha detto subito che la parola `to` è stata usata sedici volte nei primi tre paragrafi di questo capitolo (nel testo originale inglese).
 
 Proprio il fatto che i computer siano bravi in cose in cui gli umani non lo sono è il motivo per cui devi diventare bravo a parlare la "lingua dei computer". Una volta imparata questa nuova lingua, puoi delegare i compiti banali al tuo partner (il computer) e avere così più tempo per le cose per cui solo tu sei portato. In questa collaborazione tu porti creatività, intuito e inventiva.
 
@@ -32,7 +32,7 @@ Creatività e motivazione
 -------------------------
 
 Questo libro non è pensato per i programmatori professionisti, ma programmare per professione può essere un lavoro molto gratificante, sia sul piano economico sia su quello personale.
-Costruire programmi utili, eleganti e ingegnosi, che altri possano usare, è un'attività molto creativa. Il tuo computer o il tuo assistente personale digitale (PDA) di solito contiene molti programmi diversi, scritti da molti gruppi diversi di programmatori, ciascuno in gara per conquistare la tua attenzione e il tuo interesse. Fanno del loro meglio per soddisfare le tue esigenze e, allo stesso tempo, per offrirti un'ottima esperienza d'uso. In certe situazioni, quando scegli un software, i programmatori vengono pagati direttamente grazie alla tua scelta.
+Costruire programmi utili, eleganti e ingegnosi, che altri possano usare, è un'attività molto creativa. Il tuo computer o il tuo assistente personale digitale (PDA, Personal Digital Assistant) di solito contiene molti programmi diversi, scritti da molti gruppi diversi di programmatori, ciascuno in gara per conquistare la tua attenzione e il tuo interesse. Fanno del loro meglio per soddisfare le tue esigenze e, allo stesso tempo, per offrirti un'ottima esperienza d'uso. In certe situazioni, quando scegli un software, i programmatori vengono pagati direttamente grazie alla tua scelta.
 
 Se pensiamo ai programmi come al prodotto creativo di gruppi di programmatori, forse la figura seguente è una versione più sensata del nostro PDA:
 
@@ -335,7 +335,7 @@ Questo è un buon esempio di come Python e il linguaggio Python facciano da inte
 Python è per noi un modo di scambiarci sequenze di istruzioni utili (cioè programmi) in un linguaggio comune, che può essere usato da chiunque installi Python sul proprio computer.
 Nessuno di noi due sta quindi parlando *a Python*: comunichiamo tra di noi *attraverso* Python.
 
-I blocchi per costruire i programmi
+Gli elementi di base dei programmi
 -------------------------------
 
 Nei prossimi capitoli impareremo di più sul vocabolario di Python e sulla struttura delle sue frasi, dei suoi paragrafi e delle sue storie. Conosceremo le potenti capacità di Python e impareremo a comporle per creare programmi utili.
@@ -364,7 +364,7 @@ Sembra quasi troppo semplice per essere vero e, naturalmente, non è mai così s
 
 Il programma per contare le parole visto sopra usa direttamente tutti questi schemi tranne uno.
 
-Cosa potrebbe andare storto?
+Cosa potrebbe mai andare storto?
 -----------------------------
 
 Come abbiamo visto nelle nostre prime conversazioni con Python, quando scriviamo codice Python dobbiamo comunicare in modo molto preciso. Basta la minima deviazione o il minimo errore perché Python rinunci a guardare il tuo programma.
@@ -472,7 +472,7 @@ Glossario
 --------
 
 **Analizzare**
-: Esaminare un programma e analizzare la struttura sintattica.
+: Esaminare un programma e studiarne la struttura sintattica.
 \index{analizzare}
 
 **Bug**
