@@ -7,7 +7,7 @@ Chiamate di funzione
 
 
 \index{chiamata di funzione}
-Nel contesto della programmazione, una *funzione* è una sequenza di istruzioni dotata di nome che esegue un calcolo. Quando definisci una funzione, ne specifichi il nome e la sequenza di istruzioni. In seguito puoi "chiamare" la funzione per nome. Abbiamo già visto un esempio di *chiamata di funzione*:
+Nel contesto della programmazione, una *funzione* è una sequenza di istruzioni con un nome, che esegue un calcolo. Quando definisci una funzione, ne specifichi il nome e la sequenza di istruzioni. In seguito puoi "chiamare" la funzione per nome. Abbiamo già visto un esempio di *chiamata di funzione*:
 
 ~~~~ {.python}
 >>> type(32)
@@ -15,20 +15,20 @@ Nel contesto della programmazione, una *funzione* è una sequenza di istruzioni 
 ~~~~
 
 
-Il nome della funzione è `type`. L'espressione tra parentesi è chiamata *argomento* della funzione. L'argomento è un valore o una variabile che passiamo alla funzione come input. Il risultato, per la funzione `type`, è il tipo dell'argomento.
+Il nome della funzione è `type`. L'espressione tra parentesi si chiama *argomento* della funzione. L'argomento è un valore o una variabile che passiamo alla funzione come input. Il risultato, per la funzione `type`, è il tipo dell'argomento.
 
-\index{parentesi!argomento in}
+\index{parentesi!argomento}
 
-Si dice comunemente che una funzione "accetta" un argomento e "restituisce" un risultato. Il risultato è chiamato *valore di ritorno*.
+Si dice comunemente che una funzione "accetta" un argomento e "restituisce" un risultato. Il risultato si chiama *valore di ritorno* (return value).
 \index{argomento}
 \index{valore di ritorno}
 
 Funzioni built-in
 ------------------
 
-Python fornisce un buon numero di importanti funzioni built-in, che possiamo usare senza doverne scrivere la definizione. I creatori di Python hanno scritto un insieme di funzioni per risolvere problemi comuni e le hanno incluse in Python perché le potessimo usare.
+Python fornisce diverse funzioni built-in importanti, che possiamo usare senza doverne scrivere la definizione. I creatori di Python hanno scritto un insieme di funzioni per risolvere problemi comuni e le hanno incluse in Python perché le potessimo usare.
 
-Le funzioni `max` e `min` ci danno rispettivamente il valore più grande e il valore più piccolo di una lista:
+Le funzioni `max` e `min` ci danno rispettivamente il valore più grande e il più piccolo di un elenco:
 
 ~~~~ {.python}
 >>> max('Hello world')
@@ -60,7 +60,7 @@ Funzioni di conversione dei tipi di dato
 
 \index{conversione!tipo}
 \index{conversione tra tipi}
-Altre funzioni built-in di Python ti permettono di convertire i valori da un tipo a un altro: ad esempio la funzione `int` accetta qualsiasi valore e, se è possibile, lo converte in un numero intero. In caso contrario si "lamenta" con un messaggio di errore:
+Python fornisce anche funzioni built-in che convertono i valori da un tipo a un altro. La funzione `int` accetta qualsiasi valore e, se può, lo converte in un intero; altrimenti si lamenta:
 \index{funzione int}
 \index{funzione!int}
 
@@ -73,7 +73,7 @@ ValueError: invalid literal for int() with base 10: 'Hello'
 ~~~~
 
 
-`int` può convertire valori in virgola mobile in numeri interi eliminando semplicemente la parte frazionaria senza arrotondare il dato:
+`int` può convertire in interi i valori in virgola mobile, ma non arrotonda; tronca la parte frazionaria:
 
 ~~~~ {.python}
 >>> int(3.99999)
@@ -116,14 +116,14 @@ Funzioni matematiche
 \index{funzione!matematica}
 \index{modulo}
 \index{oggetto modulo}
-Python ha un modulo `math` che fornisce la maggior parte delle funzioni matematiche più comuni. Prima di poter usare il modulo, dobbiamo importarlo:
+Python ha un modulo `math` che fornisce la maggior parte delle funzioni matematiche più note. Prima di poter usare il modulo, dobbiamo importarlo:
 
 ~~~~ {.python}
 >>> import math
 ~~~~
 
 
-Questa istruzione crea un *oggetto modulo* chiamato math. Se stampi l'oggetto modulo, ottieni alcune informazioni su di esso:
+Questa istruzione crea un *oggetto modulo* chiamato `math`. Se stampi l'oggetto modulo, ottieni alcune informazioni che lo riguardano:
 
 ~~~~ {.python}
 >>> print(math)
@@ -131,7 +131,7 @@ Questa istruzione crea un *oggetto modulo* chiamato math. Se stampi l'oggetto mo
 ~~~~
 
 
-L'oggetto modulo contiene le funzioni e le variabili definite nel modulo. Per accedere a una delle funzioni devi specificare il nome del modulo e il nome della funzione, separati da un punto. Questo formato è chiamato *notazione puntata*.
+L'oggetto modulo contiene le funzioni e le variabili definite nel modulo. Per accedere a una delle funzioni devi specificare il nome del modulo e il nome della funzione, separati da un punto. Questo formato si chiama *notazione puntata* (dot notation).
 \index{notazione puntata}
 
 
@@ -144,11 +144,11 @@ L'oggetto modulo contiene le funzioni e le variabili definite nel modulo. Per ac
 ~~~~
 
 
-Nel primo esempio viene calcolato il logaritmo in base 10 del rapporto segnale/rumore. Il modulo math è dotato anche di una funzione chiamata `log` che calcola i logaritmi in base e.
+Il primo esempio calcola il logaritmo in base 10 del rapporto segnale/rumore. Il modulo `math` fornisce anche una funzione chiamata `log`, che calcola i logaritmi in base $e$.
 \index{funzione log}
 \index{funzione!log}
 \index{funzione seno}
-\index{radianti}
+\index{radiante}
 \index{funzione trigonometrica}
 \index{funzione!trigonometrica}
 
@@ -163,7 +163,7 @@ Il secondo esempio calcola il seno di `radians`. Il nome della variabile suggeri
 ~~~~
 
 
-L'espressione `math.pi` prende la variabile `pi` dal modulo math. Il valore di questa variabile è un'approssimazione di $\pi$, accurata a circa 15 cifre.
+L'espressione `math.pi` prende la variabile `pi` dal modulo `math`. Il valore di questa variabile è un'approssimazione di $\pi$, precisa fino a circa 15 cifre.
 \index{pi greco}
 
 Se conosci la trigonometria, puoi controllare il risultato precedente confrontandolo con la radice quadrata di due fratto due:
@@ -184,9 +184,9 @@ Numeri casuali
 \index{numero!casuale}
 \index{deterministico}
 \index{pseudo-casuale}
-Dato lo stesso input, la maggior parte dei programmi per computer genera sempre lo stesso output. Per tale motivo vengono detti *deterministici*. Il determinismo di solito è una cosa auspicabile poiché ci aspettiamo che lo stesso calcolo produca sempre lo stesso risultato. Per alcune applicazioni, tuttavia, vogliamo che il computer sia imprevedibile. I giochi sono un esempio ovvio, ma ce ne sono altri.
+Con gli stessi input, la maggior parte dei programmi per computer genera ogni volta gli stessi output: per questo si dicono *deterministici*. Di solito il determinismo è un bene, perché ci aspettiamo che lo stesso calcolo produca lo stesso risultato. Per alcune applicazioni, però, vogliamo che il computer sia imprevedibile. I giochi sono un esempio ovvio, ma ce ne sono altri.
 
-Realizzare un programma veramente non deterministico non è così semplice come potrebbe sembrare a prima vista anche se esistono modi per farlo almeno sembrare tale. Uno di questi è usare *algoritmi* che generano numeri *pseudo-casuali*. I numeri pseudo-casuali non sono veramente casuali perché sono generati da un calcolo deterministico, ma osservando solo i numeri è quasi impossibile distinguerli da quelli casuali.
+Rendere un programma davvero non deterministico non è poi così facile, ma ci sono modi per farlo almeno sembrare tale. Uno di questi è usare *algoritmi* che generano numeri *pseudo-casuali* (pseudorandom). I numeri pseudo-casuali non sono davvero casuali, perché li genera un calcolo deterministico, ma guardando solo i numeri è quasi impossibile distinguerli da quelli casuali.
 
 \index{modulo random}
 \index{modulo!random}
@@ -195,7 +195,7 @@ Il modulo `random` fornisce funzioni che generano numeri pseudo-casuali (che chi
 \index{funzione random}
 \index{funzione!random}
 
-La funzione `random` restituisce un numero in virgola mobile casuale compreso tra 0.0 e 1.0 (comprendendo 0.0 ma non 1.0). Ogni volta che chiami `random`, ottieni il numero successivo di una lunga serie. Per vederne un esempio, esegui questo ciclo:
+La funzione `random` restituisce un numero casuale in virgola mobile compreso tra `0.0` e `1.0` (`0.0` incluso, `1.0` escluso). Ogni volta che chiami `random`, ottieni il numero successivo di una lunga serie. Per vederne un esempio, esegui questo ciclo:
 
 ~~~~ {.python}
 import random
@@ -206,7 +206,7 @@ for i in range(10):
 ~~~~
 
 
-Questo programma produce il seguente elenco di 10 numeri casuali compresi tra 0.0 e 1.0 (1.0 escluso).
+Questo programma produce il seguente elenco di 10 numeri casuali compresi tra `0.0` e `1.0` (`1.0` escluso).
 
 ~~~~
 0.11132867921152356
@@ -252,12 +252,12 @@ Per scegliere a caso un elemento da una sequenza puoi usare `choice`:
 
 
 
-Il modulo `random` fornisce anche funzioni per generare valori casuali da distribuzioni continue come la gaussiana, l'esponenziale, la gamma e qualche altra.
+Il modulo `random` fornisce anche funzioni per generare valori casuali da distribuzioni continue, tra cui la gaussiana, l'esponenziale, la gamma e qualche altra.
 
 Aggiungere nuove funzioni
 --------------------
 
-Finora abbiamo usato solo le funzioni fornite con Python, ma è anche possibile aggiungerne di nuove. Una *definizione di funzione* specifica il nome di una nuova funzione e la sequenza di istruzioni che vengono eseguite quando la funzione viene chiamata. Una volta definita una funzione, possiamo riutilizzarla più e più volte nel nostro programma.
+Finora abbiamo usato solo le funzioni fornite con Python, ma è anche possibile aggiungerne di nuove. Una *definizione di funzione* specifica il nome di una nuova funzione e la sequenza di istruzioni eseguite quando la funzione viene chiamata. Una volta definita una funzione, possiamo riutilizzarla più e più volte in tutto il nostro programma.
 \index{funzione}
 \index{definizione di funzione}
 \index{definizione!funzione}
@@ -271,7 +271,7 @@ def print_lyrics():
 ~~~~
 
 
-`def` è una parola chiave che indica che questa è una definizione di funzione. Il nome della funzione è `print_lyrics`. Per i nomi delle funzioni valgono le stesse regole dei nomi delle variabili: sono consentiti lettere, numeri e alcuni segni di punteggiatura, ma il primo carattere non può essere un numero. Non puoi usare una parola chiave come nome di una funzione, e dovresti evitare di dare lo stesso nome a una variabile e a una funzione.
+`def` è una parola chiave e indica che questa è una definizione di funzione. Il nome della funzione è `print_lyrics`. Per i nomi delle funzioni valgono le stesse regole dei nomi delle variabili: sono consentiti lettere, numeri e alcuni segni di punteggiatura, ma il primo carattere non può essere un numero. Non puoi usare una parola chiave come nome di una funzione, e dovresti evitare di dare lo stesso nome a una variabile e a una funzione.
 
 \index{parola chiave def}
 \index{parola chiave!def}
@@ -284,10 +284,10 @@ Le parentesi vuote dopo il nome indicano che questa funzione non accetta argomen
 \index{indentazione}
 \index{due punti}
 
-La prima riga della definizione di funzione è chiamata *intestazione*; il resto è chiamato *corpo*. L'intestazione deve terminare con i due punti e il corpo deve essere indentato. Per convenzione, l'indentazione è sempre di quattro spazi. Il corpo può contenere un numero qualsiasi di istruzioni.
+La prima riga della definizione di funzione si chiama *intestazione* (header); il resto si chiama *corpo* (body). L'intestazione deve terminare con i due punti e il corpo deve essere indentato. Per convenzione, l'indentazione è sempre di quattro spazi. Il corpo può contenere un numero qualsiasi di istruzioni.
 \index{puntini di sospensione}
 
-Se scrivi una definizione di funzione in modalità interattiva, l'interprete stampa dei puntini di sospensione (`...`) per farti sapere che la definizione non è completa:
+Se digiti una definizione di funzione in modalità interattiva, l'interprete stampa dei puntini di sospensione (`...`) per farti sapere che la definizione non è completa:
 
 ~~~~ {.python}
 >>> def print_lyrics():
@@ -312,7 +312,7 @@ Il valore di `print_lyrics` è un *oggetto funzione*, che ha tipo `function`.
 \index{oggetto funzione}
 \index{oggetto!funzione}
 
-La sintassi per chiamare la nuova funzione è la stessa utilizzata per le funzioni built-in:
+La sintassi per chiamare la nuova funzione è la stessa delle funzioni built-in:
 
 ~~~~ {.python}
 >>> print_lyrics()
@@ -321,7 +321,7 @@ I sleep all night and I work all day.
 ~~~~
 
 
-Una volta che avrai definito una funzione, potrai utilizzarla all'interno di un'altra funzione.
+Dopo aver definito una funzione, puoi usarla dentro un'altra funzione.
 Ad esempio, per ripetere il ritornello precedente, potremmo scrivere una funzione chiamata `repeat_lyrics`:
 
 ~~~~ {.python}
@@ -348,14 +348,14 @@ Definizioni e usi
 --------------------
 
 \index{definizione di funzione}
-Mettendo insieme i frammenti di codice della sezione precedente, l'intero programma ha questo aspetto:
+Se mettiamo insieme i frammenti di codice della sezione precedente, il programma completo è questo:
 
 \VerbatimInput{../code3/lyrics.py}
 
-Questo programma ha due definizioni di funzione: `print_lyrics` e `repeat_lyrics`. Le definizioni di funzione vengono eseguite come le altre istruzioni, ma il loro effetto è creare oggetti funzione. Le istruzioni all'interno della funzione non vengono eseguite finché la funzione non viene chiamata, e la definizione di funzione non genera alcun output.
-\index{uso prima di def}
+Questo programma ha due definizioni di funzione: `print_lyrics` e `repeat_lyrics`. Le definizioni di funzione vengono eseguite proprio come le altre istruzioni, ma il loro effetto è creare oggetti funzione. Le istruzioni all'interno della funzione non vengono eseguite finché la funzione non viene chiamata, e la definizione di funzione non genera alcun output.
+\index{uso prima della definizione}
 
-Come puoi immaginare, devi creare una funzione prima di poterla eseguire. In altre parole, la definizione della funzione deve essere eseguita prima della sua prima chiamata.
+Come puoi immaginare, devi creare una funzione prima di poterla eseguire. In altre parole, la definizione di funzione deve essere eseguita prima che la funzione venga chiamata per la prima volta.
 
 **Esercizio 2:** Sposta l'ultima riga di questo programma all'inizio, in modo che la chiamata di funzione compaia prima delle definizioni. Esegui il programma e guarda quale messaggio di errore ottieni.
 
@@ -365,7 +365,7 @@ Flusso di esecuzione
 -----------------
 
 \index{flusso di esecuzione}
-Per garantire che una funzione venga definita prima del suo primo utilizzo, devi conoscere l'ordine in cui vengono eseguite le istruzioni, il cosiddetto *flusso di esecuzione*.
+Per assicurarti che una funzione sia definita prima del suo primo uso, devi conoscere l'ordine in cui vengono eseguite le istruzioni, cioè il *flusso di esecuzione* (flow of execution).
 
 L'esecuzione inizia sempre dalla prima istruzione del programma. Le istruzioni vengono eseguite una alla volta, in ordine, dall'alto verso il basso.
 
@@ -390,7 +390,7 @@ Alcune delle funzioni built-in che abbiamo visto richiedono degli argomenti. Ad 
 
 All'interno della funzione, gli argomenti sono assegnati a variabili chiamate *parametri*.
 Ecco un esempio di una funzione definita dall'utente che accetta un argomento:
-\index{parentesi!parametri in}
+\index{parentesi!parametro}
 
 
 ~~~~ {.python}
@@ -402,7 +402,7 @@ def print_twice(bruce):
 
 Questa funzione assegna l'argomento a un parametro chiamato `bruce`. Quando la funzione viene chiamata, stampa due volte il valore del parametro (qualunque esso sia).
 
-Questa funzione opera con qualsiasi valore che possa essere stampato.
+Questa funzione va bene per qualsiasi valore che si possa stampare.
 
 ~~~~ {.python}
 >>> print_twice('Spam')
@@ -418,7 +418,7 @@ Spam
 ~~~~
 
 
-Dato che le regole di composizione che si applicano alle funzioni built-in si applicano anche a quelle definite dall'utente, possiamo usare qualsiasi tipo di espressione come argomento per `print_twice`:
+Le regole di composizione delle funzioni built-in valgono anche per le funzioni definite dall'utente, quindi possiamo usare qualsiasi tipo di espressione come argomento di `print_twice`:
 \index{composizione}
 
 
@@ -432,7 +432,7 @@ Spam Spam Spam Spam
 ~~~~
 
 
-L'argomento viene valutato prima che venga chiamata la funzione, quindi negli esempi precedenti le espressioni `'Spam '*4` e `math.cos(math.pi)` vengono valutate una sola volta.
+L'argomento viene valutato prima che la funzione sia chiamata, quindi negli esempi le espressioni `'Spam '*4` e `math.cos(math.pi)` vengono valutate una sola volta.
 
 \index{argomento}
 
@@ -455,9 +455,9 @@ Funzioni produttive e funzioni vuote
 \index{funzione vuota}
 \index{funzione!produttiva}
 \index{funzione!vuota}
-Alcune delle funzioni che stiamo usando, come ad esempio le funzioni matematiche, producono dei risultati; in mancanza di un nome migliore, le chiamo *funzioni produttive*. Altre funzioni, come `print_twice`, eseguono un'azione ma non restituiscono alcun valore. Sono chiamate *funzioni vuote*.
+Alcune delle funzioni che stiamo usando, come le funzioni matematiche, producono risultati; in mancanza di un nome migliore, le chiamo *funzioni produttive* (fruitful functions). Altre funzioni, come `print_twice`, eseguono un'azione ma non restituiscono alcun valore. Si chiamano *funzioni vuote* (void functions).
 
-Quando chiami una funzione produttiva, quasi sempre vuoi fare qualcosa con il risultato: ad esempio puoi assegnarlo a una variabile o usarlo come parte di un'espressione:
+Quando chiami una funzione produttiva, quasi sempre vuoi fare qualcosa con il risultato; ad esempio, potresti assegnarlo a una variabile o usarlo come parte di un'espressione:
 
 ~~~~ {.python}
 x = math.cos(radians)
@@ -498,7 +498,7 @@ None
 ~~~~
 
 
-Il valore `None` non è uguale alla stringa `'None'`: è un valore speciale che ha un tipo tutto suo:
+Il valore `None` non è la stessa cosa della stringa `'None'`. È un valore speciale che ha un tipo tutto suo:
 
 ~~~~ {.python}
 >>> print(type(None))
@@ -510,28 +510,28 @@ Per restituire un risultato da una funzione, usiamo l'istruzione `return` nella 
 
 \VerbatimInput{../code3/addtwo.py}
 
-Quando questo script viene eseguito, l'istruzione `print` stampa `8` perché la funzione `addtwo` è stata chiamata con 3 e 5 come argomenti. All'interno della funzione, i parametri `a` e `b` valevano rispettivamente 3 e 5. La funzione ha calcolato la somma dei due numeri e l'ha inserita in una variabile locale della funzione, chiamata `added`. Poi ha usato l'istruzione `return` per inviare il valore calcolato al codice chiamante come risultato della funzione; il valore è stato assegnato alla variabile `x` e stampato.
+Quando questo script viene eseguito, l'istruzione `print` stampa `8` perché la funzione `addtwo` è stata chiamata con `3` e `5` come argomenti. All'interno della funzione, i parametri `a` e `b` valevano rispettivamente `3` e `5`. La funzione ha calcolato la somma dei due numeri e l'ha inserita in una variabile locale della funzione, chiamata `added`. Poi ha usato l'istruzione `return` per rimandare il valore calcolato al codice chiamante come risultato della funzione; il valore è stato assegnato alla variabile `x` e stampato.
 
 Perché le funzioni?
 --------------
 
 \index{funzione!ragioni per usarla}
-Potrebbe non esserti chiaro il motivo per cui vale la pena di suddividere un programma in funzioni. I motivi sono diversi:
+Forse non è chiaro perché valga la pena di dividere un programma in funzioni. I motivi sono diversi:
 
-- la creazione di una nuova funzione ti dà l'opportunità di dare un nome a un insieme di istruzioni, facilitandoti la lettura, la comprensione e il debug del tuo programma;
-- le funzioni possono ridurre le dimensioni di un programma, eliminando il codice ripetitivo. Se in seguito fai una modifica, devi farla in un solo posto;
-- dividere in funzioni un programma esteso ti consente di eseguire il debug delle singole parti e solo dopo assemblarle in un insieme funzionante;
-- le funzioni ben progettate sono spesso utili in molti programmi: una volta scritta e corretta una funzione, puoi riutilizzarla.
+- Creare una nuova funzione ti dà l'occasione di dare un nome a un gruppo di istruzioni, e questo semplifica la lettura, la comprensione e il debug del programma.
+- Le funzioni possono rendere un programma più piccolo eliminando il codice ripetitivo. Se in seguito fai una modifica, ti basta farla in un solo punto.
+- Dividere un programma lungo in funzioni ti permette di fare il debug delle parti una alla volta e poi di assemblarle in un insieme funzionante.
+- Le funzioni ben progettate sono spesso utili per molti programmi. Dopo aver scritto una funzione e averne fatto il debug, puoi riutilizzarla.
 
-Nel resto del libro useremo spesso una definizione di funzione per spiegare un concetto. Parte dell'abilità nel creare e usare le funzioni sta nel fare in modo che una funzione catturi correttamente un'idea, come "trova il valore più piccolo in una lista di valori". Più avanti ti mostreremo il codice che trova il valore più piccolo in una lista di valori e te lo presenteremo come una funzione chiamata `min`, che accetta come argomento una lista di valori e restituisce il valore più piccolo della lista.  
+Nel resto del libro useremo spesso una definizione di funzione per spiegare un concetto. Parte dell'abilità nel creare e usare le funzioni sta nel fare in modo che una funzione racchiuda bene un'idea, come "trova il valore più piccolo in un elenco di valori". Più avanti ti mostreremo il codice che trova il valore più piccolo in un elenco di valori e te lo presenteremo come una funzione chiamata `min`, che accetta come argomento un elenco di valori e restituisce il valore più piccolo dell'elenco.
 
 Debug
 ---------
 
 \index{debug}
-Se usi un editor di testo per scrivere i tuoi script, potresti avere problemi con spazi e tabulazioni. Il modo migliore per evitarli è usare esclusivamente gli spazi (niente tabulazioni). La maggior parte degli editor di testo che conoscono Python lo fa in modo predefinito, ma alcuni no.
+Se usi un editor di testo per scrivere i tuoi script, potresti avere problemi con spazi e tabulazioni. Il modo migliore per evitarli è usare solo gli spazi (niente tabulazioni). La maggior parte degli editor di testo che conoscono Python lo fa per impostazione predefinita, ma alcuni no.
 
-\index{spaziatura}
+\index{spazio bianco}
 
 Tabulazioni e spazi sono di solito invisibili, il che rende difficile il debug: cerca quindi un editor che gestisca l'indentazione al posto tuo.
 
@@ -539,58 +539,54 @@ Inoltre, non dimenticare di salvare il programma prima di eseguirlo. Alcuni ambi
 
 Il debug può richiedere molto tempo se continui a eseguire più e più volte lo stesso programma sbagliato!
 
-Assicurati che il codice che stai guardando sia il codice che stai eseguendo. Se non ne sei sicuro, inserisci qualcosa come `print("hello")` all'inizio del programma ed eseguilo di nuovo. Se non vedi `hello`, non stai eseguendo il programma giusto!  
+Assicurati che il codice che stai guardando sia il codice che stai eseguendo. Se non ne sei sicuro, inserisci qualcosa come `print("hello")` all'inizio del programma ed eseguilo di nuovo. Se non vedi `hello`, non stai eseguendo il programma giusto!
 
 Glossario
 --------
 
 **Algoritmo**
-: Un processo generale destinato a risolvere una categoria di problemi.
+: Un procedimento generale per risolvere una categoria di problemi.
 \index{algoritmo}
 
 **Argomento**
 : Un valore fornito a una funzione quando questa viene chiamata. Questo valore è assegnato al parametro corrispondente nella funzione.
 \index{argomento}
 
-**Corpo**
-: La sequenza di istruzioni contenute in una definizione di funzione.
-\index{corpo}
-
-**Composizione**
-: Utilizzo di un'espressione come parte di un'espressione più grande o di un'istruzione come parte di un'istruzione più ampia.
-\index{composizione}
-
-**Deterministico**
-: Relativo a un programma che fa la stessa cosa ogni volta che viene eseguito, dati gli stessi input.
-\index{deterministico}
-
-**Notazione puntata**
-: La sintassi per chiamare una funzione di un altro modulo, specificando il nome del modulo seguito da un punto e dal nome della funzione.
-\index{notazione puntata}
-
-**Flusso di esecuzione**
-: L'ordine in cui le istruzioni vengono eseguite durante l'esecuzione di un programma.
-\index{flusso di esecuzione}
-
-**Funzione produttiva**
-: Una funzione che restituisce un valore.
-\index{funzione produttiva}
-
-**Funzione**
-: Una sequenza di istruzioni dotata di nome che svolge qualche operazione utile. Le funzioni possono accettare o non accettare argomenti e possono o meno produrre un risultato.
-\index{funzione}
-
 **Chiamata di funzione**
 : Un'istruzione che esegue una funzione. È composta dal nome della funzione seguito da un elenco di argomenti.
 \index{chiamata di funzione}
+
+**Composizione**
+: L'uso di un'espressione come parte di un'espressione più grande, o di un'istruzione come parte di un'istruzione più grande.
+\index{composizione}
+
+**Corpo**
+: La sequenza di istruzioni contenute in una definizione di funzione.
+\index{corpo}
 
 **Definizione di funzione**
 : Un'istruzione che crea una nuova funzione, specificandone il nome, i parametri e le istruzioni che esegue.
 \index{definizione di funzione}
 
-**Oggetto funzione**
-: Un valore creato da una definizione di funzione. Il nome della funzione è una variabile che fa riferimento a un oggetto funzione.
-\index{oggetto funzione}
+**Deterministico**
+: Relativo a un programma che fa la stessa cosa ogni volta che viene eseguito, dati gli stessi input.
+\index{deterministico}
+
+**Flusso di esecuzione**
+: L'ordine in cui le istruzioni vengono eseguite durante l'esecuzione di un programma.
+\index{flusso di esecuzione}
+
+**Funzione**
+: Una sequenza di istruzioni con un nome, che svolge qualche operazione utile. Le funzioni possono accettare argomenti oppure no, e possono produrre un risultato oppure no.
+\index{funzione}
+
+**Funzione produttiva**
+: Una funzione che restituisce un valore.
+\index{funzione produttiva}
+
+**Funzione vuota**
+: Una funzione che non restituisce alcun valore.
+\index{funzione vuota}
 
 **Intestazione**
 : La prima riga di una definizione di funzione.
@@ -601,12 +597,20 @@ Glossario
 \index{istruzione import}
 \index{istruzione!import}
 
+**Notazione puntata**
+: La sintassi per chiamare una funzione di un altro modulo, specificando il nome del modulo seguito da un punto e dal nome della funzione.
+\index{notazione puntata}
+
+**Oggetto funzione**
+: Un valore creato da una definizione di funzione. Il nome della funzione è una variabile che fa riferimento a un oggetto funzione.
+\index{oggetto funzione}
+
 **Oggetto modulo**
 : Un valore creato da un'istruzione `import`, che fornisce accesso ai dati e al codice definiti in un modulo.
 \index{modulo}
 
 **Parametro**
-: Un nome utilizzato all'interno di una funzione per fare riferimento al valore passato come argomento.
+: Un nome usato all'interno di una funzione per fare riferimento al valore passato come argomento.
 \index{parametro}
 
 **Pseudo-casuale**
@@ -614,12 +618,8 @@ Glossario
 \index{pseudo-casuale}
 
 **Valore di ritorno**
-: Il risultato di una funzione. Se una chiamata di funzione viene utilizzata come espressione, il valore di ritorno è il valore dell'espressione.
+: Il risultato di una funzione. Se una chiamata di funzione è usata come espressione, il valore di ritorno è il valore dell'espressione.
 \index{valore di ritorno}
-
-**Funzione vuota**
-: Una funzione che non restituisce alcun valore.
-\index{funzione vuota}
 
 Esercizi
 ---------
