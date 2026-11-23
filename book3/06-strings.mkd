@@ -448,13 +448,13 @@ La documentazione del metodo `find` è disponibile all'indirizzo
 
 <https://docs.python.org/library/stdtypes.html#string-methods>.
 
-Stringhe formattate letterali
+Stringhe letterali formattate
 -------------------------
 
-\index{stringa formattata letterale}
+\index{stringa letterale formattata}
 \index{f-string}
 
-Una stringa formattata letterale (spesso chiamata semplicemente f-string) permette di usare espressioni Python all'interno delle stringhe letterali. Per farlo si antepone una `f` alla stringa letterale e si racchiudono le espressioni tra parentesi graffe `{}`.
+Una *stringa letterale formattata* (spesso chiamata semplicemente *f-string*) permette di usare espressioni Python all'interno delle stringhe letterali. Per farlo si antepone una `f` alla stringa letterale e si racchiudono le espressioni tra parentesi graffe `{}`.
 
 Ad esempio, se racchiudi il nome di una variabile tra parentesi graffe dentro una f-string, il nome viene sostituito dal suo valore:
 
@@ -484,7 +484,7 @@ In una singola stringa letterale si possono includere più espressioni, per crea
 'In 3 years I have spotted 0.1 camels.'
 ~~~~
 
-Le stringhe formattate letterali sono potenti e possono fare anche più di quanto si è visto qui. Puoi saperne di più su
+Le stringhe letterali formattate sono potenti e possono fare anche più di quanto si è visto qui. Puoi saperne di più su
 
 <https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals>.
 
