@@ -115,7 +115,7 @@ Se commetti l'errore di eseguire questo codice, imparerai in fretta a fermare su
 
 Anche se questo è un ciclo infinito disfunzionale, possiamo comunque usare questo schema per costruire cicli utili, a patto di aggiungere con cura al corpo del ciclo il codice che esce esplicitamente dal ciclo con `break` quando abbiamo raggiunto la condizione di uscita.
 
-Ad esempio, supponi di voler ricevere input dall'utente finché non digita `done`. Potresti scrivere:
+Ad esempio, supponi di voler accettare input dall'utente finché non digita `done`. Potresti scrivere:
 
 \VerbatimInput{../code3/copytildone1.py}
 
@@ -253,7 +253,7 @@ Mentre il ciclo viene eseguito, `total` accumula la somma degli elementi; una va
 
 Né il ciclo di conteggio né il ciclo di somma sono particolarmente utili in pratica, perché esistono le funzioni built-in `len()` e `sum()`, che calcolano rispettivamente il numero di elementi di una lista e il totale degli elementi della lista.
 
-### Cicli di massimo e minimo
+### Cicli per il massimo e il minimo
 
 \index{ciclo!massimo}
 \index{ciclo!minimo}
