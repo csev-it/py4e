@@ -19,7 +19,7 @@ x = x + 1
 
 
 
-Ciò significa "prendi il valore corrente di `x`, aggiungi 1, quindi aggiorna `x` con il nuovo valore".
+Significa: "prendi il valore corrente di `x`, aggiungi 1 e poi aggiorna `x` con il nuovo valore".
 
 Se provi ad aggiornare una variabile che non esiste, ottieni un errore, perché Python valuta il lato destro prima di assegnare un valore a `x`:
 
@@ -29,7 +29,7 @@ NameError: name 'x' is not defined
 ~~~~
 
 
-Prima di poter aggiornare una variabile, devi *inizializzarla*, solitamente con una semplice assegnazione:
+Prima di poter aggiornare una variabile, devi *inizializzarla*, di solito con una semplice assegnazione:
 \index{inizializzazione (prima dell'aggiornamento)}
 
 
@@ -39,7 +39,7 @@ Prima di poter aggiornare una variabile, devi *inizializzarla*, solitamente con 
 ~~~~
 
 
-L'aggiornamento di una variabile aggiungendo 1 viene chiamato *incremento*; sottrarre 1 è definito *decremento*.
+Aggiornare una variabile aggiungendo 1 si chiama *incremento*; sottrarre 1 si chiama *decremento*.
 
 \index{incremento}
 \index{decremento}
@@ -52,9 +52,9 @@ L'istruzione `while`
 \index{ciclo!while}
 \index{iterazione}
 
-I computer sono spesso usati per automatizzare attività ripetitive. Ripetere compiti identici o simili senza fare errori è qualcosa che i computer fanno bene e le persone fanno male. Poiché l'iterazione è molto comune, Python fornisce diverse funzionalità del linguaggio per renderla più semplice.
+I computer vengono usati spesso per automatizzare compiti ripetitivi. Ripetere compiti identici o simili senza fare errori è una cosa che i computer fanno bene e le persone fanno male. Poiché l'iterazione è così comune, Python fornisce diverse funzionalità del linguaggio per renderla più facile.
 
-Una forma di iterazione in Python è l'istruzione `while`. Ecco un semplice programma che esegue un conto alla rovescia partendo da cinque e poi dice `Blastoff!`.
+Una forma di iterazione in Python è l'istruzione `while`. Ecco un semplice programma che fa il conto alla rovescia da cinque e poi dice `Blastoff!`.
 
 ~~~~ {.python}
 n = 5
@@ -69,7 +69,7 @@ Puoi quasi leggere l'istruzione `while` come se fosse scritta in inglese. Signif
 
 \index{flusso di esecuzione}
 
-Più formalmente, ecco il flusso di esecuzione per un'istruzione `while`:
+Più formalmente, ecco il flusso di esecuzione di un'istruzione `while`:
 
 1.  Valuta la condizione, ottenendo come risultato `True` o `False`.
 
@@ -77,28 +77,28 @@ Più formalmente, ecco il flusso di esecuzione per un'istruzione `while`:
 
 3.  Se la condizione è vera, esegui il corpo e torna al passaggio 1.
 
-Questo tipo di flusso è chiamato *ciclo* (loop) perché il terzo passaggio torna indietro all'inizio. Ogni esecuzione del corpo del ciclo è chiamata *iterazione*. Del ciclo precedente diremmo: "Ha avuto cinque iterazioni", cioè il corpo del ciclo è stato eseguito cinque volte.
+Questo tipo di flusso è chiamato *ciclo* (loop) perché il terzo passaggio torna indietro all'inizio. Chiamiamo *iterazione* ogni esecuzione del corpo del ciclo. Del ciclo qui sopra diremmo: "Ha fatto cinque iterazioni", cioè il corpo del ciclo è stato eseguito cinque volte.
 
 \index{condizione}
 \index{ciclo}
 \index{corpo}
 
-Il corpo del ciclo dovrebbe cambiare il valore di una o più variabili in modo da far diventare infine falsa la condizione e far sì che il ciclo termini. Chiamiamo *variabile di iterazione* la variabile che cambia ogni volta che il ciclo viene eseguito e controlla quando il ciclo terminerà. Se non esiste una variabile di iterazione, il ciclo si ripeterà per sempre dando luogo a un *ciclo infinito*.
+Il corpo del ciclo dovrebbe cambiare il valore di una o più variabili, in modo che prima o poi la condizione diventi falsa e il ciclo termini. Chiamiamo *variabile di iterazione* la variabile che cambia ogni volta che il ciclo viene eseguito e controlla quando il ciclo finisce. Se non c'è una variabile di iterazione, il ciclo si ripeterà per sempre, e il risultato è un *ciclo infinito*.
 
 Cicli infiniti
 --------------
 
-Una fonte inesauribile di divertimento per i programmatori è l'osservazione che le istruzioni sui flaconi di shampoo, "Insapona, risciacqua, ripeti", sono un ciclo infinito, perché non esiste una *variabile di iterazione* che dica quante volte eseguire il ciclo.
+Per i programmatori è una fonte inesauribile di divertimento osservare che le istruzioni sul flacone dello shampoo, "Insapona, risciacqua, ripeti", sono un ciclo infinito, perché non c'è una *variabile di iterazione* che ti dica quante volte eseguire il ciclo.
 
 \index{ciclo infinito}
 \index{ciclo!infinito}
 
-Nel caso di `countdown`, possiamo dimostrare che il ciclo terminerà perché sappiamo che il valore di `n` è finito e possiamo vedere che il valore di `n` diminuisce ogni volta che si esegue il ciclo, quindi alla fine dobbiamo arrivare a 0. Altre volte un ciclo è evidentemente infinito, perché non ha affatto una variabile di iterazione.
+Nel caso di `countdown` possiamo dimostrare che il ciclo termina, perché sappiamo che il valore di `n` è finito e possiamo vedere che il valore di `n` diminuisce a ogni passaggio del ciclo, quindi prima o poi dobbiamo arrivare a 0. Altre volte un ciclo è evidentemente infinito, perché non ha nessuna variabile di iterazione.
 
 \index{istruzione break}
 \index{istruzione!break}
 
-A volte non sai che è il momento di terminare un ciclo finché non arrivi a metà del corpo. In tal caso puoi scrivere di proposito un ciclo infinito e poi usare l'istruzione `break` per uscire dal ciclo.
+A volte non sai che è il momento di terminare un ciclo finché non arrivi a metà del corpo. In questo caso puoi scrivere di proposito un ciclo infinito e poi usare l'istruzione `break` per uscire dal ciclo.
 
 Il ciclo seguente è ovviamente un *ciclo infinito* perché l'espressione logica nell'istruzione `while` è semplicemente la costante logica `True`:
 
@@ -111,7 +111,7 @@ print('Done!')
 ~~~~
 
 
-Se commetti l'errore di eseguire questo codice, imparerai rapidamente a fermare un processo Python fuori controllo sul tuo sistema o a trovare il pulsante di spegnimento sul tuo computer. Questo programma verrà eseguito per sempre o fino a quando la tua batteria si esaurirà perché l'espressione logica nella parte superiore del ciclo è sempre vera in virtù del fatto che l'espressione è il valore costante `True`.
+Se commetti l'errore di eseguire questo codice, imparerai in fretta a fermare sul tuo sistema un processo Python fuori controllo, o a trovare dov'è il pulsante di spegnimento del computer. Questo programma resterà in esecuzione per sempre, o finché la batteria non si esaurisce, perché l'espressione logica all'inizio del ciclo è sempre vera, dato che è il valore costante `True`.
 
 Anche se questo è un ciclo infinito disfunzionale, possiamo comunque usare questo schema per costruire cicli utili, a patto di aggiungere con cura al corpo del ciclo il codice che esce esplicitamente dal ciclo con `break` quando abbiamo raggiunto la condizione di uscita.
 
@@ -121,7 +121,7 @@ Ad esempio, supponi di voler ricevere input dall'utente finché non digita `done
 
 La condizione del ciclo è `True`, che è sempre vera, quindi il ciclo viene ripetuto finché non incontra l'istruzione `break`.
 
-A ogni passaggio il programma mostra all'utente una parentesi angolare come prompt. Se l'utente digita `done`, l'istruzione `break` esce dal ciclo. Altrimenti il programma ripete qualsiasi cosa scriva l'utente e torna all'inizio del ciclo. Ecco un esempio di esecuzione:
+A ogni passaggio il programma mostra all'utente una parentesi angolare come prompt. Se l'utente digita `done`, l'istruzione `break` fa uscire dal ciclo. Altrimenti il programma ripete tutto ciò che l'utente digita e torna all'inizio del ciclo. Ecco un esempio di esecuzione:
 
 ~~~~
 > hello there
@@ -133,16 +133,16 @@ Done!
 ~~~~
 
 
-Questo è un modo comune di scrivere cicli `while` perché puoi controllare la condizione in qualsiasi punto del ciclo (non solo nella parte superiore) e puoi esprimere la condizione di arresto in modo affermativo ("fermati quando questo accade") piuttosto che in modo negativo ("continua finché quello non accade").
+Questo modo di scrivere i cicli `while` è comune perché puoi controllare la condizione in qualsiasi punto del ciclo (non solo all'inizio) e puoi esprimere la condizione di arresto in forma affermativa ("fermati quando succede questo") invece che in forma negativa ("continua finché non succede quello").
 
 Terminare le iterazioni con `continue`
 -----------------------------------------------
 
 \index{istruzione continue}
 \index{istruzione!continue}
-A volte ti trovi in un'iterazione di un ciclo e vuoi terminare l'iterazione corrente e passare subito alla successiva. In questo caso puoi usare l'istruzione `continue` per saltare all'iterazione successiva senza completare il corpo del ciclo per l'iterazione corrente.
+A volte, durante un'iterazione di un ciclo, vuoi terminare l'iterazione corrente e passare subito alla successiva. In questo caso puoi usare l'istruzione `continue` per saltare all'iterazione successiva senza completare il corpo del ciclo per l'iterazione corrente.
 
-Ecco un esempio di un ciclo che copia il suo input finché l'utente non digita `done`, ma tratta le righe che iniziano con il carattere cancelletto come righe da non stampare (un po' come i commenti di Python).
+Ecco un esempio di ciclo che copia il suo input finché l'utente non digita `done`, ma tratta le righe che iniziano con il carattere cancelletto come righe da non stampare (un po' come i commenti di Python).
 
 \VerbatimInput{../code3/copytildone2.py}
 
@@ -161,15 +161,15 @@ Done!
 
 Vengono stampate tutte le righe tranne quella che inizia con il cancelletto perché, quando viene eseguito `continue`, l'iterazione corrente termina e si torna all'istruzione `while` per iniziare l'iterazione successiva, saltando così l'istruzione `print`.
 
-Cicli definiti con l'uso di `for`
+Cicli definiti con `for`
 --------------------------------------
 
 \index{istruzione for}
 \index{istruzione!for}
 
-A volte vogliamo eseguire un ciclo su un *insieme* di cose, come una lista di parole, le righe di un file o una lista di numeri. Quando abbiamo una lista di cose su cui eseguire il ciclo, possiamo costruire un ciclo *definito* usando un'istruzione `for`. Chiamiamo l'istruzione `while` un ciclo *indefinito* perché si ripete semplicemente finché una condizione non diventa `False`, mentre il ciclo `for` scorre un insieme noto di elementi ed esegue tante iterazioni quanti sono gli elementi dell'insieme.
+A volte vogliamo scorrere un *insieme* di cose, come un elenco di parole, le righe di un file o un elenco di numeri. Quando abbiamo un elenco di cose da scorrere, possiamo costruire un ciclo *definito* con un'istruzione `for`. Chiamiamo l'istruzione `while` ciclo *indefinito* perché si limita a ripetersi finché una condizione non diventa `False`, mentre il ciclo `for` scorre un insieme noto di elementi e quindi esegue tante iterazioni quanti sono gli elementi dell'insieme.
 
-La sintassi di un ciclo `for` è simile a quella del ciclo `while`, in quanto ci sono un'istruzione `for` e un corpo del ciclo:
+La sintassi di un ciclo `for` è simile a quella del ciclo `while`, perché ci sono un'istruzione `for` e un corpo del ciclo:
 
 ~~~~ {.python}
 friends = ['Joseph', 'Glenn', 'Sally']
@@ -179,7 +179,7 @@ print('Done!')
 ~~~~
 
 
-In termini di Python, la variabile `friends` è una lista^[Esamineremo le liste in modo più dettagliato in un capitolo successivo.] di tre stringhe e il ciclo `for` scorre la lista ed esegue il corpo una volta per ognuna delle tre stringhe della lista, producendo questo output:
+In termini di Python, la variabile `friends` è una lista^[Esamineremo le liste più in dettaglio in un capitolo successivo.] di tre stringhe e il ciclo `for` scorre la lista ed esegue il corpo una volta per ognuna delle tre stringhe della lista, producendo questo output:
 
 ~~~~ {.python}
 Happy New Year: Joseph
@@ -189,9 +189,9 @@ Done!
 ~~~~
 
 
-La traduzione in linguaggio naturale di questo ciclo `for` non è diretta come quella del `while`, ma se pensi agli amici come a un *insieme*, funziona così: "Esegui le istruzioni nel corpo del ciclo `for` una volta per ogni amico (friend) *contenuto* nell'insieme chiamato amici (friends)."
+La traduzione in linguaggio naturale di questo ciclo `for` non è diretta come quella del `while`, ma se pensi agli amici come a un *insieme*, suona così: "Esegui le istruzioni nel corpo del ciclo `for` una volta per ogni amico (`friend`) *contenuto* nell'insieme chiamato amici (`friends`)".
 
-Guardando il ciclo `for`, `for` e `in` sono parole chiave riservate di Python, mentre `friend` e `friends` sono variabili.
+Nel ciclo `for`, `for` e `in` sono parole chiave riservate di Python, mentre `friend` e `friends` sono variabili.
 
 ~~~~ {.python}
 for friend in friends:
@@ -199,21 +199,21 @@ for friend in friends:
 ~~~~
 
 
-In particolare, `friend` è la *variabile di iterazione* per il ciclo `for`: la variabile `friend` cambia in ogni iterazione del ciclo e controlla quando il ciclo `for` terminerà. La *variabile di iterazione* scorre in successione le tre stringhe memorizzate nella variabile `friends`.
+In particolare, `friend` è la *variabile di iterazione* del ciclo `for`. La variabile `friend` cambia a ogni iterazione del ciclo e controlla quando il ciclo `for` termina. La *variabile di iterazione* scorre una dopo l'altra le tre stringhe memorizzate nella variabile `friends`.
 
 Schemi di ciclo
 -------------
 
 
-Spesso usiamo un ciclo `for` o `while` per scorrere una lista di elementi o il contenuto di un file cercando qualcosa, come ad esempio il valore più grande o più piccolo dei dati che stiamo scorrendo.
+Spesso usiamo un ciclo `for` o `while` per scorrere un elenco di elementi o il contenuto di un file alla ricerca di qualcosa, come il valore più grande o più piccolo tra i dati che scorriamo.
 
-Questi cicli sono generalmente costruiti in questo modo:
+Di solito questi cicli si costruiscono così:
 
-- inizializzazione di una o più variabili prima dell'inizio del ciclo;
+- inizializzare una o più variabili prima che il ciclo inizi;
 
-- esecuzione di alcuni calcoli su ciascun elemento nel corpo del ciclo, eventualmente modificando le variabili nel corpo del ciclo;
+- eseguire qualche calcolo su ciascun elemento nel corpo del ciclo, eventualmente cambiando le variabili nel corpo del ciclo;
 
-- osservazione delle variabili risultanti al termine del ciclo.
+- guardare le variabili risultanti quando il ciclo termina.
 
 Useremo una lista di numeri per illustrare i concetti e la costruzione di questi schemi di ciclo.
 
@@ -229,7 +229,7 @@ print('Count: ', count)
 ~~~~
 
 
-Impostiamo la variabile `count` a zero prima dell'inizio del ciclo, poi scriviamo un ciclo `for` per scorrere la lista di numeri. La nostra variabile di *iterazione* si chiama `itervar` e, sebbene non usiamo `itervar` nel ciclo, è lei che controlla il ciclo e fa sì che il corpo del ciclo sia eseguito una volta per ciascuno dei valori della lista.
+Impostiamo la variabile `count` a zero prima che il ciclo inizi, poi scriviamo un ciclo `for` per scorrere la lista di numeri. La nostra variabile di *iterazione* si chiama `itervar` e, anche se non usiamo `itervar` nel ciclo, è lei che controlla il ciclo e fa eseguire il corpo del ciclo una volta per ciascuno dei valori della lista.
 
 Nel corpo del ciclo aggiungiamo 1 al valore corrente di `count` per ciascuno dei valori della lista. Mentre il ciclo è in esecuzione, il valore di `count` è il numero di valori che abbiamo visto "finora".
 
@@ -245,13 +245,13 @@ print('Total: ', total)
 ~~~~
 
 
-In questo ciclo *usiamo* la *variabile di iterazione*. Invece di aggiungere semplicemente uno a `count`, come nel ciclo precedente, a ogni iterazione del ciclo aggiungiamo al totale parziale il numero effettivo (3, 41, 12, ecc.). Se pensi alla variabile `total`, contiene il "totale parziale dei valori visti finora". Quindi, prima che inizi il ciclo, `total` è zero perché non abbiamo ancora visto alcun valore; durante il ciclo `total` è il totale parziale; alla fine del ciclo `total` è il totale complessivo di tutti i valori della lista.
+In questo ciclo *usiamo* la *variabile di iterazione*. Invece di aggiungere semplicemente uno a `count`, come nel ciclo precedente, a ogni iterazione del ciclo aggiungiamo al totale parziale il numero vero e proprio (3, 41, 12, ecc.). Se ci pensi, la variabile `total` contiene il "totale parziale dei valori visti finora". Quindi prima che il ciclo inizi `total` è zero, perché non abbiamo ancora visto nessun valore; durante il ciclo `total` è il totale parziale; alla fine del ciclo `total` è il totale complessivo di tutti i valori della lista.
 
-Mentre il ciclo viene eseguito, `total` accumula la somma degli elementi; una variabile usata in questo modo viene talvolta chiamata *accumulatore*.
+Mentre il ciclo viene eseguito, `total` accumula la somma degli elementi; una variabile usata in questo modo a volte è chiamata *accumulatore*.
 
 \index{accumulatore!somma}
 
-Né il ciclo di conteggio né il ciclo di somma sono particolarmente utili nella pratica perché esistono le funzioni built-in `len()` e `sum()`, che calcolano rispettivamente il numero di elementi di una lista e il totale degli elementi della lista.
+Né il ciclo di conteggio né il ciclo di somma sono particolarmente utili in pratica, perché esistono le funzioni built-in `len()` e `sum()`, che calcolano rispettivamente il numero di elementi di una lista e il totale degli elementi della lista.
 
 ### Cicli di massimo e minimo
 
@@ -287,13 +287,13 @@ Largest: 74
 ~~~~
 
 
-È meglio considerare la variabile `largest` come il "valore più grande che abbiamo visto finora". Prima del ciclo impostiamo `largest` alla costante `None`. `None` è un valore costante speciale che possiamo memorizzare in una variabile per contrassegnarla come "vuota".
+Conviene pensare alla variabile `largest` come al "valore più grande che abbiamo visto finora". Prima del ciclo impostiamo `largest` alla costante `None`. `None` è un valore costante speciale che possiamo memorizzare in una variabile per contrassegnarla come "vuota".
 
-Prima che il ciclo inizi, il valore più grande che abbiamo visto finora è `None`, poiché non abbiamo ancora visto alcun valore. Mentre il ciclo è in esecuzione, se `largest` è `None` prendiamo il primo valore che vediamo come il più grande finora. Puoi vedere che nella prima iterazione, quando il valore di `itervar` è 3, poiché `largest` è `None` impostiamo subito `largest` a 3.
+Prima che il ciclo inizi, il valore più grande che abbiamo visto finora è `None`, perché non abbiamo ancora visto nessun valore. Mentre il ciclo è in esecuzione, se `largest` è `None` prendiamo il primo valore che vediamo come il più grande finora. Puoi vedere che nella prima iterazione, quando il valore di `itervar` è 3, dato che `largest` è `None` impostiamo subito `largest` a 3.
 
 Dopo la prima iterazione `largest` non è più `None`, quindi la seconda parte dell'espressione logica composta, che controlla `itervar > largest`, scatta solo quando vediamo un valore maggiore del "più grande finora". Quando vediamo un nuovo valore "ancora più grande", lo prendiamo come nuovo valore di `largest`. Nell'output del programma puoi vedere che `largest` passa da 3 a 41 a 74.
 
-Alla fine del ciclo abbiamo esaminato tutti i valori e la variabile `largest` contiene il valore più grande della lista.
+Alla fine del ciclo abbiamo esaminato tutti i valori e la variabile `largest` ora contiene davvero il valore più grande della lista.
 
 Per calcolare il numero più piccolo il codice è molto simile, con una piccola modifica:
 
@@ -310,7 +310,7 @@ print('Smallest:', smallest)
 
 Di nuovo, `smallest` è il "più piccolo finora" prima, durante e dopo l'esecuzione del ciclo. Al termine del ciclo, `smallest` contiene il valore minimo della lista.
 
-Anche qui, come per il conteggio e la somma, le funzioni built-in `max()` e `min()` rendono superfluo scrivere questi cicli.
+Anche qui, come per il conteggio e la somma, le funzioni built-in `max()` e `min()` rendono superfluo scrivere proprio questi cicli.
 
 Quella che segue è una versione semplice della funzione built-in `min()` di Python:
 
@@ -324,53 +324,53 @@ def min(values):
 ~~~~
 
 
-Nella versione a funzione del codice per il più piccolo abbiamo rimosso tutte le istruzioni `print`, in modo da renderla equivalente alla funzione built-in `min` di Python.
+Nella versione a funzione del codice per trovare il minimo abbiamo tolto tutte le istruzioni `print`, in modo da renderla equivalente alla funzione `min`, che in Python è già built-in.
 
 Debug
 ---------
 
 Quando inizi a scrivere programmi più grandi, potresti ritrovarti a dedicare più tempo al debug. Più codice significa più possibilità di commettere un errore e più posti in cui i bug possono nascondersi.
 \index{debug!per bisezione}
-\index{bisezione!debug per}
+\index{bisezione!nel debug}
 
-Un modo per ridurre il tempo di debug è effettuare un "debug per bisezione". Ad esempio, se ci sono 100 righe nel tuo programma e le controlli una alla volta, ci vorrebbero 100 passaggi.
+Un modo per ridurre il tempo di debug è il "debug per bisezione". Ad esempio, se il tuo programma ha 100 righe, a controllarle una alla volta ci vorrebbero 100 passaggi.
 
-Prova invece a dividere il problema a metà. Guarda a metà del programma, o lì vicino, per trovare un valore intermedio da controllare. Aggiungi un'istruzione `print` (o qualcos'altro che abbia un effetto verificabile) ed esegui il programma.
+Prova invece a dividere il problema a metà. Cerca a metà del programma, o lì vicino, un valore intermedio che puoi controllare. Aggiungi un'istruzione `print` (o qualcos'altro che abbia un effetto verificabile) ed esegui il programma.
 
-Se il controllo a metà non è corretto, il problema deve essere nella prima metà del programma. Se è corretto, il problema è nella seconda metà.
+Se il controllo a metà programma dà un risultato sbagliato, il problema è per forza nella prima metà del programma. Se il risultato è corretto, il problema è nella seconda metà.
 
-Ogni volta che esegui un controllo come questo, dimezzi il numero di righe da controllare. Dopo sei passaggi (che sono molto meno di 100), dovresti scendere a una o due righe di codice, almeno in teoria.
+Ogni volta che fai un controllo come questo, dimezzi il numero di righe in cui devi cercare. Dopo sei passaggi (che sono molti meno di 100), ti resterebbero una o due righe di codice, almeno in teoria.
 
-Nella pratica non è sempre chiaro quale sia il "centro del programma" e non è sempre possibile controllarlo. Non ha senso contare le righe e trovare il punto centrale esatto. Pensa invece ai punti del programma in cui potrebbero esserci errori e ai punti in cui è facile inserire un controllo. Poi scegli un punto in cui ritieni che le probabilità che il bug si trovi prima o dopo il controllo siano più o meno le stesse.
+In pratica non è sempre chiaro quale sia la "metà del programma", e non sempre è possibile controllarla. Non ha senso contare le righe e trovare l'esatto punto centrale. Pensa invece ai punti del programma in cui potrebbero esserci errori e a quelli in cui è facile inserire un controllo. Poi scegli un punto in cui, secondo te, il bug ha più o meno le stesse probabilità di trovarsi prima o dopo il controllo.
 
 Glossario
 --------
 
 **Accumulatore**
-: Una variabile utilizzata in un ciclo per sommare o accumulare un risultato.
+: Una variabile usata in un ciclo per sommare o accumulare un risultato.
 \index{accumulatore}
 
+**Ciclo infinito**
+: Un ciclo in cui la condizione di arresto non è mai soddisfatta o che non ha nessuna condizione di arresto.
+\index{ciclo infinito}
+
 **Contatore**
-: Una variabile utilizzata in un ciclo per contare il numero di volte in cui si è verificato qualcosa. Inizializziamo un contatore a zero e poi lo incrementiamo ogni volta che vogliamo "contare" qualcosa.
+: Una variabile usata in un ciclo per contare quante volte è successo qualcosa. Inizializziamo un contatore a zero e poi lo incrementiamo ogni volta che vogliamo "contare" qualcosa.
 \index{contatore}
 
 **Decremento**
 : Un aggiornamento che riduce il valore di una variabile.
 \index{decremento}
 
-**Inizializzare**
-: Un'assegnazione che fornisce un valore iniziale a una variabile che verrà aggiornata.
-
 **Incremento**
 : Un aggiornamento che aumenta il valore di una variabile (spesso di uno).
 \index{incremento}
 
-**Ciclo infinito**
-: Un ciclo in cui la condizione di fine non è mai soddisfatta o per il quale non esiste una tale condizione.
-\index{ciclo infinito}
+**Inizializzare**
+: Assegnare un valore iniziale a una variabile che verrà aggiornata.
 
 **Iterazione**
-: Esecuzione ripetuta di un insieme di istruzioni utilizzando una funzione che chiama se stessa oppure un ciclo.
+: L'esecuzione ripetuta di un insieme di istruzioni, per mezzo di una funzione che chiama se stessa oppure di un ciclo.
 \index{iterazione}
 
 Esercizi
@@ -389,4 +389,4 @@ Enter a number: done
 ~~~~
 
 
-**Esercizio 2:** Scrivi un altro programma che chieda una lista di numeri come sopra e alla fine stampi sia il massimo sia il minimo dei numeri, invece della media.
+**Esercizio 2:** Scrivi un altro programma che chieda un elenco di numeri come sopra e alla fine stampi sia il massimo sia il minimo dei numeri, invece della media.
