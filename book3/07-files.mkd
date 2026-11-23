@@ -17,7 +17,7 @@ Ma se ricordi i nostri discorsi sull'architettura hardware, una volta tolta l'al
 
 ![Memoria secondaria](height=2.5in@../images/arch)
 
-In questo capitolo iniziamo a lavorare con la *memoria secondaria* (o con i file). La memoria secondaria non viene cancellata quando si toglie l'alimentazione. Oppure, nel caso di una chiavetta USB, i dati che scriviamo dai nostri programmi possono essere rimossi dal sistema e trasportati su un altro sistema.
+In questo capitolo iniziamo a lavorare con la *memoria secondaria* (o con i file). La memoria secondaria non viene cancellata quando si toglie l'alimentazione. Oppure, nel caso di una chiavetta USB, i dati che scriviamo con i nostri programmi possono essere portati via dal sistema e trasportati su un altro sistema.
 
 Ci concentreremo soprattutto sulla lettura e la scrittura di file di testo, come quelli che creiamo in un editor di testo. Più avanti vedremo come lavorare con i file di database, che sono file binari progettati appositamente per essere letti e scritti tramite un software di database.
 
@@ -28,7 +28,7 @@ Aprire i file
 \index{funzione open}
 \index{funzione!open}
 
-Quando vogliamo leggere o scrivere un file (ad esempio sul tuo disco rigido), dobbiamo prima *aprire* il file. L'apertura del file comunica con il tuo sistema operativo, che sa dove sono memorizzati i dati di ogni file. Quando apri un file, chiedi al sistema operativo di trovare il file in base al nome e di assicurarsi che esista. In questo esempio apriamo il file `mbox.txt`, che dovrebbe essere memorizzato nella stessa cartella in cui ti trovi quando avvii Python. Puoi scaricare questo file da [www.py4e.com/code3/mbox.txt](http://www.py4e.com/code3/mbox.txt)
+Quando vogliamo leggere o scrivere un file (ad esempio sul tuo disco rigido), dobbiamo prima *aprire* il file. Aprirlo significa comunicare con il sistema operativo, che sa dove sono memorizzati i dati di ogni file. Quando apri un file, chiedi al sistema operativo di trovare il file in base al nome e di assicurarsi che esista. In questo esempio apriamo il file `mbox.txt`, che dovrebbe essere memorizzato nella stessa cartella in cui ti trovi quando avvii Python. Puoi scaricare questo file da [www.py4e.com/code3/mbox.txt](http://www.py4e.com/code3/mbox.txt)
 
 ~~~~ {.python}
 >>> fhand = open('mbox.txt')
@@ -38,7 +38,7 @@ Quando vogliamo leggere o scrivere un file (ad esempio sul tuo disco rigido), do
 
 \index{handle del file}
 
-Se la `open` ha successo, il sistema operativo ci restituisce un *handle del file* (file handle). L'handle del file non è il dato vero e proprio contenuto nel file, ma è invece una "maniglia" (handle) che possiamo usare per leggere i dati. Ricevi un handle se il file richiesto esiste e hai i permessi adeguati per leggerlo.
+Se la `open` ha successo, il sistema operativo ci restituisce un *handle del file* (file handle). L'handle del file non è il dato vero e proprio contenuto nel file, ma una "maniglia" (handle) che possiamo usare per leggere i dati. Ricevi un handle se il file richiesto esiste e hai i permessi adeguati per leggerlo.
 
 ![Un handle del file](height=2.0in@../images/handle)
 
@@ -56,7 +56,7 @@ Più avanti useremo `try` ed `except` per gestire con più eleganza la situazion
 File di testo e righe
 --------------------
 
-Un file di testo può essere pensato come una sequenza di righe, proprio come una stringa Python può essere pensata come una sequenza di caratteri. Ad esempio, questo è un campione di un file di testo che registra l'attività di posta di varie persone in un gruppo di sviluppo di un progetto open source:
+Un file di testo si può considerare una sequenza di righe, proprio come una stringa Python si può considerare una sequenza di caratteri. Ad esempio, questo è un estratto di un file di testo che registra l'attività di posta di varie persone in un gruppo di sviluppo di un progetto open source:
 
 ~~~~
 From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
@@ -83,7 +83,7 @@ Per suddividere il file in righe, c'è un carattere speciale che rappresenta la 
 
 \index{newline}
 
-In Python rappresentiamo il carattere *newline* come backslash-n nelle costanti stringa. Anche se sembra formato da due caratteri, in realtà è un carattere solo. Quando guardiamo la variabile inserendo `stuff` nell'interprete, questo ci mostra il `\n` nella stringa, ma quando usiamo `print` per mostrare la stringa, vediamo la stringa spezzata su due righe dal carattere newline.
+In Python rappresentiamo il carattere *newline* come backslash-n nelle costanti stringa. Anche se sembra formato da due caratteri, in realtà è un carattere solo. Quando guardiamo la variabile inserendo `stuff` nell'interprete, questo ci mostra il `\n` nella stringa, ma quando usiamo `print` per mostrare la stringa, la vediamo spezzata su due righe dal carattere newline.
 
 ~~~~ {.python}
 >>> stuff = 'Hello\nWorld!'
@@ -116,9 +116,9 @@ Anche se l'*handle del file* non contiene i dati del file, è piuttosto facile c
 
 \VerbatimInput{../code3/open.py}
 
-Possiamo usare l'handle del file come sequenza nel nostro ciclo `for`. Il nostro ciclo `for` conta semplicemente il numero di righe del file e lo stampa. La traduzione approssimativa del ciclo `for` in italiano è: "per ogni riga del file rappresentato dall'handle del file, aggiungi uno alla variabile `count`".
+Possiamo usare l'handle del file come sequenza nel nostro ciclo `for`. Il ciclo `for` conta semplicemente il numero di righe del file e lo stampa. La traduzione approssimativa del ciclo `for` in italiano è: "per ogni riga del file rappresentato dall'handle del file, aggiungi uno alla variabile `count`".
 
-Il motivo per cui la funzione `open` non legge l'intero file è che il file potrebbe essere molto grande, con molti gigabyte di dati. L'istruzione `open` impiega lo stesso tempo a prescindere dalla dimensione del file. È il ciclo `for` che in realtà fa leggere i dati dal file.
+La funzione `open` non legge l'intero file perché il file potrebbe essere molto grande, con molti gigabyte di dati. L'istruzione `open` impiega lo stesso tempo a prescindere dalla dimensione del file. È il ciclo `for` che in realtà fa leggere i dati dal file.
 
 Quando il file viene letto in questo modo con un ciclo `for`, Python si occupa di suddividere i dati del file in righe separate usando il carattere newline. Python legge ogni riga fino al newline e include il newline come ultimo carattere nella variabile `line` a ogni iterazione del ciclo `for`.
 
@@ -135,7 +135,7 @@ Se sai che il file è relativamente piccolo rispetto alla dimensione della tua m
 From stephen.marquar
 ~~~~
 
-In questo esempio l'intero contenuto (tutti i 94.626 caratteri) del file `mbox-short.txt` viene letto direttamente nella variabile `inp`. Usiamo lo slicing delle stringhe per stampare i primi 20 caratteri dei dati stringa memorizzati in `inp`.
+In questo esempio l'intero contenuto (tutti i 94.626 caratteri) del file `mbox-short.txt` viene letto direttamente nella variabile `inp`. Usiamo lo slicing delle stringhe per stampare i primi 20 caratteri della stringa memorizzata in `inp`.
 
 Quando il file viene letto in questo modo, tutti i caratteri, comprese tutte le righe e i caratteri newline, sono un'unica grande stringa nella variabile `inp`. È una buona idea memorizzare l'output di `read` in una variabile, perché ogni chiamata a `read` esaurisce la risorsa:
 
@@ -147,12 +147,12 @@ Quando il file viene letto in questo modo, tutti i caratteri, comprese tutte le 
 0
 ~~~~
 
-Ricorda che questa forma della funzione `open` dovrebbe essere usata solo se i dati del file entrano comodamente nella memoria principale del tuo computer. Se il file è troppo grande per entrare nella memoria principale, dovresti scrivere il tuo programma in modo che legga il file a pezzi usando un ciclo `for` o `while`.
+Ricorda che questa forma della funzione `open` va usata solo se i dati del file entrano comodamente nella memoria principale del tuo computer. Se il file è troppo grande per entrare nella memoria principale, dovresti scrivere il programma in modo che legga il file a pezzi usando un ciclo `for` o `while`.
 
 Cercare in un file
 ------------------------
 
-Quando cerchi tra i dati di un file, uno schema molto comune è leggere il file ignorando la maggior parte delle righe ed elaborando solo le righe che soddisfano una particolare condizione. Possiamo combinare lo schema per la lettura di un file con i metodi delle stringhe per costruire semplici meccanismi di ricerca.
+Quando cerchi tra i dati di un file, uno schema molto comune è leggere il file ignorando la maggior parte delle righe ed elaborando solo quelle che soddisfano una particolare condizione. Possiamo combinare lo schema per la lettura di un file con i metodi delle stringhe per costruire semplici meccanismi di ricerca.
 
 \index{schema del filtro}
 \index{schema!filtro}
@@ -174,7 +174,7 @@ From: rjlowe@iupui.edu
 ...
 ~~~~
 
-L'output sembra ottimo, dato che le uniche righe che vediamo sono quelle che iniziano con `From:`, ma perché vediamo le righe vuote in più? Ciò è dovuto a quel carattere *newline* invisibile. Ognuna delle righe termina con un newline, quindi l'istruzione `print` stampa la stringa nella variabile `line`, che include un newline, e poi `print` aggiunge *un altro* newline, producendo l'effetto di doppia spaziatura che vediamo.
+L'output sembra ottimo, dato che le uniche righe che vediamo sono quelle che iniziano con `From:`, ma perché vediamo le righe vuote in più? Dipende da quel carattere *newline* invisibile. Ogni riga termina con un newline, quindi l'istruzione `print` stampa la stringa nella variabile `line`, che include un newline, e poi `print` aggiunge *un altro* newline, producendo l'effetto di interlinea doppia che vediamo.
 
 Potremmo usare lo slicing della riga per stampare tutto tranne l'ultimo carattere, ma un approccio più semplice è usare il metodo `rstrip`, che rimuove gli spazi bianchi dal lato destro di una stringa, come segue:
 
@@ -193,19 +193,19 @@ From: cwen@iupui.edu
 ...
 ~~~~
 
-Man mano che i tuoi programmi di elaborazione dei file diventano più complicati, ti conviene strutturare i tuoi cicli di ricerca usando `continue`. L'idea di base del ciclo di ricerca è che stai cercando le righe "interessanti" e di fatto salti le righe "non interessanti". E poi, quando troviamo una riga interessante, facciamo qualcosa con quella riga.
+Man mano che i tuoi programmi di elaborazione dei file diventano più complicati, ti conviene strutturare i cicli di ricerca usando `continue`. L'idea di base del ciclo di ricerca è che cerchi le righe "interessanti" e di fatto salti quelle "non interessanti". E poi, quando troviamo una riga interessante, facciamo qualcosa con quella riga.
 
-Possiamo strutturare il ciclo in modo che segua lo schema del salto delle righe non interessanti, come segue:
+Possiamo strutturare il ciclo secondo lo schema in cui si saltano le righe non interessanti, come segue:
 
 \VerbatimInput{../code3/search3.py}
 
 L'output del programma è lo stesso. In italiano, le righe non interessanti sono quelle che non iniziano con `From:`, che saltiamo usando `continue`. Per le righe "interessanti" (cioè quelle che iniziano con `From:`) eseguiamo l'elaborazione.
 
-Possiamo usare il metodo delle stringhe `find` per simulare la ricerca di un editor di testo, che trova le righe in cui la stringa cercata si trova in un punto qualsiasi della riga. Dato che `find` cerca un'occorrenza di una stringa all'interno di un'altra stringa e restituisce la posizione della stringa oppure `-1` se la stringa non è stata trovata, possiamo scrivere il seguente ciclo per mostrare le righe che contengono la stringa `@uct.ac.za` (cioè che provengono dall'Università di Città del Capo, in Sudafrica):
+Possiamo usare il metodo delle stringhe `find` per simulare la ricerca di un editor di testo, che trova le righe in cui la stringa cercata compare in un punto qualsiasi della riga. Dato che `find` cerca un'occorrenza di una stringa all'interno di un'altra stringa e restituisce la posizione della stringa oppure `-1` se la stringa non è stata trovata, possiamo scrivere il seguente ciclo per mostrare le righe che contengono la stringa `@uct.ac.za` (cioè che provengono dall'Università di Città del Capo, in Sudafrica):
 
 \VerbatimInput{../code3/search4.py}
 
-Che produce il seguente output:
+Il programma produce il seguente output:
 
 ~~~~
 From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
@@ -221,10 +221,10 @@ Author: david.horwitz@uct.ac.za
 
 Qui usiamo anche la forma contratta dell'istruzione `if`, in cui mettiamo il `continue` sulla stessa riga dell'`if`. Questa forma contratta dell'`if` funziona come se il `continue` fosse sulla riga successiva e indentato.
 
-Lasciare che l'utente scelga il nome del file
+Far scegliere all'utente il nome del file
 -------------------------------------
 
-Non vogliamo davvero dover modificare il nostro codice Python ogni volta che vogliamo elaborare un file diverso. Sarebbe più pratico chiedere all'utente di inserire la stringa con il nome del file ogni volta che il programma viene eseguito, così che possa usare il nostro programma su file diversi senza cambiare il codice Python.
+Non vogliamo certo dover modificare il nostro codice Python ogni volta che vogliamo elaborare un file diverso. Sarebbe più pratico chiedere all'utente di inserire la stringa con il nome del file ogni volta che il programma viene eseguito, così che possa usare il nostro programma su file diversi senza cambiare il codice Python.
 
 Farlo è piuttosto semplice: leggiamo il nome del file dall'utente usando `input`, come segue:
 
@@ -242,7 +242,7 @@ Enter the file name: mbox-short.txt
 There were 27 subject lines in mbox-short.txt
 ~~~~
 
-Prima di sbirciare la prossima sezione, dai un'occhiata al programma qui sopra e chiediti: "Cosa potrebbe andare storto qui?" oppure: "Cosa potrebbe fare il nostro amichevole utente per far uscire in malo modo il nostro bel programmino con un traceback, facendoci fare una figura non proprio brillante agli occhi dei nostri utenti?"
+Prima di sbirciare la prossima sezione, dai un'occhiata al programma qui sopra e chiediti: "Cosa potrebbe mai andare storto qui?" oppure: "Cosa potrebbe fare il nostro amichevole utente per far uscire in malo modo il nostro bel programmino con un traceback, facendoci fare una figura non proprio brillante agli occhi dei nostri utenti?"
 
 Usare `try`, `except` e `open`
 -----------------------------------------------------
@@ -267,12 +267,12 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'na na boo boo'
 ~~~~
 
-Non ridere. Prima o poi gli utenti faranno ogni cosa possibile per rompere i tuoi programmi, per sbaglio o con intenzioni malevole. Infatti, una parte importante di qualsiasi gruppo di sviluppo software è una persona o un gruppo chiamato *controllo qualità* (Quality Assurance, o QA in breve), il cui lavoro è proprio fare le cose più folli possibili nel tentativo di rompere il software che il programmatore ha creato.
+Non ridere. Prima o poi gli utenti faranno ogni cosa possibile per rompere i tuoi programmi, per sbaglio o con intenzioni malevole. Infatti, una parte importante di qualsiasi gruppo di sviluppo software è costituita da una o più persone, chiamate *controllo qualità* (Quality Assurance, o QA in breve), il cui lavoro è proprio fare le cose più folli possibili nel tentativo di rompere il software che il programmatore ha creato.
 
 \index{controllo qualità}
 \index{QA}
 
-Il gruppo QA ha il compito di trovare i difetti nei programmi prima che consegniamo il programma agli utenti finali, che magari acquistano il software o ci pagano lo stipendio per scrivere il software. Quindi il gruppo QA è il migliore amico del programmatore.
+Il gruppo QA ha il compito di trovare i difetti nei programmi prima che consegniamo il programma agli utenti finali, che magari acquistano il software o ci pagano lo stipendio per scriverlo. Quindi il gruppo QA è il migliore amico del programmatore.
 
 \index{istruzione try}
 \index{istruzione!try}
@@ -285,7 +285,7 @@ Quindi, ora che vediamo il difetto nel programma, possiamo correggerlo con elega
 
 \VerbatimInput{../code3/search7.py}
 
-La funzione `exit` termina il programma. È una funzione che chiamiamo e che non ritorna mai. Ora, quando il nostro utente (o il gruppo QA) digita sciocchezze o nomi di file sbagliati, li "catturiamo" e rimediamo con eleganza:
+La funzione `exit` termina il programma. È una funzione che chiamiamo e che non restituisce mai il controllo. Ora, quando il nostro utente (o il gruppo QA) digita sciocchezze o nomi di file sbagliati, li "catturiamo" e rimediamo con eleganza:
 
 ~~~~
 python search7.py
@@ -301,7 +301,7 @@ File cannot be opened: na na boo boo
 
 Proteggere la chiamata a `open` è un buon esempio dell'uso corretto di `try` ed `except` in un programma Python. Usiamo il termine "Pythonic" quando facciamo qualcosa "alla maniera di Python". Potremmo dire che l'esempio qui sopra è il modo Pythonic di aprire un file.
 
-Quando sarai diventato più abile in Python, potrai scambiare battute con altri programmatori Python per decidere quale di due soluzioni equivalenti a un problema sia "più Pythonic". L'obiettivo di essere "più Pythonic" coglie l'idea che la programmazione è in parte ingegneria e in parte arte. Non sempre ci interessa soltanto far funzionare qualcosa: vogliamo anche che la nostra soluzione sia elegante e che sia apprezzata come elegante dai nostri pari.
+Quando sarai diventato più abile in Python, potrai lanciarti in un botta e risposta con altri programmatori Python per decidere quale di due soluzioni equivalenti a un problema sia "più Pythonic". L'obiettivo di essere "più Pythonic" coglie l'idea che la programmazione è in parte ingegneria e in parte arte. Non sempre ci interessa soltanto far funzionare qualcosa: vogliamo anche che la nostra soluzione sia elegante e che sia apprezzata come elegante dai nostri pari.
 
 Scrivere i file
 -------------
@@ -330,7 +330,7 @@ Il metodo `write` dell'oggetto handle del file inserisce i dati nel file e resti
 
 Di nuovo, l'oggetto file tiene traccia del punto in cui si trova, quindi se chiami ancora `write`, aggiunge i nuovi dati alla fine.
 
-Dobbiamo assicurarci di gestire le fini delle righe mentre scriviamo nel file, inserendo in modo esplicito il carattere newline quando vogliamo terminare una riga. L'istruzione `print` aggiunge automaticamente un newline in coda, ma il metodo `write` non aggiunge il newline automaticamente.
+Dobbiamo assicurarci di gestire la fine di ogni riga mentre scriviamo nel file, inserendo in modo esplicito il carattere newline quando vogliamo terminare una riga. L'istruzione `print` aggiunge automaticamente un newline in coda, ma il metodo `write` non aggiunge il newline automaticamente.
 
 ~~~~ {.python}
 >>> line2 = 'the emblem of our land.\n'
@@ -355,7 +355,7 @@ Debug
 \index{debug}
 \index{spazio bianco}
 
-Quando leggi e scrivi file, potresti incontrare problemi con gli spazi bianchi. Questi errori possono essere difficili da correggere con il debug, perché spazi, tabulazioni e newline sono normalmente invisibili:
+Quando leggi e scrivi file, potresti incontrare problemi con gli spazi bianchi. Il debug di questi errori può essere difficile, perché spazi, tabulazioni e newline sono normalmente invisibili:
 
 ~~~~ {.python}
 >>> s = '1 2\t 3\n 4'
@@ -368,7 +368,7 @@ Quando leggi e scrivi file, potresti incontrare problemi con gli spazi bianchi. 
 \index{funzione!repr}
 \index{rappresentazione sotto forma di stringa}
 
-La funzione built-in `repr` può aiutare. Accetta come argomento un oggetto qualsiasi e restituisce una rappresentazione dell'oggetto sotto forma di stringa. Per le stringhe, rappresenta i caratteri di spazio bianco con sequenze con il backslash:
+La funzione built-in `repr` può aiutare. Accetta come argomento un oggetto qualsiasi e restituisce una rappresentazione dell'oggetto sotto forma di stringa. Per le stringhe, rappresenta i caratteri di spazio bianco usando sequenze con il backslash:
 
 ~~~~ {.python}
 >>> print(repr(s))
@@ -377,7 +377,7 @@ La funzione built-in `repr` può aiutare. Accetta come argomento un oggetto qual
 
 Questo può essere utile per il debug.
 
-Un altro problema che potresti incontrare è che sistemi diversi usano caratteri diversi per indicare la fine di una riga. Alcuni sistemi usano un newline, rappresentato da `\n`. Altri usano un carattere di ritorno a capo, rappresentato da `\r`. Alcuni usano entrambi. Se sposti file tra sistemi diversi, queste incoerenze potrebbero causare problemi.
+Un altro problema che potresti incontrare è che sistemi diversi usano caratteri diversi per indicare la fine di una riga. Alcuni sistemi usano un newline, rappresentato da `\n`. Altri usano un carattere di ritorno carrello, rappresentato da `\r`. Alcuni usano entrambi. Se sposti file tra sistemi diversi, queste incoerenze potrebbero causare problemi.
 
 \index{carattere di fine riga}
 
@@ -390,6 +390,15 @@ Glossario
 : Impedire che un'eccezione termini un programma usando le istruzioni `try` ed `except`.
 \index{catturare}
 
+**Controllo qualità**
+: Una persona o un gruppo che si occupa di garantire la qualità complessiva di un prodotto software. Spesso il QA contribuisce a testare un prodotto e a individuarne i problemi prima che sia rilasciato.
+\index{controllo qualità}
+\index{QA}
+
+**File di testo**
+: Una sequenza di caratteri memorizzata su un supporto permanente, come un disco rigido.
+\index{file di testo}
+
 **Newline**
 : Un carattere speciale usato nei file e nelle stringhe per indicare la fine di una riga.
 \index{newline}
@@ -398,19 +407,10 @@ Glossario
 : Relativo a una tecnica che funziona in modo elegante in Python. "Usare `try` ed `except` è il modo *Pythonic* di rimediare alla mancanza di un file".
 \index{Pythonic}
 
-**Controllo qualità**
-: Una persona o un gruppo che si occupa di garantire la qualità complessiva di un prodotto software. Il QA è spesso coinvolto nel testare un prodotto e nell'individuare i problemi prima che il prodotto sia rilasciato.
-\index{controllo qualità}
-\index{QA}
-
-**File di testo**
-: Una sequenza di caratteri memorizzata in una memoria permanente, come un disco rigido.
-\index{file di testo}
-
 Esercizi
 ---------
 
-**Esercizio 1:** Scrivi un programma che legga un file e stampi il contenuto del file (riga per riga) tutto in maiuscolo. L'esecuzione del programma avrà questo aspetto:
+**Esercizio 1:** Scrivi un programma che legga un file e ne stampi il contenuto (riga per riga) tutto in maiuscolo. L'esecuzione del programma avrà questo aspetto:
 
 ~~~~
 python shout.py
@@ -440,11 +440,11 @@ Enter the file name: mbox-short.txt
 Average spam confidence: 0.750718518519
 ~~~~
 
-Testa il tuo file sui file `mbox.txt` e `mbox-short.txt`.
+Testa il tuo programma sui file `mbox.txt` e `mbox-short.txt`.
 
 **Esercizio 3:**
 
-A volte, quando i programmatori si annoiano o vogliono divertirsi un po', aggiungono un innocuo *Easter egg* al loro programma. Modifica il programma che chiede all'utente il nome del file in modo che stampi un messaggio divertente quando l'utente digita esattamente il nome di file `na na boo boo`. Il programma dovrebbe comportarsi normalmente per tutti gli altri file, che esistano o no. Ecco un esempio di esecuzione del programma:
+A volte, quando i programmatori si annoiano o vogliono divertirsi un po', aggiungono un innocuo *Easter egg* al loro programma. Modifica il programma che chiede all'utente il nome del file in modo che stampi un messaggio divertente quando l'utente digita esattamente il nome di file `na na boo boo`. Il programma dovrebbe comportarsi normalmente con tutti gli altri file, che esistano o no. Ecco un esempio di esecuzione del programma:
 
 ~~~~
 python egg.py
