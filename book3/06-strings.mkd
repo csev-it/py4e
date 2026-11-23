@@ -43,7 +43,7 @@ Quindi `b` è la lettera numero 0 ("zeresima") di `'banana'`, `a` è la lettera 
 ![Indici di una stringa](height=0.75in@../images/string)
 
 \index{indice!che parte da zero}
-\index{zero!indice che parte da}
+\index{zero!come primo indice}
 
 Puoi usare come indice qualsiasi espressione, comprese variabili e operatori, ma il valore dell'indice deve essere un intero. Altrimenti ottieni:
 
@@ -103,7 +103,7 @@ Scorrere una stringa con un ciclo
 \index{ciclo!for}
 \index{istruzione!for}
 
-Molti calcoli comportano l'elaborazione di una stringa un carattere alla volta. Spesso partono dall'inizio, selezionano ogni carattere a turno, ci fanno qualcosa e proseguono fino alla fine. Questo schema di elaborazione è chiamato *scorrimento* (traversal). Un modo per scrivere uno scorrimento è usare un ciclo `while`:
+Molti calcoli comportano l'elaborazione di una stringa un carattere alla volta. Spesso partono dall'inizio, selezionano un carattere dopo l'altro, ci fanno qualcosa e proseguono fino alla fine. Questo schema di elaborazione è chiamato *scorrimento* (traversal). Un modo per scrivere uno scorrimento è usare un ciclo `while`:
 
 ~~~~ {.python}
 index = 0
@@ -157,9 +157,9 @@ Se ometti il primo indice (prima dei due punti), la slice parte dall'inizio dell
 'ana'
 ~~~~
 
-Se il primo indice è maggiore o uguale al secondo, il risultato è una *stringa vuota*, rappresentata da due apici:
+Se il primo indice è maggiore o uguale al secondo, il risultato è una *stringa vuota*, rappresentata da due virgolette:
 
-\index{apice}
+\index{virgolette}
 
 ~~~~ {.python}
 >>> fruit = 'banana'
@@ -167,7 +167,7 @@ Se il primo indice è maggiore o uguale al secondo, il risultato è una *stringa
 ''
 ~~~~
 
-Una stringa vuota non contiene caratteri e ha lunghezza 0 ma, a parte questo, è uguale a qualsiasi altra stringa.
+Una stringa vuota non contiene caratteri e ha lunghezza 0, ma a parte questo è uguale a qualsiasi altra stringa.
 
 **Esercizio 2:** Dato che `fruit` è una stringa, cosa significa `fruit[:]`?
 
@@ -218,7 +218,7 @@ Cicli e conteggi
 \index{contatore}
 \index{conteggio e ciclo}
 \index{ciclo e conteggio}
-\index{ciclo!con le stringhe}
+\index{ciclo!su una stringa}
 
 Il seguente programma conta il numero di volte in cui la lettera `a` compare in una stringa:
 
@@ -329,7 +329,7 @@ Ad esempio, il metodo `upper` accetta una stringa e restituisce una nuova string
 \index{metodo}
 \index{stringa!metodo}
 
-Invece della sintassi delle funzioni, `upper(word)`, usa la sintassi dei metodi, `word.upper()`.
+Non usa la sintassi delle funzioni, `upper(word)`, ma quella dei metodi, `word.upper()`.
 
 \index{notazione puntata}
 
@@ -406,7 +406,7 @@ False
 True
 ~~~~
 
-Nell'ultimo esempio viene chiamato il metodo `lower` e poi usiamo `startswith` per vedere se la stringa risultante, in minuscolo, inizia con la lettera `h`. Finché facciamo attenzione all'ordine, possiamo fare più chiamate di metodo in una singola espressione.
+Nell'ultimo esempio viene chiamato il metodo `lower` e poi usiamo `startswith` per vedere se la stringa risultante, in minuscolo, inizia con la lettera `h`. Purché facciamo attenzione all'ordine, possiamo fare più chiamate di metodo in una singola espressione.
 
 \index{metodo count}
 \index{metodo!count}
@@ -420,11 +420,11 @@ Scrivi un'invocazione che conti il numero di volte in cui la lettera `a` compare
 Analisi delle stringhe
 ---------------
 
-Spesso vogliamo guardare dentro una stringa e trovare una sottostringa. Ad esempio, se ci venisse presentata una serie di righe formattate come segue:
+Spesso vogliamo guardare dentro una stringa e trovare una sottostringa. Ad esempio, se abbiamo davanti una serie di righe formattate come segue:
 
 `From stephen.marquard@`*` uct.ac.za`*` Sat Jan  5 09:14:16 2008`
 
-e volessimo estrarre da ogni riga solo la seconda metà dell'indirizzo (cioè `uct.ac.za`), possiamo farlo usando il metodo `find` e lo slicing delle stringhe.
+e vogliamo estrarre da ogni riga solo la seconda metà dell'indirizzo (cioè `uct.ac.za`), possiamo farlo usando il metodo `find` e lo slicing delle stringhe.
 
 Per prima cosa troveremo la posizione della chiocciola nella stringa. Poi troveremo la posizione del primo spazio *dopo* la chiocciola. Infine useremo lo slicing delle stringhe per estrarre la porzione di stringa che stiamo cercando.
 
@@ -456,7 +456,7 @@ Stringhe formattate letterali
 
 Una stringa formattata letterale (spesso chiamata semplicemente f-string) permette di usare espressioni Python all'interno delle stringhe letterali. Per farlo si antepone una `f` alla stringa letterale e si racchiudono le espressioni tra parentesi graffe `{}`.
 
-Ad esempio, se racchiudi il nome di una variabile tra parentesi graffe dentro una f-string, il nome verrà sostituito dal suo valore:
+Ad esempio, se racchiudi il nome di una variabile tra parentesi graffe dentro una f-string, il nome viene sostituito dal suo valore:
 
 ~~~~ {.python}
 >>> camels = 42
@@ -484,7 +484,7 @@ In una singola stringa letterale si possono includere più espressioni, per crea
 'In 3 years I have spotted 0.1 camels.'
 ~~~~
 
-Le stringhe formattate letterali sono potenti e possono fare anche più di quanto è trattato qui. Puoi saperne di più su
+Le stringhe formattate letterali sono potenti e possono fare anche più di quanto si è visto qui. Puoi saperne di più su
 
 <https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals>.
 
@@ -493,7 +493,7 @@ Debug
 
 \index{debug}
 
-Un'abilità che dovresti coltivare mentre programmi è chiederti sempre: "Cosa potrebbe andare storto qui?" oppure: "Quale cosa folle potrebbe fare il nostro utente per mandare in crash il nostro programma (apparentemente) perfetto?"
+Un'abilità che dovresti coltivare mentre programmi è chiederti sempre: "Cosa potrebbe andare storto qui?" oppure: "Quale follia potrebbe fare l'utente per mandare in crash il nostro programma (apparentemente) perfetto?"
 
 Ad esempio, guarda il programma che abbiamo usato per illustrare il ciclo `while` nel capitolo sull'iterazione:
 
@@ -514,7 +514,7 @@ Traceback (most recent call last):
 IndexError: string index out of range
 ~~~~
 
-Il codice funziona bene finché non gli viene presentata una riga vuota. A quel punto non c'è un carattere numero zero, quindi otteniamo un traceback. Ci sono due soluzioni per rendere "sicura" la riga tre anche quando la riga è vuota.
+Il codice funziona bene finché non riceve una riga vuota. A quel punto non c'è un carattere numero zero, quindi otteniamo un traceback. Ci sono due soluzioni per rendere "sicura" la riga tre anche quando la riga è vuota.
 
 Una possibilità è usare semplicemente il metodo `startswith`, che restituisce `False` se la stringa è vuota.
 
@@ -538,17 +538,13 @@ Glossario
 : Una variabile usata per contare qualcosa, di solito inizializzata a zero e poi incrementata.
 \index{contatore}
 
-**Stringa vuota**
-: Una stringa senza caratteri e di lunghezza 0, rappresentata da due apici.
-\index{stringa vuota}
+**Elemento**
+: Uno dei valori di una sequenza.
+\index{elemento}
 
 **Flag**
 : Una variabile booleana usata per indicare se una condizione è vera o falsa.
 \index{flag}
-
-**Invocazione**
-: Un'istruzione che chiama un metodo.
-\index{invocazione}
 
 **Immutabile**
 : Relativo a una sequenza ai cui elementi non si può assegnare un valore.
@@ -558,9 +554,9 @@ Glossario
 : Un valore intero usato per selezionare un elemento di una sequenza, ad esempio un carattere di una stringa.
 \index{indice}
 
-**Elemento**
-: Uno dei valori di una sequenza.
-\index{elemento}
+**Invocazione**
+: Un'istruzione che chiama un metodo.
+\index{invocazione}
 
 **Metodo**
 : Una funzione associata a un oggetto e chiamata usando la notazione puntata.
@@ -575,6 +571,10 @@ Glossario
 \index{schema di ricerca}
 \index{schema!ricerca}
 
+**Scorrere**
+: Iterare sugli elementi di una sequenza, eseguendo un'operazione simile su ciascuno.
+\index{scorrimento}
+
 **Sequenza**
 : Un insieme ordinato, cioè un insieme di valori in cui ogni valore è identificato da un indice intero.
 \index{sequenza}
@@ -583,22 +583,22 @@ Glossario
 : Una parte di una stringa specificata da un intervallo di indici.
 \index{slice}
 
-**Scorrere**
-: Iterare sugli elementi di una sequenza, eseguendo un'operazione simile su ciascuno.
-\index{scorrimento}
+**Stringa vuota**
+: Una stringa senza caratteri e di lunghezza 0, rappresentata da due virgolette.
+\index{stringa vuota}
 
 Esercizi
 ---------
 
 **Esercizio 5:** Slicing delle stringhe
 
-Prendi il seguente codice Python che memorizza una stringa:
+Considera il seguente codice Python che memorizza una stringa:
 
 `str = 'X-DSPAM-Confidence: 0.8475'`
 
 Usa `find` e lo slicing delle stringhe per estrarre la porzione di stringa dopo il carattere dei due punti, poi usa la funzione `float` per convertire la stringa estratta in un numero in virgola mobile.
 
-\index{metodo delle stringhe}
+\index{metodo di stringa}
 \index{metodo!stringa}
 
 **Esercizio 6:** Metodi delle stringhe
@@ -607,6 +607,6 @@ Leggi la documentazione dei metodi delle stringhe su
 
 <https://docs.python.org/library/stdtypes.html#string-methods>.
 
-Ti conviene fare esperimenti con alcuni di essi per assicurarti di aver capito come funzionano. `strip` e `replace` sono particolarmente utili.
+Ti conviene fare esperimenti con alcuni di questi metodi per assicurarti di aver capito come funzionano. `strip` e `replace` sono particolarmente utili.
 
 La documentazione usa una sintassi che potrebbe creare confusione. Ad esempio, in `find(sub[, start[, end]])` le parentesi quadre indicano argomenti opzionali. Quindi `sub` è obbligatorio, ma `start` è opzionale, e se includi `start`, allora `end` è opzionale.
