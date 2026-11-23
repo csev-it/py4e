@@ -49,7 +49,7 @@ x is not y           # x is not the same as y
 ~~~~
 
 
-Anche se queste operazioni ti saranno probabilmente familiari, i simboli utilizzati da Python sono diversi da quelli matematici. Un errore comune è utilizzare un singolo segno di uguale (`=`) al posto di un doppio segno di uguale (`==`). Ricorda che `=` è un operatore di assegnazione, mentre `==` è un operatore di confronto. Non esistono operatori come `=<` o `=>`.
+Probabilmente conosci già queste operazioni, ma i simboli di Python sono diversi da quelli che la matematica usa per le stesse operazioni. Un errore comune è usare un solo segno di uguale (`=`) al posto di un doppio segno di uguale (`==`). Ricorda che `=` è un operatore di assegnazione, mentre `==` è un operatore di confronto. `=<` e `=>` non esistono.
 \index{operatore di confronto}
 \index{operatore!confronto}
 
@@ -58,7 +58,7 @@ Operatori logici
 
 \index{operatore logico}
 \index{operatore!logico}
-Esistono tre *operatori logici*: `and`, `or` e `not`. La semantica (significato) di questi operatori è simile al loro significato in inglese. Ad esempio,
+Esistono tre *operatori logici*: `and`, `or` e `not`. La semantica (significato) di questi operatori è simile al senso che queste parole hanno in inglese. Ad esempio,
 
 `x > 0 and x < 10`
 
@@ -92,7 +92,7 @@ True
 ~~~~
 
 
-Questa flessibilità può tornare utile in alcune situazioni, ma ha alcune sottigliezze che potrebbero creare confusione. Ti conviene evitarla finché non sei sicuro di sapere quello che stai facendo.
+Questa flessibilità può tornare utile in certe situazioni, ma ha alcune sottigliezze che potrebbero creare confusione. Ti conviene evitarla finché non sei sicuro di sapere quello che stai facendo.
 
 Esecuzione condizionale
 ---------------------
@@ -102,7 +102,7 @@ Esecuzione condizionale
 \index{istruzione if}
 \index{istruzione!if}
 \index{esecuzione condizionale}
-Per scrivere programmi utili, abbiamo quasi sempre bisogno di verificare le condizioni e modificare di conseguenza il comportamento del programma. Le *istruzioni condizionali* ci danno questa capacità. La forma più semplice è l'istruzione `if`:
+Per scrivere programmi utili dobbiamo quasi sempre poter controllare delle condizioni e cambiare di conseguenza il comportamento del programma. Le *istruzioni condizionali* ci danno questa possibilità. La forma più semplice è l'istruzione `if`:
 
 ~~~~ {.python}
 if x > 0 :
@@ -110,16 +110,16 @@ if x > 0 :
 ~~~~
 
 
-L'espressione booleana dopo l'istruzione `if` è chiamata *condizione*. L'istruzione `if` termina con il carattere due punti (`:`) e la riga o le righe che la seguono sono indentate.
+L'espressione booleana dopo l'istruzione `if` si chiama *condizione*. Chiudiamo l'istruzione `if` con il carattere dei due punti (`:`), e la riga o le righe che la seguono sono indentate.
 
-![Logica If](height=1.5in@../images/if)
+![Logica dell'`if`](height=1.5in@../images/if)
 
 Se la condizione logica è vera, l'istruzione indentata viene eseguita. Se la condizione logica è falsa, l'istruzione indentata viene saltata.
 \index{condizione}
 \index{istruzione composta}
 \index{istruzione!composta}
 
-Le istruzioni `if` hanno la stessa struttura delle definizioni di funzione o dei cicli `for`^[Impareremo a conoscere funzioni e cicli rispettivamente nei Capitoli 4 e 5.]. L'istruzione è composta da una riga di intestazione che termina con i due punti (`:`) seguita da un blocco indentato. Istruzioni come questa sono chiamate *istruzioni composte* perché si estendono su più righe.
+Le istruzioni `if` hanno la stessa struttura delle definizioni di funzione o dei cicli `for`^[Studieremo le funzioni nel Capitolo 4 e i cicli nel Capitolo 5.]. L'istruzione è formata da una riga di intestazione che termina con il carattere dei due punti (`:`), seguita da un blocco indentato. Le istruzioni come questa si chiamano *istruzioni composte* (compound statement) perché si estendono su più righe.
 
 ~~~~ {.python}
 if x > y:
@@ -127,7 +127,7 @@ if x > y:
     print(y)
 ~~~~
 
-Non c'è limite al numero di istruzioni che possono apparire nel corpo, ma deve essercene almeno una. A volte è utile avere un corpo senza istruzioni (di solito come segnaposto per codice che non hai ancora scritto). In tal caso puoi usare l'istruzione `pass`, che non fa nulla, per superare il controllo dell'interprete Python.
+Non c'è limite al numero di istruzioni che possono apparire nel corpo, ma deve essercene almeno una. A volte è utile avere un corpo senza istruzioni (di solito come segnaposto per codice che non hai ancora scritto). In questo caso puoi usare l'istruzione `pass`, che non fa nulla, per superare il controllo dell'interprete Python.
 \index{istruzione pass}
 \index{istruzione!pass}
 
@@ -138,7 +138,7 @@ if x < 0 :
 ~~~~
 
 
-Se inserisci un'istruzione `if` nell'interprete Python, il prompt cambierà da tre chevron (`>>>`) a tre punti (`...`) per segnalare che ti trovi nel mezzo di un blocco di istruzioni, come mostrato di seguito:
+Se inserisci un'istruzione `if` nell'interprete Python, il prompt cambia da tre segni di maggiore (`>>>`) a tre punti (`...`) per indicare che sei nel mezzo di un blocco di istruzioni, come mostrato qui sotto:
 
 ~~~~ {.python}
 >>> x = 3
@@ -150,7 +150,7 @@ Small
 ~~~~
 
 
-Quando utilizzi l'interprete Python, devi lasciare una riga vuota alla fine di un blocco, in caso contrario Python segnalerà un errore:
+Quando usi l'interprete Python, devi lasciare una riga vuota alla fine di un blocco, altrimenti Python segnala un errore:
 
 ~~~~ {.python}
 >>> x = 3
@@ -164,7 +164,7 @@ SyntaxError: invalid syntax
 ~~~~
 
 
-Durante la scrittura e l'esecuzione di uno script non è necessaria una riga vuota alla fine di un blocco di istruzioni, anche se questa può migliorare la leggibilità del codice.  
+Quando scrivi ed esegui uno script non serve una riga vuota alla fine di un blocco di istruzioni, ma può rendere il tuo codice più leggibile.  
 
 Esecuzione alternativa
 ---------------------
@@ -172,7 +172,7 @@ Esecuzione alternativa
 \index{esecuzione alternativa}
 \index{parola chiave else}
 \index{parola chiave!else}
-Una seconda forma dell'istruzione `if` è l'*esecuzione alternativa* in cui ci sono due possibilità e la condizione determina quale viene eseguita. La sintassi ha questo aspetto:
+Una seconda forma dell'istruzione `if` è l'*esecuzione alternativa*, in cui ci sono due possibilità e la condizione determina quale delle due viene eseguita. La sintassi è questa:
 
 ~~~~ {.python}
 if x % 2 == 0:
@@ -182,11 +182,11 @@ else:
 ~~~~
 
 
-Se il resto della divisione di `x` per 2 è 0, sappiamo che `x` è pari e il programma visualizza un messaggio in tal senso. Se la condizione è falsa, viene eseguita la seconda serie di istruzioni.
+Se il resto della divisione di `x` per 2 è 0, sappiamo che `x` è pari e il programma visualizza un messaggio che lo dice. Se la condizione è falsa, viene eseguita la seconda serie di istruzioni.
 
-![Logica If-Then-Else](height=1.5in@../images/if-else)
+![Logica dell'if-then-else](height=1.5in@../images/if-else)
 
-Poiché questa condizione deve necessariamente essere vera o falsa, verrà eseguita esattamente una delle alternative. Le alternative sono chiamate *rami* (branch) perché sono rami nel flusso di esecuzione.
+Dato che la condizione deve essere per forza vera o falsa, viene eseguita esattamente una delle alternative. Le alternative si chiamano *rami* (branch), perché sono rami del flusso di esecuzione.
 \index{ramo}
 
 Condizioni concatenate
@@ -194,7 +194,7 @@ Condizioni concatenate
 
 \index{condizione concatenata}
 \index{condizione!concatenata}
-A volte ci sono più di due possibilità e servono più di due rami. Un modo per esprimere un calcolo di questo tipo è una *condizione concatenata*:
+A volte ci sono più di due possibilità e ci servono più di due rami. Un modo per esprimere un calcolo di questo tipo è una *condizione concatenata* (chained conditional):
 
 ~~~~ {.python}
 if x < y:
@@ -206,9 +206,9 @@ else:
 ~~~~
 
 
-`elif` è l'abbreviazione di "else if". Anche stavolta verrà eseguito esattamente un ramo.
+`elif` è l'abbreviazione di "else if". Anche in questo caso viene eseguito esattamente un ramo.
 
-![Logica If-Then-ElseIf](height=2.0in@../images/elif)
+![Logica dell'if-then-elseif](height=2.0in@../images/elif)
 
 Non c'è limite al numero di istruzioni `elif`. Se c'è una clausola `else`, deve essere alla fine, ma non è obbligatorio che ci sia.
 \index{parola chiave elif}
@@ -225,14 +225,14 @@ elif choice == 'c':
 ~~~~
 
 
-Ogni condizione viene controllata in ordine. Se la prima condizione è falsa, verrà controllata la successiva e così via. Se una di queste condizioni è vera, viene eseguito il ramo corrispondente e l'istruzione termina. Anche se più di una condizione è vera, viene eseguito solo il primo ramo vero.  
+Le condizioni vengono controllate in ordine. Se la prima è falsa, viene controllata la successiva, e così via. Se una è vera, viene eseguito il ramo corrispondente e l'istruzione termina. Anche se è vera più di una condizione, viene eseguito solo il primo ramo vero.  
 
 Condizioni annidate
 -------------------
 
 \index{condizione annidata}
 \index{condizione!annidata}
-Una condizione può anche essere annidata all'interno di un'altra. Avremmo potuto scrivere l'esempio a tre rami anche in questo modo:
+Una condizione può anche essere annidata dentro un'altra. Avremmo potuto scrivere l'esempio a tre rami in questo modo:
 
 ~~~~ {.python}
 if x == y:
@@ -247,11 +247,11 @@ else:
 
 La condizione esterna contiene due rami. Il primo ramo contiene un'istruzione semplice. Il secondo ramo contiene un'altra istruzione `if`, che ha a sua volta due rami. Questi due rami sono entrambi istruzioni semplici, ma avrebbero potuto essere anche istruzioni condizionali.
 
-![Istruzioni if annidate](height=2.0in@../images/nested)
+![Istruzioni `if` annidate](height=2.0in@../images/nested)
 
-Nonostante l'indentazione delle istruzioni renda evidente la struttura, le *condizioni annidate* diventano molto rapidamente difficili da leggere. In generale, è meglio evitarle quando possibile.
+Anche se l'indentazione delle istruzioni rende evidente la struttura, le *condizioni annidate* diventano molto presto difficili da leggere. In generale, è una buona idea evitarle quando puoi.
 
-Gli operatori logici forniscono spesso un modo per semplificare le istruzioni condizionali annidate. Ad esempio, possiamo riscrivere il codice seguente usando una singola condizione:
+Spesso gli operatori logici offrono un modo per semplificare le istruzioni condizionali annidate. Ad esempio, possiamo riscrivere il codice seguente con una sola condizione:
 
 ~~~~ {.python}
 if 0 < x:
@@ -260,7 +260,7 @@ if 0 < x:
 ~~~~
 
 
-L'istruzione `print` viene eseguita solo quando superiamo entrambe le condizioni. Possiamo ottenere lo stesso effetto con l'operatore `and`:
+L'istruzione `print` viene eseguita solo quando entrambe le condizioni sono vere. Possiamo ottenere lo stesso effetto con l'operatore `and`:
 
 ~~~~ {.python}
 if 0 < x and x < 10:
@@ -271,7 +271,7 @@ if 0 < x and x < 10:
 Catturare le eccezioni usando `try` ed `except`
 ----------------------------------------
 
-In precedenza abbiamo esaminato un segmento di codice in cui abbiamo utilizzato le funzioni `input` e `int` per leggere e analizzare un numero intero inserito dall'utente. Abbiamo anche visto che questo potrebbe risultare insidioso:
+In precedenza abbiamo visto un segmento di codice in cui usavamo le funzioni `input` e `int` per leggere e analizzare un numero intero inserito dall'utente. Abbiamo visto anche quanto può essere insidioso farlo:
 
 ~~~~ {.python}
 >>> prompt = "What is the air velocity of an unladen swallow?\n"
@@ -285,9 +285,9 @@ base 10: 'What do you mean, an African or a European swallow?'
 ~~~~
 
 
-Quando eseguiamo queste istruzioni nell'interprete Python, otteniamo un nuovo prompt, pensiamo "ops" e passiamo all'istruzione successiva.
+Quando eseguiamo queste istruzioni nell'interprete Python, l'interprete ci dà un nuovo prompt, pensiamo "ops" e passiamo all'istruzione successiva.
 
-Tuttavia, se inserisci questo codice in uno script Python e si verifica questo errore, lo script si ferma immediatamente con un traceback. Non esegue l'istruzione successiva.
+Se però inserisci questo codice in uno script Python e si verifica questo errore, lo script si ferma di colpo con un traceback. Non esegue l'istruzione successiva.
 \index{traceback}
 
 Ecco un programma di esempio che converte una temperatura da Fahrenheit a Celsius:
@@ -297,7 +297,7 @@ Ecco un programma di esempio che converte una temperatura da Fahrenheit a Celsiu
 
 \VerbatimInput{../code3/fahren.py}
 
-Se eseguiamo questo codice e gli forniamo valori non validi, fallirà semplicemente mostrando un messaggio di errore poco amichevole:
+Se eseguiamo questo codice e gli diamo un input non valido, fallisce semplicemente con un messaggio di errore poco amichevole:
 
 ~~~~
 python fahren.py
@@ -322,11 +322,11 @@ Per gestire questi tipi di errori, previsti e imprevisti, Python ha una struttur
 
 Puoi pensare alla funzionalità `try` ed `except` di Python come a una "polizza assicurativa" su una sequenza di istruzioni.
 
-Possiamo riscrivere il nostro convertitore di temperatura come segue:
+Possiamo riscrivere il convertitore di temperatura come segue:
 
 \VerbatimInput{../code3/fahren2.py}
 
-Python inizia eseguendo la sequenza di istruzioni nel blocco `try`. Se tutto va bene, salta il blocco `except` e procede. Se si verifica un'eccezione nel blocco `try`, Python esce dal blocco `try` ed esegue la sequenza di istruzioni nel blocco `except`.
+Per prima cosa Python esegue la sequenza di istruzioni del blocco `try`. Se tutto va bene, salta il blocco `except` e prosegue. Se nel blocco `try` si verifica un'eccezione, Python esce dal blocco `try` ed esegue la sequenza di istruzioni del blocco `except`.
 
 ~~~~
 python fahren2.py
@@ -350,13 +350,13 @@ Valutazione in cortocircuito delle espressioni logiche
 -----------------------------------------------
 
 \index{cortocircuito}
-Quando Python sta elaborando un'espressione logica come `x >= 2 and (x/y) > 2`, valuta l'espressione da sinistra a destra. Per la definizione di `and`, se `x` è minore di 2, l'espressione `x >= 2` è `False` e quindi l'intera espressione è `False`, indipendentemente dal fatto che `(x/y) > 2` valga `True` o `False`.
+Quando Python elabora un'espressione logica come `x >= 2 and (x/y) > 2`, la valuta da sinistra a destra. Per come è definito `and`, se `x` è minore di 2 l'espressione `x >= 2` è `False`, e quindi l'intera espressione è `False`, sia che `(x/y) > 2` valga `True` sia che valga `False`.
 
-Quando Python rileva che non c'è nulla da guadagnare valutando il resto di un'espressione logica, ferma la valutazione e non esegue i calcoli rimanenti. Quando la valutazione di un'espressione logica si ferma perché il valore complessivo è già noto, si parla di *cortocircuito* della valutazione.
+Quando Python si accorge che valutare il resto di un'espressione logica non porta alcun vantaggio, ferma la valutazione e non esegue i calcoli che restano. Quando la valutazione di un'espressione logica si ferma perché il valore complessivo è già noto, si parla di valutazione in *cortocircuito* (short circuit).
 
 \index{schema del guardiano}
 \index{schema!guardiano}
-Anche se ciò ti potrà sembrare una sottigliezza, il comportamento di cortocircuito porta a una tecnica intelligente chiamata *schema del guardiano*. Considera la seguente sequenza di codice nell'interprete Python:
+Può sembrare una sottigliezza, ma il comportamento di cortocircuito porta a una tecnica ingegnosa chiamata *schema del guardiano* (guardian pattern). Considera questa sequenza di codice nell'interprete Python:
 
 ~~~~ {.python}
 >>> x = 6
@@ -379,7 +379,7 @@ ZeroDivisionError: division by zero
 
 Il terzo calcolo è fallito perché Python stava valutando `(x/y)` e `y` era zero, il che causa un errore di runtime. Il primo e il secondo esempio invece *non* sono falliti: nel primo calcolo `y` era diverso da zero, e nel secondo la prima parte dell'espressione, `x >= 2`, valeva `False`, quindi `(x/y)` non è mai stato eseguito, per la regola del *cortocircuito*, e non c'è stato alcun errore.
 
-Possiamo costruire l'espressione logica in modo da collocare strategicamente una valutazione di *guardia* appena prima della valutazione che potrebbe causare un errore, come segue:
+Possiamo costruire l'espressione logica in modo da collocare strategicamente una valutazione di *guardia* subito prima di quella che potrebbe causare un errore, come segue:
 
 ~~~~ {.python}
 >>> x = 1
@@ -398,7 +398,7 @@ ZeroDivisionError: division by zero
 ~~~~
 
 
-Nella prima espressione logica, `x >= 2` è `False`, quindi la valutazione si ferma all'`and`. Nella seconda espressione logica, `x >= 2` è `True` ma `y != 0` è `False`, quindi non raggiungiamo mai `(x/y)`.
+Nella prima espressione logica, `x >= 2` è `False`, quindi la valutazione si ferma all'`and`. Nella seconda espressione logica, `x >= 2` è `True` ma `y != 0` è `False`, quindi non arriviamo mai a `(x/y)`.
 
 Nella terza espressione logica, `y != 0` viene *dopo* il calcolo `(x/y)`, quindi l'espressione fallisce con un errore.
 
@@ -414,8 +414,8 @@ Il traceback che Python visualizza quando si verifica un errore contiene molte i
 - il tipo di errore;
 - dove si è verificato.
 
-Gli errori di sintassi sono solitamente facili da trovare, ma ci sono alcuni tranelli. Gli errori di spaziatura possono essere insidiosi perché gli spazi e le tabulazioni sono invisibili e siamo abituati a ignorarli.
-\index{spaziatura}
+Gli errori di sintassi sono di solito facili da trovare, ma ci sono alcuni tranelli. Gli errori dovuti agli spazi bianchi possono essere insidiosi, perché spazi e tabulazioni sono invisibili e siamo abituati a ignorarli.
+\index{spazio bianco}
 
 
 ~~~~ {.python}
@@ -428,72 +428,72 @@ IndentationError: unexpected indent
 ~~~~
 
 
-In questo esempio il problema è che la seconda riga è indentata di uno spazio. Ma il messaggio di errore punta a `y`, e ciò è fuorviante. In generale, i messaggi di errore indicano il punto dove è stato rilevato il problema, ma l'errore reale potrebbe essere in un punto precedente del codice, a volte su una riga precedente.
+In questo esempio il problema è che la seconda riga è indentata di uno spazio. Ma il messaggio di errore punta a `y`, il che è fuorviante. In generale, i messaggi di errore indicano dove è stato scoperto il problema, ma l'errore vero potrebbe trovarsi prima nel codice, a volte in una riga precedente.
 
-In generale, i messaggi di errore dicono dove è stato scoperto il problema, ma spesso quel punto non coincide con il punto dove è stato causato.  
+In generale, i messaggi di errore ti dicono dove è stato scoperto il problema, ma spesso non è lì che è stato causato.  
 
 Glossario
 --------
 
-**Corpo**
-: La sequenza di istruzioni presenti all'interno di un'istruzione composta.
-\index{corpo}
-
-**Espressione booleana**
-: Un'espressione il cui valore è `True` o `False`.
-\index{espressione booleana}
-\index{espressione!booleana}
-
-**Ramo**
-: Una delle sequenze di istruzioni alternative di un'istruzione condizionale.
-\index{ramo}
-
-**Condizione concatenata**
-: Un'istruzione condizionale con una serie di rami alternativi.
-\index{condizione concatenata}
-\index{condizione!concatenata}
-
-**Operatore di confronto**
-: Uno degli operatori che confrontano i propri operandi: `==`, `!=`, `>`, `<`, `>=` e `<=`.
-
-**Istruzione condizionale**
-: Un'istruzione che controlla il flusso di esecuzione in base a una condizione.
-\index{istruzione condizionale}
-\index{istruzione!condizionale}
-
 **Condizione**
 : L'espressione booleana in un'istruzione condizionale che determina quale ramo viene eseguito.
 \index{condizione}
-
-**Istruzione composta**
-: Un'istruzione formata da un'intestazione e da un corpo. L'intestazione termina con i due punti (`:`). Il corpo è indentato rispetto all'intestazione.
-\index{istruzione composta}
-
-**Schema del guardiano**
-: La costruzione di un'espressione logica con confronti aggiuntivi, per sfruttare il comportamento di cortocircuito.
-\index{schema del guardiano}
-\index{schema!guardiano}
-
-**Operatore logico**
-: Uno degli operatori che combinano espressioni booleane: `and`, `or` e `not`.
 
 **Condizione annidata**
 : Un'istruzione condizionale che appare in uno dei rami di un'altra istruzione condizionale.
 \index{condizione annidata}
 \index{condizione!annidata}
 
+**Condizione concatenata**
+: Un'istruzione condizionale con una serie di rami alternativi.
+\index{condizione concatenata}
+\index{condizione!concatenata}
+
+**Corpo**
+: La sequenza di istruzioni all'interno di un'istruzione composta.
+\index{corpo}
+
+**Cortocircuito**
+: Il comportamento per cui Python, a metà della valutazione di un'espressione logica, ferma la valutazione perché conosce già il valore finale dell'espressione, senza dover valutare il resto.
+\index{cortocircuito}
+
+**Espressione booleana**
+: Un'espressione il cui valore è `True` o `False`.
+\index{espressione booleana}
+\index{espressione!booleana}
+
+**Istruzione composta**
+: Un'istruzione formata da un'intestazione e da un corpo. L'intestazione termina con i due punti (`:`). Il corpo è indentato rispetto all'intestazione.
+\index{istruzione composta}
+
+**Istruzione condizionale**
+: Un'istruzione che controlla il flusso di esecuzione in base a una condizione.
+\index{istruzione condizionale}
+\index{istruzione!condizionale}
+
+**Operatore di confronto**
+: Uno degli operatori che confrontano i propri operandi: `==`, `!=`, `>`, `<`, `>=` e `<=`.
+
+**Operatore logico**
+: Uno degli operatori che combinano espressioni booleane: `and`, `or` e `not`.
+
+**Ramo**
+: Una delle sequenze di istruzioni alternative di un'istruzione condizionale.
+\index{ramo}
+
+**Schema del guardiano**
+: La costruzione di un'espressione logica con confronti aggiuntivi, per sfruttare il comportamento di cortocircuito.
+\index{schema del guardiano}
+\index{schema!guardiano}
+
 **Traceback**
 : Un elenco delle funzioni in esecuzione, che viene stampato quando si verifica un'eccezione.
 \index{traceback}
 
-**Cortocircuito**
-: Si verifica quando Python, a metà della valutazione di un'espressione logica, ferma la valutazione perché conosce già il valore finale dell'espressione, senza dover valutare il resto.
-\index{cortocircuito}
-
 Esercizi
 ---------
 
-**Esercizio 1:** Riscrivi il calcolo della retribuzione in modo da riconoscere al dipendente 1,5 volte la tariffa oraria per le ore lavorate oltre le 40.
+**Esercizio 1:** Riscrivi il tuo calcolo della retribuzione in modo da dare al dipendente 1,5 volte la tariffa oraria per le ore lavorate oltre le 40.
 
 ~~~~
 Enter Hours: 45
@@ -502,7 +502,7 @@ Pay: 475.0
 ~~~~
 
 
-**Esercizio 2:** Riscrivi il programma per il calcolo della retribuzione utilizzando `try` ed `except`, in modo che gestisca in maniera elegante gli input non numerici, stampando un messaggio e uscendo dal programma. Di seguito vengono mostrate due esecuzioni del programma:
+**Esercizio 2:** Riscrivi il tuo programma della retribuzione usando `try` ed `except`, in modo che gestisca con eleganza un input non numerico, stampando un messaggio e uscendo dal programma. Ecco due esecuzioni del programma:
 
 ~~~~
 Enter Hours: 20
@@ -519,7 +519,7 @@ Error, please enter numeric input
 ~~~~
 
 
-**Esercizio 3:** Scrivi un programma che chieda un punteggio compreso tra 0.0 e 1.0. Se il punteggio è fuori dall'intervallo, stampa un messaggio di errore. Se il punteggio è compreso tra 0.0 e 1.0, stampa un voto utilizzando la seguente tabella:
+**Esercizio 3:** Scrivi un programma che chieda un punteggio compreso tra `0.0` e `1.0`. Se il punteggio è fuori dall'intervallo, stampa un messaggio di errore. Se il punteggio è compreso tra `0.0` e `1.0`, stampa un voto usando la tabella seguente:
 
 ~~~~
  Score   Grade
