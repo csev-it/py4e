@@ -893,7 +893,7 @@ Enter file: romeo.txt
 
 **Esercizio 5: Client di posta minimalista.**
 
-MBOX (mail box) è un formato di file molto diffuso per memorizzare e condividere una raccolta di email. Era usato dai primi server di posta e dalle prime applicazioni desktop. Senza entrare troppo nei dettagli, MBOX è un file di testo che memorizza le email una dopo l'altra. Le email sono separate da una riga speciale che inizia con `From ` (nota lo spazio). Attenzione: le righe che iniziano con `From:` (nota i due punti) descrivono l'email stessa e non fanno da separatore. Immagina di aver scritto un'applicazione di posta minimalista, che elenca gli indirizzi email dei mittenti nella posta in arrivo dell'utente e conta il numero di email.
+MBOX (mail box) è un formato di file molto diffuso per memorizzare e condividere una raccolta di email. Era usato dai primi server di posta e dalle prime applicazioni desktop. Senza entrare troppo nei dettagli, MBOX è un file di testo che memorizza le email una dopo l'altra. Le email sono separate da una riga speciale che inizia con `"From "` (nota lo spazio). Attenzione: le righe che iniziano con `From:` (nota i due punti) descrivono l'email stessa e non fanno da separatore. Immagina di aver scritto un'applicazione di posta minimalista, che elenca gli indirizzi email dei mittenti nella posta in arrivo dell'utente e conta il numero di email.
 
 Scrivi un programma che legga i dati della casella di posta e, quando trova una riga che inizia con `From`, la divida in parole usando il metodo `split`. Ci interessa chi ha inviato il messaggio, cioè la seconda parola della riga `From`.
 
