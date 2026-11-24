@@ -150,7 +150,7 @@ Supponiamo, ad esempio, che tu non conosca nemmeno le parole o le frasi più sem
 
 ~~~~ {.python}
 >>> I come in peace, please take me to your leader
-File "<stdin>", line 1
+  File "<stdin>", line 1
     I come in peace, please take me to your leader
       ^^^^
 SyntaxError: invalid syntax
@@ -373,7 +373,7 @@ I programmatori principianti spesso prendono il fatto che Python non lascia spaz
 
 ~~~~ {.python}
 >>> primt 'Hello world!'
-File "<stdin>", line 1
+  File "<stdin>", line 1
     primt 'Hello world!'
           ^^^^^^^^^^^^^^
 SyntaxError: invalid syntax
@@ -384,12 +384,12 @@ Traceback (most recent call last):
 NameError: name 'primt' is not defined. Did you mean: 'print'?
 
 >>> I hate you Python!
-File "<stdin>", line 1
+  File "<stdin>", line 1
     I hate you Python!
       ^^^^
 SyntaxError: invalid syntax
 >>> if you come out of there, I would teach you a lesson
-File "<stdin>", line 1
+  File "<stdin>", line 1
     if you come out of there, I would teach you a lesson
            ^^^^
 SyntaxError: invalid syntax
@@ -428,7 +428,7 @@ esecuzione
 : Sperimenta apportando modifiche ed eseguendo versioni diverse. Spesso, se visualizzi la cosa giusta nel punto giusto del programma, il problema diventa ovvio. A volte, però, devi passare un po' di tempo a costruire un'*impalcatura* (scaffolding).
 
 riflessione
-: Prenditi un po' di tempo per pensare! Di che tipo di errore si tratta: di sintassi, di runtime, semantico? Quali informazioni puoi ottenere dai messaggi di errore o dall'output del programma? Che tipo di errore potrebbe causare il problema che stai osservando? Cosa hai cambiato per ultimo, prima che apparisse il problema?
+: Prenditi un po' di tempo per pensare! Di che tipo di errore si tratta: di sintassi, logico, semantico? Quali informazioni puoi ottenere dai messaggi di errore o dall'output del programma? Che tipo di errore potrebbe causare il problema che stai osservando? Cosa hai cambiato per ultimo, prima che apparisse il problema?
 
 ritirata
 : A un certo punto la cosa migliore da fare è tornare indietro, annullando le modifiche recenti, fino a riavere un programma che funziona e che comprendi. Da lì puoi iniziare la ricostruzione.
@@ -574,9 +574,9 @@ d) Un documento di videoscrittura
 
 ~~~~ {.python}
 >>> primt 'Hello world!'
-File "<stdin>", line 1
-  primt 'Hello world!'
-                     ^
+  File "<stdin>", line 1
+    primt 'Hello world!'
+          ^^^^^^^^^^^^^^
 SyntaxError: invalid syntax
 >>>
 ~~~~
