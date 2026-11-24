@@ -765,7 +765,7 @@ Un uso disattento delle liste (e di altri oggetti mutabili) può portare a lungh
 
     Potresti fissarlo a lungo e scervellarti oppure chiedere aiuto a qualcuno, ma l'approccio più rapido e intelligente è aggiungere un'istruzione `print`. Il posto migliore per aggiungerla è subito prima della riga in cui il programma è fallito, per stampare i dati che sembrano causare l'errore.
 
-    Certo, questo approccio può generare molte righe di output, ma almeno avrai subito qualche indizio sul problema in questione. Quindi aggiungiamo una stampa della variabile `words` subito prima della riga cinque. Aggiungiamo anche un prefisso `Debug:` alla riga, così da tenere separati l'output normale e quello di debug.
+    Certo, questo approccio può generare molte righe di output, ma almeno avrai subito qualche indizio sul problema in questione. Quindi aggiungiamo una stampa della variabile `words` subito prima della riga quattro. Aggiungiamo anche un prefisso `Debug:` alla riga, così da tenere separati l'output normale e quello di debug.
 
     ~~~~ {.python}
     for line in fhand:
