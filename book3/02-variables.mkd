@@ -523,6 +523,13 @@ Dopo un periodo piuttosto breve conoscerai le parole riservate più comuni e com
     <b>print</b>(word)
 </pre>
 
+```{=latex}
+\begin{Verbatim}[commandchars=\\\{\},fontsize=\small]
+\textbf{for} word \textbf{in} words\textbf{:}
+    \textbf{print}(word)
+\end{Verbatim}
+```
+
 Le parti del codice definite da Python (`for`, `in`, `print` e `:`) sono in grassetto, mentre le variabili scelte dal programmatore (`word` e `words`) non lo sono. Molti editor di testo conoscono la sintassi di Python e colorano le parole riservate in modo diverso, per darti degli indizi che aiutano a tenere distinte le variabili e le parole riservate. Dopo un po' comincerai a leggere Python e a stabilire rapidamente cos'è una variabile e cos'è una parola riservata.
 
 Debug
