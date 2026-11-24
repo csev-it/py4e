@@ -300,17 +300,18 @@ Python ha una funzione chiamata `dir` che elenca i metodi disponibili per un ogg
 >>> dir(stuff)
 [... 'capitalize', 'casefold', 'center', 'count', 'encode',
 'endswith', 'expandtabs', 'find', 'format', 'format_map',
-'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit',
-'isidentifier', 'islower', 'isnumeric', 'isprintable',
-'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower',
-'lstrip', 'maketrans', 'partition', 'replace', 'rfind',
+'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal',
+'isdigit', 'isidentifier', 'islower', 'isnumeric',
+'isprintable', 'isspace', 'istitle', 'isupper', 'join',
+'ljust', 'lower', 'lstrip', 'maketrans', 'partition',
+'removeprefix', 'removesuffix', 'replace', 'rfind',
 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip',
 'split', 'splitlines', 'startswith', 'strip', 'swapcase',
 'title', 'translate', 'upper', 'zfill']
 >>> help(str.capitalize)
-Help on method_descriptor:
+Help on method descriptor capitalize:
 
-capitalize(self, /)
+capitalize(self, /) unbound builtins.str method
     Return a capitalized version of the string.
 
     More specifically, make the first character have upper
@@ -509,8 +510,9 @@ hello there
 print this!
 >
 Traceback (most recent call last):
-  File "copytildone.py", line 3, in <module>
+  File "copytildone2.py", line 3, in <module>
     if line[0] == '#':
+       ~~~~^^^
 IndexError: string index out of range
 ~~~~
 
