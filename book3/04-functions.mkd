@@ -166,7 +166,7 @@ Il secondo esempio calcola il seno di `radians`. Il nome della variabile suggeri
 L'espressione `math.pi` prende la variabile `pi` dal modulo `math`. Il valore di questa variabile è un'approssimazione di $\pi$, precisa fino a circa 15 cifre.
 \index{pi greco}
 
-Se conosci la trigonometria, puoi controllare il risultato precedente confrontandolo con la radice quadrata di due fratto due:
+Se conosci la trigonometria, puoi controllare il risultato precedente confrontandolo con la radice quadrata di due fratto due^[Su alcuni sistemi, ad esempio macOS, l'ultima cifra di `math.sin(radians)` può essere diversa (`0.7071067811865475` invece di `0.7071067811865476`): dipende da come il sistema operativo calcola il seno, non da un errore nel tuo codice.]:
 \index{funzione sqrt}
 \index{funzione!sqrt}
 
