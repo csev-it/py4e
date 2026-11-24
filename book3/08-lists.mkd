@@ -755,8 +755,9 @@ Un uso disattento delle liste (e di altri oggetti mutabili) può portare a lungh
     python search8.py
     Sat
     Traceback (most recent call last):
-      File "search8.py", line 5, in <module>
+      File "search8.py", line 4, in <module>
         if words[0] != 'From' : continue
+           ~~~~~^^^
     IndexError: list index out of range
     ~~~~
 
@@ -781,8 +782,9 @@ Un uso disattento delle liste (e di altri oggetti mutabili) può portare a lungh
     Debug: ['X-DSPAM-Probability:', '0.0000']
     Debug: []
     Traceback (most recent call last):
-      File "search9.py", line 6, in <module>
+      File "search9.py", line 5, in <module>
         if words[0] != 'From' : continue
+           ~~~~~^^^
     IndexError: list index out of range
     ~~~~
 
