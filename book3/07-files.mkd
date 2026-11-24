@@ -147,7 +147,7 @@ Quando il file viene letto in questo modo, tutti i caratteri, comprese tutte le 
 0
 ~~~~
 
-Ricorda che questa forma della funzione `open` va usata solo se i dati del file entrano comodamente nella memoria principale del tuo computer. Se il file è troppo grande per entrare nella memoria principale, dovresti scrivere il programma in modo che legga il file a pezzi usando un ciclo `for` o `while`.
+Ricorda che il metodo `read` va usato solo se i dati del file entrano comodamente nella memoria principale del tuo computer. Se il file è troppo grande per entrare nella memoria principale, dovresti scrivere il programma in modo che legga il file a pezzi usando un ciclo `for` o `while`.
 
 Cercare in un file
 ------------------------
