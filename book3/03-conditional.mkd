@@ -372,6 +372,8 @@ False
 >>> x >= 2 and (x/y) > 2
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
+    x >= 2 and (x/y) > 2
+                ~^~
 ZeroDivisionError: division by zero
 >>>
 ~~~~
