@@ -71,6 +71,12 @@ Termini che ricorrono nel testo di più capitoli.
 | parser | parser | resta in inglese; il verbo «parse» è «analizzare» |
 | quantifier | quantificatore |  |
 | token | token | resta in inglese; tutorial ufficiale: 2 volte su 2 |
+| underscore | underscore | resta in inglese (regola 20) |
+| slicing | slicing | resta in inglese (regola 20); tutorial ufficiale: 4 volte su 4 |
+| formatted string literal, f-string | stringa letterale formattata, f-string | deciso il 23 novembre 2026; in corsivo alla prima comparsa |
+| data structure | struttura dati | deciso il 23 novembre 2026: non «struttura di dati»; tutorial ufficiale: 4 volte su 4 |
+| termine tradotto con la glossa inglese | corsivo, inglese in tondo tra parentesi | regola 22, deciso il 24 novembre 2026: «*controllo di flusso* (flow control)», non tra virgolette |
+| link su una riga a sé | senza punto finale | deciso il 24 novembre 2026; la frase che finisce con un link dentro il testo, e la nota con parole e un link finale, si chiudono con il punto |
 | web, web page, web server | web, pagina web, server web | «web» minuscolo, salvo «World Wide Web» |
 | retrieve, download | recuperare, scaricare |  |
 | request, response | richiesta, risposta |  |
@@ -87,7 +93,7 @@ Termini che ricorrono nel testo di più capitoli.
 | self-closing tag | tag a chiusura automatica | con l'inglese tra parentesi alla prima comparsa |
 | subtree | sottoalbero |  |
 | top (level) element | elemento di primo livello |  |
-| parent, child (nodi XML) | padre, figlio | per le classi il glossario del capitolo 14 fissa «classe genitore, classe figlia» |
+| parent, child (nodi XML) | padre, figlio | per le classi il glossario del capitolo 14 fissa «classe padre, classe figlia» |
 | vendor | fornitore |  |
 | self-describing | autodescrittivo |  |
 | array, markup | array, markup | restano in inglese |
@@ -109,9 +115,9 @@ Termini che ricorrono nel testo di più capitoli.
 | embedded | incorporato | alla prima comparsa «*incorporato* (embedded)» |
 | directory, folder | directory, cartella | tutorial ufficiale: «directory» 25 volte su 26 |
 | connection, link (tra righe e tabelle) | connessione, collegamento | «connessione» solo per la connessione al database |
-| unique | univoco |  |
+| unique | distinto, univoco | «distinto» per «senza ripetizioni» («parole distinte»); «univoco» per ciò che identifica («identificatore univoco»); non «unico» per «senza duplicati» |
 | track | brano |  |
-| capabilities | capacità | tutorial ufficiale: 3 volte su 3 |
+| capabilities | capacità, funzionalità | deciso il 24 novembre 2026: «funzionalità» per librerie, linguaggi e formati; «capacità» per oggetti e database. Tutorial ufficiale: «capacità» 3 volte su 3 |
 | numeri di quattro cifre | senza punto | «1200», «3000»; il punto delle migliaia da cinque cifre in su («100.000») |
 | data visualization, to visualize | visualizzazione dei dati, visualizzare |  |
 | to crawl, to spider | scansionare | «scansione» per il nome; «spider» resta per il programma |
@@ -217,36 +223,33 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | return value | Valore di ritorno | valore di ritorno |  |
 | void function | Funzione vuota | funzione vuota |  |
 
-### Capitolo 5 (`05-iterations.mkd`), da rivedere
+### Capitolo 5 (`05-iterations.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| accumulator | Accumulatore |  |  |
-| counter | Contatore |  |  |
-| decrement | Decremento |  |  |
-| initialize | Inizializzare |  |  |
-| increment | Incremento |  |  |
-| infinite loop | Ciclo infinito |  |  |
-| iteration | Iterazione |  |  |
+| accumulator | Accumulatore | accumulatore |  |
+| counter | Contatore | contatore |  |
+| decrement | Decremento | decremento |  |
+| initialize | Inizializzare | inizializzare |  |
+| increment | Incremento | incremento |  |
+| infinite loop | Ciclo infinito | ciclo infinito |  |
+| iteration | Iterazione | iterazione |  |
 
-### Capitolo 6 (`06-strings.mkd`), da rivedere
+### Capitolo 6 (`06-strings.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| counter | Contatore |  |  |
-| empty string | Stringa vuota |  |  |
-| format operator | Operatore di formato |  |  |
-| format sequence | Sequenza di formato |  |  |
-| format string | Stringa di formato |  |  |
-| flag | Flag |  |  |
-| invocation | Invocazione |  |  |
-| immutable | Immutabile |  |  |
-| index | Indice |  |  |
+| counter | Contatore | contatore |  |
+| empty string | Stringa vuota | stringa vuota |  |
+| flag | Flag | flag | resta in inglese |
+| invocation | Invocazione | invocazione |  |
+| immutable | Immutabile | immutabile |  |
+| index | Indice | indice |  |
 | item | Item | elemento | tutorial ufficiale: «elemento» 26 volte su 28 |
-| method | Metodo |  |  |
-| object | Oggetto |  |  |
-| search | Ricerca |  |  |
-| sequence | Sequenza |  |  |
+| method | Metodo | metodo |  |
+| object | Oggetto | oggetto |  |
+| search | Ricerca | ricerca |  |
+| sequence | Sequenza | sequenza |  |
 | slice | Segmento | slice | deciso il 22 novembre 2026; tutorial ufficiale: «slice» 9 volte, «fetta» 3 |
 | traverse | Traverse | scorrere |  |
 
@@ -297,12 +300,12 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | comparable | Comparabile | confrontabile | «compare» è «confrontare», mai «comparare» |
-| data structure | Struttura di dati | struttura di dati |  |
+| data structure | Struttura di dati | struttura dati | deciso il 23 novembre 2026 |
 | DSU | DSU | DSU | la sigla e «decorate-sort-undecorate» restano in inglese, con «decorare, ordinare, togliere la decorazione» come spiegazione |
 | gather | Gather | raccolta (gather) |  |
 | hashable | Hashabile | hashable | deciso il 22 novembre 2026: resta in inglese |
 | scatter | Scatter | spacchettamento (scatter) |  |
-| shape (of a data structure) | Formato (di una struttura dati) | forma (di una struttura di dati) | «shape error» = «*errori di forma* (shape error)» |
+| shape (of a data structure) | Formato (di una struttura dati) | forma (di una struttura dati) | «shape error» = «*errori di forma* (shape error)» |
 | singleton | Singleton | singleton | resta in inglese |
 | tuple | Tupla | tupla |  |
 | tuple assignment | Assegnazione di tupla | assegnazione di tupla |  |
