@@ -53,7 +53,11 @@ Puoi usare come indice qualsiasi espressione, comprese variabili e operatori, ma
 
 ~~~~ {.python}
 >>> letter = fruit[1.5]
-TypeError: string indices must be integers
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    letter = fruit[1.5]
+             ~~~~~^^^^^
+TypeError: string indices must be integers, not 'float'
 ~~~~
 
 Ottenere la lunghezza di una stringa usando `len`
