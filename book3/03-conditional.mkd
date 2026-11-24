@@ -159,7 +159,7 @@ Quando usi l'interprete Python, devi lasciare una riga vuota alla fine di un blo
 ... print('Done')
   File "<stdin>", line 3
     print('Done')
-        ^
+    ^^^^^
 SyntaxError: invalid syntax
 ~~~~
 
@@ -423,7 +423,6 @@ Gli errori di sintassi sono di solito facili da trovare, ma ci sono alcuni trane
 >>>  y = 6
   File "<stdin>", line 1
     y = 6
-    ^
 IndentationError: unexpected indent
 ~~~~
 
