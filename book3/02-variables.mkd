@@ -120,7 +120,7 @@ Nomi delle variabili e parole chiave
 \index{parola chiave}
 Di solito i programmatori scelgono per le variabili nomi significativi, che documentano a cosa serve la variabile.
 
-I nomi delle variabili possono essere lunghi a piacere. Possono contenere sia lettere sia numeri, ma non possono iniziare con un numero. Le lettere maiuscole sono ammesse, ma è una buona idea iniziare i nomi delle variabili con una lettera minuscola (più avanti vedrai perché).
+I nomi delle variabili possono essere lunghi a piacere. Possono contenere sia lettere sia numeri, ma non possono iniziare con un numero.^[Nota per chi scrive in italiano: Python accetta nei nomi anche i caratteri non ASCII, come le lettere accentate (`città` è un nome valido), ma è meglio non usarli. Un nome così è facile da digitare su una tastiera italiana e difficile da riscrivere su un'altra, e si confonde con lo stesso nome senza accento. Usa solo lettere senza accento, cifre e underscore, come negli esempi di questo libro, che per lo stesso motivo restano in inglese.] Le lettere maiuscole sono ammesse, ma è una buona idea iniziare i nomi delle variabili con una lettera minuscola (più avanti vedrai perché).
 
 Il carattere underscore (`_`) può comparire in un nome. Si usa spesso nei nomi composti da più parole, come `my_name` o `airspeed_of_unladen_swallow`. I nomi delle variabili possono iniziare con un underscore, ma di solito lo evitiamo, a meno che non stiamo scrivendo codice di libreria che useranno altri.\index{carattere underscore}
 
