@@ -9,9 +9,9 @@ Non esiste un glossario ufficiale inglese-italiano di Python. Nella documentazio
 1. con il **tutorial ufficiale** in italiano (sorgenti in `python/python-docs-it`, ramo `3.13`, 950 frasi tradotte), che è l'unica traduzione pubblicata dalla Python Software Foundation: le note riportano quante volte usa ciascuna forma;
 2. dove il tutorial non ha il termine o è incerto, con l'**uso corrente** tra chi programma in italiano, per decisione del revisore.
 
-Per i termini che vengono da *Think Python* (per esempio fruitful e void function) si è consultata anche «Pensare in Python», la traduzione italiana di Andrea Zanella (`AllenDowney/ThinkPythonItalian`).
+Per i termini che vengono da *Think Python* (ad esempio fruitful e void function) si è consultata anche «Pensare in Python», la traduzione italiana di Andrea Zanella (`AllenDowney/ThinkPythonItalian`).
 
-Le voci dei glossari di fine capitolo sono elencate qui sotto accanto all'originale inglese. Una voce senza scelta non è ancora stata rivista: si decide quando si lavora al suo capitolo.
+Le voci dei glossari di fine capitolo sono elencate qui sotto accanto all'originale inglese.
 
 ## Scelte trasversali
 
@@ -23,7 +23,7 @@ Termini che ricorrono nel testo di più capitoli.
 | default | predefinito | tutorial ufficiale: «predefinito» 21 volte su 25 |
 | header (HTTP, file, istruzione) | intestazione | tutorial ufficiale: sempre «intestazione» |
 | indentation | indentazione | tutorial ufficiale: «indentazione» 8 volte, «rientro» 1 |
-| loop | ciclo | tutorial ufficiale: «ciclo» 14 volte, «loop» 2 |
+| loop | ciclo | tutorial ufficiale: «ciclo» in 14 coppie su 21, «loop» mai |
 | nested | annidato | tutorial ufficiale: «annidato» 6 volte, «nidificato» 4 |
 | newline | newline | resta in inglese; alla prima occorrenza di un capitolo si spiega: «carattere di fine riga» |
 | print (verbo) | stampare | deciso il 22 novembre 2026; tutorial ufficiale: «stampare» 29 volte su 32. «visualizzare» resta per «display» |
@@ -56,8 +56,8 @@ Termini che ricorrono nel testo di più capitoli.
 | sanity check, consistency check | controllo di plausibilità, controllo di coerenza | con l'inglese tra parentesi alla prima comparsa |
 | scaffolding | impalcatura | «Pensare in Python»: «impalcature» |
 | idiom | idioma |  |
-| keyword argument | argomento chiave-valore | tutorial ufficiale: «argomenti chiave-valore» in 7 coppie su 9; alla prima comparsa «*argomento chiave-valore* (keyword argument)» |
-| list comprehension | comprensione di lista | tutorial ufficiale: «comprensione» in 9 coppie su 11 |
+| keyword argument | argomento chiave-valore | tutorial ufficiale: «argomenti chiave-valore» in 7 coppie su 17, la forma più frequente; alla prima comparsa «*argomento chiave-valore* (keyword argument)» |
+| list comprehension | comprensione di lista | tutorial ufficiale: «comprensione» in 9 coppie su 10 |
 | composite key | chiave composta |  |
 | swap | scambiare | tutorial ufficiale: «scambiare» |
 | collection | collezione | tutorial ufficiale: «collezione» 5 volte, «raccolta» 1; «raccolta» resta per «gather» |
@@ -72,9 +72,9 @@ Termini che ricorrono nel testo di più capitoli.
 | quantifier | quantificatore |  |
 | token | token | resta in inglese; tutorial ufficiale: 2 volte su 2 |
 | underscore | underscore | resta in inglese (regola 20) |
-| slicing | slicing | resta in inglese (regola 20); tutorial ufficiale: 4 volte su 4 |
+| slicing | slicing | resta in inglese (regola 20); tutorial ufficiale: «slicing» in 3 coppie su 4, «affettamento» in 1 |
 | formatted string literal, f-string | stringa letterale formattata, f-string | deciso il 23 novembre 2026; in corsivo alla prima comparsa |
-| data structure | struttura dati | deciso il 23 novembre 2026: non «struttura di dati»; tutorial ufficiale: 4 volte su 4 |
+| data structure | struttura dati | deciso il 23 novembre 2026: non «struttura di dati»; tutorial ufficiale: «struttura dati» in 4 coppie su 5, «struttura di dati» mai |
 | termine tradotto con la glossa inglese | corsivo, inglese in tondo tra parentesi | regola 22, deciso il 24 novembre 2026: «*controllo di flusso* (flow control)», non tra virgolette |
 | link su una riga a sé | senza punto finale | deciso il 24 novembre 2026; la frase che finisce con un link dentro il testo, e la nota con parole e un link finale, si chiudono con il punto |
 | web, web page, web server | web, pagina web, server web | «web» minuscolo, salvo «World Wide Web» |
@@ -114,7 +114,7 @@ Termini che ricorrono nel testo di più capitoli.
 | crow's foot diagram | diagramma a zampa di gallina | forma in uso in italiano (pagine italiane di Lucid); alla prima comparsa «*diagrammi a zampa di gallina* (crow's foot diagrams)» |
 | embedded | incorporato | alla prima comparsa «*incorporato* (embedded)» |
 | directory, folder | directory, cartella | tutorial ufficiale: «directory» 25 volte su 26 |
-| connection, link (tra righe e tabelle) | connessione, collegamento | «connessione» solo per la connessione al database |
+| connection, link (tra righe e tabelle) | connessione, collegamento | «connessione» per database e rete; «collegamento» tra righe e tabelle |
 | unique | distinto, univoco | «distinto» per «senza ripetizioni» («parole distinte»); «univoco» per ciò che identifica («identificatore univoco»); non «unico» per «senza duplicati» |
 | track | brano |  |
 | capabilities | capacità, funzionalità | deciso il 24 novembre 2026: «funzionalità» per librerie, linguaggi e formati; «capacità» per oggetti e database. Tutorial ufficiale: «capacità» 3 volte su 3 |
@@ -149,7 +149,7 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | main memory | Memoria principale | memoria principale |  |
 | parse | Analizzare | analizzare |  |
 | portability | Portabilità | portabilità |  |
-| print function | Funzione di stampa | funzione print | è il nome della funzione |
+| print function | Funzione di stampa | funzione `print` | è il nome della funzione |
 | problem solving | Risoluzione dei problemi | risoluzione dei problemi |  |
 | program | Programma | programma |  |
 | prompt | Prompt | prompt |  |
@@ -216,7 +216,7 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | function definition | Definizione di funzione | definizione di funzione |  |
 | function object | Oggetto funzione | oggetto funzione |  |
 | header | Header | intestazione | tutorial ufficiale: sempre «intestazione», anche per «class definition header» |
-| import statement | Istruzione import | istruzione import |  |
+| import statement | Istruzione import | istruzione `import` |  |
 | module object | Oggetto modulo | oggetto modulo |  |
 | parameter | Parametro | parametro |  |
 | pseudorandom | Pseudo-casuale | pseudo-casuale |  |
@@ -245,19 +245,19 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | invocation | Invocazione | invocazione |  |
 | immutable | Immutabile | immutabile |  |
 | index | Indice | indice |  |
-| item | Item | elemento | tutorial ufficiale: «elemento» 26 volte su 28 |
+| item | Item | elemento | tutorial ufficiale: «elemento» in 26 coppie su 27 |
 | method | Metodo | metodo |  |
 | object | Oggetto | oggetto |  |
 | search | Ricerca | ricerca |  |
 | sequence | Sequenza | sequenza |  |
-| slice | Segmento | slice | deciso il 22 novembre 2026; tutorial ufficiale: «slice» 9 volte, «fetta» 3 |
+| slice | Segmento | slice | deciso il 22 novembre 2026; tutorial ufficiale: «slice» in 5 coppie, «fetta» in 2 |
 | traverse | Traverse | scorrere |  |
 
 ### Capitolo 7 (`07-files.mkd`), rivisto
 
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
-| catch | Catch | catturare | «gestire» traduce «handle» (tutorial ufficiale: «gestire» 27 volte su 30) |
+| catch | Catch | catturare | «gestire» traduce «handle» (tutorial ufficiale: «gestire» in 26 coppie su 27) |
 | newline | Newline | newline | resta in inglese |
 | Pythonic | Pythonic | Pythonic | deciso il 22 novembre 2026: resta in inglese |
 | Quality Assurance | Controllo qualità | controllo qualità | deciso il 22 novembre 2026: «*controllo qualità* (Quality Assurance, o QA in breve)» alla prima comparsa, poi «QA» |
@@ -288,7 +288,7 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | hash function | Funzione di hash | funzione hash |  |
 | histogram | Istogramma | istogramma |  |
 | implementation | Implementazione | implementazione |  |
-| item | Elemento | elemento | tutorial ufficiale: «elemento» 26 volte su 28 |
+| item | Elemento | elemento | tutorial ufficiale: «elemento» in 26 coppie su 27 |
 | key | Chiave | chiave |  |
 | key-value pair | Coppia chiave-valore | coppia chiave-valore |  |
 | lookup | Ricerca | ricerca |  |
@@ -316,7 +316,7 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 |---|---|---|---|
 | brittle code | Codice fragile | codice fragile |  |
 | greedy matching | Corrispondenza avida | corrispondenza avida | greedy = avido, non-greedy = non avido |
-| grep | Grep | grep | nome di un comando: minuscolo e nel carattere da codice |
+| grep | Grep | `grep` | nome di un comando: minuscolo e nel carattere da codice |
 | regular expression | Espressione regolare | espressione regolare | «regex» resta in inglese dove l'originale lo usa |
 | wild card | Wild-card | carattere jolly |  |
 
@@ -335,7 +335,7 @@ La colonna «Voce attuale» riporta la voce com'era prima della revisione. La co
 | Inglese | Voce attuale | Scelta | Nota |
 |---|---|---|---|
 | API | API | API | alla prima comparsa «*interfacce di programmazione delle applicazioni* (API, Application Program Interfaces)» |
-| ElementTree | ElementTree | ElementTree |  |
+| ElementTree | ElementTree | `ElementTree` | nome di un modulo: nel carattere da codice |
 | JSON | JSON | JSON | senza articolo quando indica il formato, con l'articolo quando indica un contenuto preciso («il JSON analizzato») |
 | SOA | SOA | SOA | alla prima comparsa «*architettura orientata ai servizi* (SOA, Service-Oriented Architecture)» |
 | XML | XML | XML | come JSON: senza articolo per il formato |
