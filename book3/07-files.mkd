@@ -47,7 +47,8 @@ Se il file non esiste, `open` fallirà con un traceback e non otterrai un handle
 ~~~~ {.python}
 >>> fhand = open('stuff.txt')
 Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <module>
+    fhand = open('stuff.txt')
 FileNotFoundError: [Errno 2] No such file or directory: 'stuff.txt'
 ~~~~
 
