@@ -139,7 +139,7 @@ for i in range(len(numbers)):
     numbers[i] = numbers[i] * 2
 ~~~~
 
-Questo ciclo scorre la lista e aggiorna ogni elemento. `len` restituisce il numero di elementi della lista. `range` restituisce una lista di indici da 0 a $n-1$, dove $n$ è la lunghezza della lista. A ogni passaggio del ciclo, `i` riceve l'indice dell'elemento successivo. L'istruzione di assegnazione nel corpo usa `i` per leggere il vecchio valore dell'elemento e per assegnare il nuovo valore.
+Questo ciclo scorre la lista e aggiorna ogni elemento. `len` restituisce il numero di elementi della lista. `range` restituisce una sequenza di indici da 0 a $n-1$, dove $n$ è la lunghezza della lista. A ogni passaggio del ciclo, `i` riceve l'indice dell'elemento successivo. L'istruzione di assegnazione nel corpo usa `i` per leggere il vecchio valore dell'elemento e per assegnare il nuovo valore.
 
 \index{aggiornamento di un elemento}
 \index{aggiornamento!elemento}
@@ -880,7 +880,7 @@ Shakespeare ha usato oltre 20.000 parole nelle sue opere. Ma come faresti a stab
 
 Usiamo invece Python per riuscirci. Elenca tutte le parole distinte, in ordine alfabetico, memorizzate in un file `romeo.txt` che contiene una parte dell'opera di Shakespeare.
 
-Per cominciare, scarica una copia del file [www.py4e.com/code3/romeo.txt](http://www.py4e.com/code3/romeo.txt). Crea una lista di parole distinte, che conterrà il risultato finale. Scrivi un programma che apra il file `romeo.txt` e lo legga riga per riga. Dividi ogni riga in una lista di parole usando la funzione `split`. Per ogni parola, controlla se è già nella lista delle parole distinte. Se non c'è, aggiungila alla lista. Quando il programma ha finito, ordina e stampa la lista delle parole distinte in ordine alfabetico.
+Per cominciare, scarica una copia del file [www.py4e.com/code3/romeo.txt](http://www.py4e.com/code3/romeo.txt). Crea una lista di parole distinte, che conterrà il risultato finale. Scrivi un programma che apra il file `romeo.txt` e lo legga riga per riga. Dividi ogni riga in una lista di parole usando il metodo `split`. Per ogni parola, controlla se è già nella lista delle parole distinte. Se non c'è, aggiungila alla lista. Quando il programma ha finito, ordina e stampa la lista delle parole distinte in ordine alfabetico.
 
 ~~~~
 Enter file: romeo.txt
@@ -895,7 +895,7 @@ Enter file: romeo.txt
 
 MBOX (mail box) è un formato di file molto diffuso per memorizzare e condividere una raccolta di email. Era usato dai primi server di posta e dalle prime applicazioni desktop. Senza entrare troppo nei dettagli, MBOX è un file di testo che memorizza le email una dopo l'altra. Le email sono separate da una riga speciale che inizia con `From ` (nota lo spazio). Attenzione: le righe che iniziano con `From:` (nota i due punti) descrivono l'email stessa e non fanno da separatore. Immagina di aver scritto un'applicazione di posta minimalista, che elenca gli indirizzi email dei mittenti nella posta in arrivo dell'utente e conta il numero di email.
 
-Scrivi un programma che legga i dati della casella di posta e, quando trova una riga che inizia con `From`, la divida in parole usando la funzione `split`. Ci interessa chi ha inviato il messaggio, cioè la seconda parola della riga `From`.
+Scrivi un programma che legga i dati della casella di posta e, quando trova una riga che inizia con `From`, la divida in parole usando il metodo `split`. Ci interessa chi ha inviato il messaggio, cioè la seconda parola della riga `From`.
 
 ~~~~
 From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008
