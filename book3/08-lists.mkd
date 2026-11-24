@@ -370,7 +370,7 @@ Ci sono diverse funzioni built-in che si possono usare sulle liste e che ti perm
 >>> print(sum(nums))
 154
 >>> print(sum(nums)/len(nums))
-25
+25.666666666666668
 ~~~~
 
 La funzione `sum()` si può usare solo quando gli elementi della lista sono numeri. Le altre (`max()`, `len()`, ecc.) funzionano con liste di stringhe e di altri tipi che possono essere confrontati.
@@ -622,7 +622,7 @@ None
 
 >>> t3 = t1 + [3]
 >>> print(t3)
-[1, 2, 3]
+[1, 2, 3, 3]
 >>> t1 is t3
 False
 ~~~~
