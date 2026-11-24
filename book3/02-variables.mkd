@@ -477,7 +477,7 @@ print(x1q3p9afd)
 
 Per l'interprete Python questi tre programmi sono *esattamente uguali*, ma gli esseri umani li vedono e li capiscono in modo molto diverso. Gli esseri umani capiscono più in fretta l'*intento* del secondo programma, perché il programmatore ha scelto nomi di variabili che rispecchiano ciò che intende memorizzare in ciascuna variabile.
 
-Chiamiamo questi nomi di variabili scelti con saggezza "nomi mnemonici per le variabili". La parola *mnemonico*^[Vedi <http://www.treccani.it/vocabolario/mnemonico/> per una descrizione estesa della parola "mnemonico".] significa "che aiuta la memoria". Scegliamo nomi mnemonici per le variabili perché ci aiutino a ricordare il motivo per cui le abbiamo create.
+Chiamiamo questi nomi di variabili scelti con saggezza "nomi mnemonici per le variabili". La parola *mnemonico*^[Vedi <https://www.treccani.it/vocabolario/mnemonico/> per una descrizione estesa della parola "mnemonico".] significa "che aiuta la memoria". Scegliamo nomi mnemonici per le variabili perché ci aiutino a ricordare il motivo per cui le abbiamo create.
 
 Tutto questo sembra ottimo, ed è davvero una buona idea usare nomi mnemonici per le variabili; però questi nomi possono ostacolare un programmatore alle prime armi quando cerca di analizzare e capire il codice. Il motivo è che i programmatori principianti non hanno ancora imparato a memoria le parole riservate (sono solo 35), e a volte le variabili con nomi troppo descrittivi cominciano a sembrare parte del linguaggio, e non semplici nomi di variabili scelti bene.
 
@@ -616,6 +616,7 @@ Glossario
 
 **Valutare**
 : Semplificare un'espressione eseguendo le operazioni in modo da ottenere un unico valore.
+\index{valutare}
 
 **Variabile**
 : Un nome che si riferisce a un valore.
