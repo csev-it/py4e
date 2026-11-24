@@ -383,6 +383,8 @@ SyntaxError: invalid syntax
 >>> primt ('Hello world')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
+    primt ('Hello world')
+    ^^^^^
 NameError: name 'primt' is not defined. Did you mean: 'print'?
 
 >>> I hate you Python!
