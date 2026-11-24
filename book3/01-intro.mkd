@@ -136,8 +136,8 @@ A un certo punto ti troverai in un terminale o in una finestra di comando, digit
 \index{modalità interattiva}
 
 ~~~~ {.python}
-Python 3.11.6 (main, Nov  2 2023, 04:39:43)
-   [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Python 3.15.2 (main, Oct 25 2026, 16:57:51)
+   [Clang 21.0.0 (clang-2100.3.34.2)] on darwin
 Type "help", "copyright", "credits" or "license" for more
 information.
 >>>
@@ -197,6 +197,8 @@ Prima di concludere la nostra prima conversazione con l'interprete Python, proba
 >>> good-bye
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
+    good-bye
+    ^^^^
 NameError: name 'good' is not defined
 >>> if you don't mind, I need to leave
   File "<stdin>", line 1
@@ -273,7 +275,7 @@ L'interprete Python è scritto in un linguaggio di alto livello chiamato "C". Pu
 Quindi Python è a sua volta un programma, ed è compilato in codice macchina. Quando hai installato Python sul tuo computer (o quando l'ha installato il fornitore), hai copiato sul tuo sistema una versione in codice macchina del programma Python tradotto. In Windows, il codice macchina eseguibile di Python stesso si trova probabilmente in un file con un nome simile a questo:
 
 ~~~~
-C:\Python35\python.exe
+C:\Python315\python.exe
 ~~~~
 
 È più di quanto ti serva davvero sapere per essere un programmatore Python, ma a volte conviene rispondere fin dall'inizio a quelle piccole domande assillanti.
