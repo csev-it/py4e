@@ -25,6 +25,10 @@ Se provi ad aggiornare una variabile che non esiste, ottieni un errore, perché 
 
 ~~~~ {.python}
 >>> x = x + 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    x = x + 1
+        ^
 NameError: name 'x' is not defined
 ~~~~
 
