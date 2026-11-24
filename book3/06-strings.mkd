@@ -320,7 +320,7 @@ capitalize(self, /)
 
 La funzione `dir` elenca i metodi e puoi usare `help` per ottenere una semplice documentazione su un metodo, ma una fonte di documentazione migliore per i metodi delle stringhe sarebbe
 
-<https://docs.python.org/library/stdtypes.html#string-methods>.
+<https://docs.python.org/library/stdtypes.html#string-methods>
 
 Chiamare un *metodo* è simile a chiamare una funzione (accetta argomenti e restituisce un valore), ma la sintassi è diversa. Chiamiamo un metodo aggiungendo il nome del metodo al nome della variabile, con il punto come delimitatore.
 
@@ -446,7 +446,7 @@ Usiamo una versione del metodo `find` che ci permette di specificare la posizion
 
 La documentazione del metodo `find` è disponibile all'indirizzo
 
-<https://docs.python.org/library/stdtypes.html#string-methods>.
+<https://docs.python.org/library/stdtypes.html#string-methods>
 
 Stringhe letterali formattate
 -------------------------
@@ -486,7 +486,7 @@ In una singola stringa letterale si possono includere più espressioni, per crea
 
 Le stringhe letterali formattate sono potenti e possono fare anche più di quanto si è visto qui. Puoi saperne di più su
 
-<https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals>.
+<https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals>
 
 Debug
 ---------
@@ -605,7 +605,7 @@ Usa `find` e lo slicing delle stringhe per estrarre la porzione di stringa dopo 
 
 Leggi la documentazione dei metodi delle stringhe su
 
-<https://docs.python.org/library/stdtypes.html#string-methods>.
+<https://docs.python.org/library/stdtypes.html#string-methods>
 
 Ti conviene fare esperimenti con alcuni di questi metodi per assicurarti di aver capito come funzionano. `strip` e `replace` sono particolarmente utili.
 
