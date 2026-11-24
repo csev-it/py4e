@@ -62,7 +62,7 @@ Termini che ricorrono nel testo di più capitoli.
 | swap | scambiare | tutorial ufficiale: «scambiare» |
 | collection | collezione | tutorial ufficiale: «collezione» 5 volte, «raccolta» 1; «raccolta» resta per «gather» |
 | list (parola comune, non il tipo di dato) | elenco | «a comma-separated list of values» = «un elenco di valori separati da virgole»; «lista» solo per il tipo di dato |
-| hash order | ordine dell'hash |  |
+| hash order | ordine di inserimento | deciso il 24 novembre 2026: da Python 3.7 i dizionari conservano l'ordine in cui le chiavi sono inserite; l'inglese dice ancora «hash order», che per Python di oggi è inesatto (capitoli 9 e 10) |
 | match (verbo), match (nome) | corrispondere a, corrispondenza | soggetto del verbo è l'espressione, non chi programma: «vogliamo la corrispondenza con…» |
 | backslash | backslash | resta in inglese, maschile |
 | raw string | stringa raw | alla prima comparsa «*stringa raw* (raw string)»; tutorial ufficiale: «stringa raw» |
